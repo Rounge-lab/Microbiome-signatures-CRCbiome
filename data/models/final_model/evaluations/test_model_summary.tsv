@@ -1,0 +1,5 @@
+primary_model	data_type	dataset_type	stratification	strat_cat	dataset	model_name	algorithm	secondary_model	add_var	sec_model
+rf_mphl	read-based	sgbs	none	none	taxa	taxa	random forest	catfit	taxa	FIT, microbial model
+rf_mags	mag-based	mags	none	none	taxa	taxa	random forest	catfit	taxa	FIT, microbial model
+rf_mphl	read-based	sgbs	none	none	taxa	taxa	random forest	catfit_demo_wcrf	taxa	FIT, demography, WCRF, microbial model
+rf_mags	mag-based	mags	none	none	taxa	taxa	random forest	catfit_demo_wcrf	taxa	FIT, demography, WCRF, microbial model

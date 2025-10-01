@@ -1,0 +1,1641 @@
+deltaker_id,final_result,age_invitation,kjonn,final_result_cat7,age_cat,train_test
+865676,5a. <3 Non-advanced adenomas,60.546160068661926,M,Non-advanced adenoma (<3),65 or under,train
+330500,3. Non neoplastic findings,62.964502827792906,M,Non-advanced adenoma (>=3),over 70,train
+288793,5a. <3 Non-advanced adenomas,59.37930082835106,M,Negative,65 or under,train
+201333,1. Negative,56.01852013793465,F,Non-advanced adenoma (<3),over 70,train
+109154,3. Non neoplastic findings,66.21603704455778,M,Non-advanced adenoma (>=3),65 or under,train
+179701,5a. <3 Non-advanced adenomas,74.05043733837698,M,Non-advanced adenoma (<3),65 or under,train
+913041,3. Non neoplastic findings,57.625144109497626,M,Non-advanced adenoma (<3),65 or under,test
+379688,1. Negative,67.55313437584508,F,Advanced adenoma,65 or under,train
+195005,5b. >= 3 Non-advanced adenomas,74.87973130094827,F,Non-advanced adenoma (>=3),over 70,train
+468264,5a. <3 Non-advanced adenomas,60.4637471020929,M,Non-advanced adenoma (<3),over 70,train
+738603,3. Non neoplastic findings,60.937678238499544,F,Advanced serrated,65-70,test
+170809,3. Non neoplastic findings,75.26839379375423,F,Non-advanced adenoma (<3),65 or under,test
+934059,5a. <3 Non-advanced adenomas,58.62368436958291,F,Negative,65-70,train
+757416,1. Negative,66.70483636116012,F,Non-advanced adenoma (<3),over 70,test
+306296,5a. <3 Non-advanced adenomas,74.37376189538281,M,Advanced adenoma,over 70,train
+796300,1. Negative,75.7051541412079,F,Advanced adenoma,65 or under,test
+976892,1. Negative,57.96413923350796,M,CRC,65 or under,test
+731121,3. Non neoplastic findings,61.387830272703994,F,Negative,65-70,train
+482374,4b. Serrated lesions,75.81205393943345,M,Negative,65 or under,test
+711025,5c. Advanced adenoma,66.29496786304585,M,no colonoscopy,over 70,train
+222330,1. Negative,62.39635836201597,F,Advanced adenoma,over 70,train
+181987,5c. Advanced adenoma,65.95836267950139,M,Negative,over 70,test
+286483,4b. Serrated lesions,58.630309956189954,F,Non-advanced adenoma (<3),over 70,train
+880028,5c. Advanced adenoma,58.219185289517874,M,Negative,65-70,train
+882397,5a. <3 Non-advanced adenomas,73.13848543602002,M,Non-advanced adenoma (<3),65-70,train
+204911,3. Non neoplastic findings,76.30833155763862,M,Non-advanced adenoma (<3),over 70,test
+521342,3. Non neoplastic findings,72.87354442430328,M,Non-advanced adenoma (>=3),65 or under,train
+166958,5c. Advanced adenoma,59.61400331189139,F,Advanced serrated,65 or under,train
+545238,1. Negative,73.82505305838434,F,Non-advanced adenoma (<3),65 or under,train
+858253,5a. <3 Non-advanced adenomas,61.87206810421487,M,Non-advanced adenoma (<3),65 or under,test
+935763,5c. Advanced adenoma,66.06048713609347,M,Advanced adenoma,65-70,train
+672551,5b. >= 3 Non-advanced adenomas,74.12408977421813,M,Advanced adenoma,over 70,train
+161447,5c. Advanced adenoma,59.401003163912605,F,Negative,65 or under,train
+211466,5c. Advanced adenoma,76.17439924911389,F,Advanced serrated,65 or under,test
+609055,5a. <3 Non-advanced adenomas,67.94836061549827,M,Advanced adenoma,65 or under,train
+418046,1. Negative,73.70525833692055,M,Negative,65 or under,train
+598786,5a. <3 Non-advanced adenomas,68.54491627148367,M,CRC,65 or under,train
+594552,1. Negative,59.441974271035285,F,Advanced adenoma,65 or under,test
+462181,3. Non neoplastic findings,55.674503551033865,M,Negative,65 or under,train
+316854,1. Negative,71.96232367135924,F,Advanced adenoma,65 or under,train
+370828,5b. >= 3 Non-advanced adenomas,71.46659256901074,F,Negative,65 or under,train
+739121,3. Non neoplastic findings,65.79102594237648,F,Non-advanced serrated/other lesions,65 or under,test
+326540,5b. >= 3 Non-advanced adenomas,69.23195549403718,M,Negative,65 or under,train
+462688,5c. Advanced adenoma,64.70603823356457,F,Non-advanced serrated/other lesions,65 or under,test
+988600,5a. <3 Non-advanced adenomas,68.12045074552863,M,Non-advanced serrated/other lesions,65 or under,train
+537533,5b. >= 3 Non-advanced adenomas,65.62342626779706,M,Non-advanced adenoma (>=3),over 70,test
+804422,1. Negative,72.05196434985152,F,Negative,65-70,train
+231103,3. Non neoplastic findings,67.9583187965328,M,no colonoscopy,65-70,train
+825323,1. Negative,73.97049367354428,F,Non-advanced serrated/other lesions,65 or under,train
+936812,5b. >= 3 Non-advanced adenomas,73.29288348085683,M,Advanced adenoma,65 or under,train
+430155,5a. <3 Non-advanced adenomas,72.81608296097194,M,Advanced adenoma,65 or under,train
+156333,4b. Serrated lesions,60.95470330480627,M,Negative,65 or under,train
+349404,"2a. FOBT+, no colonoscopy",58.11730412196522,F,Negative,over 70,train
+719492,5a. <3 Non-advanced adenomas,68.27139329817754,M,Advanced adenoma,over 70,train
+263070,5c. Advanced adenoma,57.42990779547811,M,Negative,over 70,train
+871668,5c. Advanced adenoma,59.209026723974,F,Advanced adenoma,65-70,train
+740215,5c. Advanced adenoma,62.40806979078606,M,no colonoscopy,65 or under,train
+114237,1. Negative,59.46091852736043,M,Negative,65 or under,train
+267241,3. Non neoplastic findings,59.04048032978858,M,Negative,over 70,test
+430070,5a. <3 Non-advanced adenomas,60.759070055847666,F,Non-advanced adenoma (<3),65 or under,test
+249439,5c. Advanced adenoma,72.96105883616214,F,Negative,65 or under,test
+193623,6. Cancer,75.63339060475236,M,Advanced adenoma,65 or under,train
+669528,5a. <3 Non-advanced adenomas,56.28817656348496,F,Advanced adenoma,over 70,test
+759916,5b. >= 3 Non-advanced adenomas,69.87543496543032,F,Negative,65 or under,test
+134412,5a. <3 Non-advanced adenomas,76.84246178045177,F,Negative,65 or under,train
+238336,5b. >= 3 Non-advanced adenomas,65.88197638029972,M,Advanced serrated,65 or under,train
+855278,5b. >= 3 Non-advanced adenomas,66.12342593287516,M,Advanced adenoma,65-70,test
+238051,5a. <3 Non-advanced adenomas,65.14045263495814,M,Non-advanced serrated/other lesions,over 70,train
+976984,3. Non neoplastic findings,61.64048115832399,F,Advanced adenoma,65 or under,test
+185921,3. Non neoplastic findings,65.14797537044568,F,Negative,65 or under,test
+636383,5b. >= 3 Non-advanced adenomas,71.71227677680918,F,no colonoscopy,65 or under,train
+542835,5a. <3 Non-advanced adenomas,67.87257189165946,F,Advanced adenoma,65 or under,train
+579050,1. Negative,68.97355867310283,M,Negative,65 or under,train
+159138,3. Non neoplastic findings,71.621216363505,M,Advanced adenoma,65-70,train
+228303,5b. >= 3 Non-advanced adenomas,58.12708785256682,F,Advanced adenoma,over 70,train
+342187,5a. <3 Non-advanced adenomas,66.9608916723759,M,Non-advanced adenoma (<3),over 70,test
+814663,5b. >= 3 Non-advanced adenomas,74.0580868008724,F,Advanced adenoma,65 or under,train
+767252,1. Negative,74.79107596941863,F,Advanced adenoma,65-70,train
+775462,5c. Advanced adenoma,62.29446695292529,M,Negative,over 70,train
+389205,5c. Advanced adenoma,63.60889175382889,M,Advanced adenoma,over 70,test
+150838,5a. <3 Non-advanced adenomas,65.80230273628166,M,Non-advanced adenoma (<3),65 or under,train
+103818,3. Non neoplastic findings,60.63344456265382,M,Negative,65-70,train
+813763,4b. Serrated lesions,64.4833250575428,M,Negative,65 or under,test
+593359,6. Cancer,73.384415806623,F,Advanced adenoma,65 or under,train
+127010,3. Non neoplastic findings,62.74332474182628,F,Non-advanced adenoma (<3),65 or under,test
+168733,5a. <3 Non-advanced adenomas,75.04751837857222,M,Negative,over 70,train
+652794,4b. Serrated lesions,70.5367879435792,M,Non-advanced adenoma (>=3),65 or under,train
+599043,5c. Advanced adenoma,63.62466852139617,F,Non-advanced adenoma (<3),over 70,test
+214875,3. Non neoplastic findings,60.14782457715012,M,Negative,65-70,train
+993377,5a. <3 Non-advanced adenomas,60.03966684706179,M,CRC,65-70,train
+643844,5a. <3 Non-advanced adenomas,62.65551045593161,M,Non-advanced serrated/other lesions,over 70,train
+929508,1. Negative,64.71315976095103,M,Non-advanced adenoma (<3),over 70,test
+501123,5a. <3 Non-advanced adenomas,71.2184893154485,M,Negative,65-70,train
+783293,5c. Advanced adenoma,65.3872083297851,M,Non-advanced serrated/other lesions,over 70,train
+332866,5b. >= 3 Non-advanced adenomas,58.63753121228122,F,Negative,65 or under,train
+369451,5c. Advanced adenoma,74.06463140177038,M,Negative,over 70,train
+172512,3. Non neoplastic findings,69.03868607486405,M,Negative,over 70,train
+960883,5c. Advanced adenoma,67.05532457146528,M,Non-advanced adenoma (<3),over 70,train
+271030,5b. >= 3 Non-advanced adenomas,73.39039192483092,M,Advanced adenoma,65 or under,train
+912377,5d. Advanced serrated,59.62821350667426,M,Negative,65 or under,train
+248547,5c. Advanced adenoma,63.02895324787361,F,Advanced adenoma,over 70,train
+172152,5a. <3 Non-advanced adenomas,75.95390231471343,F,Negative,65 or under,train
+863540,5b. >= 3 Non-advanced adenomas,74.59792889890635,F,Advanced adenoma,65 or under,train
+968631,4b. Serrated lesions,62.04045859672361,M,Advanced adenoma,65-70,train
+913614,3. Non neoplastic findings,62.305807941584646,F,Non-advanced adenoma (<3),over 70,train
+273272,5c. Advanced adenoma,71.79909268884158,M,Non-advanced adenoma (<3),65-70,train
+299683,6. Cancer,67.73891233975058,M,Advanced adenoma,65 or under,test
+459338,5b. >= 3 Non-advanced adenomas,71.63749883447753,M,Non-advanced adenoma (<3),65 or under,train
+884623,5a. <3 Non-advanced adenomas,61.706948480729224,M,CRC,65 or under,train
+997832,3. Non neoplastic findings,60.9724101606572,F,Non-advanced serrated/other lesions,65-70,train
+379697,5a. <3 Non-advanced adenomas,72.07159833784577,F,Non-advanced adenoma (>=3),65 or under,train
+770909,1. Negative,62.132580938301224,F,Negative,65 or under,test
+376007,3. Non neoplastic findings,61.09532897935651,M,Negative,over 70,train
+943441,5c. Advanced adenoma,58.13675502752811,M,Advanced adenoma,65 or under,train
+196157,5c. Advanced adenoma,73.84185521051252,M,Non-advanced adenoma (>=3),over 70,train
+328390,1. Negative,61.71789938070621,M,Negative,65-70,test
+458941,5b. >= 3 Non-advanced adenomas,71.89690168569699,M,Negative,over 70,train
+256940,5a. <3 Non-advanced adenomas,62.763313257083,M,Non-advanced adenoma (<3),65-70,train
+557090,"2a. FOBT+, no colonoscopy",74.88964067420318,M,Non-advanced adenoma (<3),over 70,test
+255437,6. Cancer,65.63469470926528,F,Negative,65 or under,train
+781922,5a. <3 Non-advanced adenomas,59.87187096799543,M,Negative,65 or under,train
+723278,3. Non neoplastic findings,71.22892400709205,M,Non-advanced serrated/other lesions,65 or under,train
+351768,5b. >= 3 Non-advanced adenomas,68.8687045973982,M,Advanced adenoma,65-70,test
+851993,3. Non neoplastic findings,61.21354790145742,F,Non-advanced adenoma (>=3),65 or under,train
+965387,5c. Advanced adenoma,66.3798284261411,F,Non-advanced adenoma (<3),65-70,train
+894071,5a. <3 Non-advanced adenomas,60.554354307941836,F,Negative,65-70,train
+131083,1. Negative,66.46692136145452,F,Advanced serrated,65 or under,train
+180276,5c. Advanced adenoma,67.4593227085047,M,Non-advanced adenoma (<3),over 70,train
+989050,4b. Serrated lesions,59.55668998210437,F,Negative,65-70,train
+799606,3. Non neoplastic findings,56.33570706487327,M,Non-advanced adenoma (<3),over 70,test
+848187,3. Non neoplastic findings,70.12540194479809,F,no colonoscopy,over 70,train
+499312,5b. >= 3 Non-advanced adenomas,59.47861890870411,F,Non-advanced adenoma (<3),65 or under,train
+992868,5a. <3 Non-advanced adenomas,73.30844530124374,M,Non-advanced adenoma (<3),65-70,train
+929120,5a. <3 Non-advanced adenomas,57.855854551262155,F,CRC,65 or under,train
+804900,3. Non neoplastic findings,73.5433314013572,F,Negative,65-70,train
+200902,5a. <3 Non-advanced adenomas,62.049955220142095,F,CRC,65 or under,train
+978163,5d. Advanced serrated,59.644579163437164,M,Advanced adenoma,over 70,train
+143280,5b. >= 3 Non-advanced adenomas,60.561879823300956,M,Non-advanced adenoma (<3),65 or under,train
+203923,5a. <3 Non-advanced adenomas,58.3726943489305,M,Non-advanced serrated/other lesions,65-70,train
+930144,5a. <3 Non-advanced adenomas,61.96882029851485,M,Non-advanced adenoma (<3),over 70,test
+335890,1. Negative,61.11143848914633,M,Non-advanced adenoma (>=3),65-70,train
+910192,1. Negative,73.46568825889631,M,Negative,over 70,train
+532911,5d. Advanced serrated,74.37820016778282,M,Negative,65-70,train
+588135,5a. <3 Non-advanced adenomas,71.55473250432676,M,Negative,65-70,test
+895533,5b. >= 3 Non-advanced adenomas,58.29837613560374,M,Non-advanced adenoma (>=3),65 or under,test
+551929,5b. >= 3 Non-advanced adenomas,66.30481750804213,M,Non-advanced adenoma (<3),over 70,train
+719611,5c. Advanced adenoma,58.30826285966858,M,Non-advanced adenoma (<3),65 or under,test
+467442,5a. <3 Non-advanced adenomas,58.97275799018847,M,Negative,over 70,train
+225772,5a. <3 Non-advanced adenomas,72.46636961167087,F,no colonoscopy,65-70,train
+763490,5c. Advanced adenoma,59.66267530163888,F,Advanced adenoma,65 or under,train
+812143,5a. <3 Non-advanced adenomas,63.639200460666814,F,Negative,over 70,train
+404038,5a. <3 Non-advanced adenomas,58.64564054750031,F,Negative,65 or under,train
+400061,1. Negative,64.5369303270263,F,Advanced serrated,65 or under,test
+657217,5d. Advanced serrated,72.17938255381405,F,Non-advanced adenoma (<3),65-70,train
+679008,3. Non neoplastic findings,75.7170963676719,M,Negative,over 70,test
+992791,"2a. FOBT+, no colonoscopy",75.96792667766962,M,CRC,65 or under,train
+875362,5b. >= 3 Non-advanced adenomas,59.78379333075529,M,Negative,over 70,test
+439154,1. Negative,58.54340118431376,F,Negative,over 70,train
+921907,5a. <3 Non-advanced adenomas,72.19869701039438,F,Advanced adenoma,65 or under,train
+608752,3. Non neoplastic findings,57.97749346395776,F,Negative,65-70,test
+244358,5a. <3 Non-advanced adenomas,76.55364019417313,M,Non-advanced adenoma (<3),65 or under,train
+829051,5b. >= 3 Non-advanced adenomas,72.88559693007744,M,Negative,over 70,test
+757332,4b. Serrated lesions,62.676919690569136,M,Advanced serrated,65-70,train
+967669,4b. Serrated lesions,70.698119216602,M,Advanced adenoma,65-70,train
+728975,5a. <3 Non-advanced adenomas,63.65216449204735,M,Non-advanced adenoma (<3),65-70,train
+722389,1. Negative,56.72277944188013,F,Negative,65 or under,test
+142888,5b. >= 3 Non-advanced adenomas,76.3107497563517,M,Advanced adenoma,over 70,train
+886460,3. Non neoplastic findings,74.49145462407789,M,Advanced adenoma,over 70,train
+180920,5a. <3 Non-advanced adenomas,66.63208229905574,F,Advanced adenoma,65-70,train
+706276,"2a. FOBT+, no colonoscopy",70.13581940125856,M,Non-advanced adenoma (>=3),65 or under,train
+398241,5c. Advanced adenoma,76.57616264845586,M,Non-advanced adenoma (<3),over 70,train
+596883,4b. Serrated lesions,75.05934155212078,F,Non-advanced adenoma (<3),over 70,test
+218756,5a. <3 Non-advanced adenomas,66.22383073617715,M,Non-advanced serrated/other lesions,65 or under,train
+928751,5b. >= 3 Non-advanced adenomas,67.76338179520924,M,Negative,65 or under,train
+786288,1. Negative,58.2307710575199,M,Non-advanced adenoma (<3),over 70,test
+836640,5c. Advanced adenoma,65.04159834728753,F,Non-advanced adenoma (<3),over 70,train
+199094,5a. <3 Non-advanced adenomas,64.90884725475883,F,Non-advanced adenoma (>=3),65 or under,train
+689256,1. Negative,73.98436426810063,M,Negative,over 70,test
+807799,4b. Serrated lesions,75.98331699315293,F,Non-advanced adenoma (<3),65-70,train
+165589,5a. <3 Non-advanced adenomas,69.13602716888204,M,Non-advanced adenoma (<3),65 or under,train
+760232,3. Non neoplastic findings,76.31229293314335,M,Negative,over 70,train
+812964,6. Cancer,61.22662990159019,F,Negative,over 70,train
+106567,5c. Advanced adenoma,63.94866022797385,M,Advanced adenoma,65 or under,train
+152760,1. Negative,59.226823825330264,M,Non-advanced adenoma (<3),over 70,test
+829686,5a. <3 Non-advanced adenomas,74.21917858035164,F,CRC,over 70,test
+987831,6. Cancer,58.79715294725592,F,Non-advanced adenoma (<3),65-70,test
+605241,5c. Advanced adenoma,68.88091950907318,M,CRC,65-70,test
+425213,5a. <3 Non-advanced adenomas,67.39856520272932,M,Non-advanced adenoma (<3),65-70,train
+998622,5c. Advanced adenoma,58.55713331575195,M,Non-advanced adenoma (<3),over 70,train
+123003,5a. <3 Non-advanced adenomas,65.39808597008037,F,Negative,65-70,train
+519409,5c. Advanced adenoma,76.11482176925442,M,Non-advanced adenoma (>=3),over 70,train
+749006,5b. >= 3 Non-advanced adenomas,57.99064174961693,F,no colonoscopy,over 70,train
+387343,5c. Advanced adenoma,76.39848043239525,M,Advanced adenoma,65 or under,train
+192638,5a. <3 Non-advanced adenomas,59.13847992961463,M,Non-advanced serrated/other lesions,over 70,train
+730839,3. Non neoplastic findings,69.35404418324113,F,Advanced serrated,65-70,test
+209822,3. Non neoplastic findings,70.9360895338329,F,Non-advanced adenoma (<3),over 70,train
+839983,5d. Advanced serrated,75.23579958673837,M,Non-advanced adenoma (<3),over 70,train
+315154,5a. <3 Non-advanced adenomas,57.114172257067146,M,Advanced adenoma,65-70,train
+318521,1. Negative,74.38284011573883,F,Negative,over 70,test
+476903,1. Negative,71.65273673880395,M,Advanced adenoma,over 70,train
+705888,5a. <3 Non-advanced adenomas,58.814864153342306,M,Negative,over 70,train
+555293,5a. <3 Non-advanced adenomas,64.36069740345148,F,no colonoscopy,65 or under,train
+708186,1. Negative,70.22288494699538,F,Non-advanced adenoma (<3),over 70,train
+160520,1. Negative,63.70366094608099,F,Advanced adenoma,65 or under,train
+633425,"2a. FOBT+, no colonoscopy",57.14843266462193,F,Advanced serrated,over 70,test
+209662,5b. >= 3 Non-advanced adenomas,60.38677268340648,M,Advanced adenoma,65 or under,train
+465487,5a. <3 Non-advanced adenomas,64.3030930055279,M,Non-advanced adenoma (<3),over 70,train
+444359,5c. Advanced adenoma,62.0604379326594,M,CRC,65-70,train
+609419,5a. <3 Non-advanced adenomas,73.858750575737,M,Non-advanced adenoma (<3),65 or under,train
+273739,5a. <3 Non-advanced adenomas,57.81795244305128,M,Non-advanced adenoma (<3),65-70,train
+471727,4b. Serrated lesions,58.1463852029383,F,Advanced adenoma,over 70,train
+778889,1. Negative,67.56517098825427,M,Non-advanced adenoma (>=3),65-70,train
+308570,5a. <3 Non-advanced adenomas,61.72889369995152,F,Non-advanced adenoma (<3),65-70,train
+335888,5b. >= 3 Non-advanced adenomas,66.80908747598299,M,Negative,65 or under,train
+107332,1. Negative,72.21587559083272,F,Non-advanced adenoma (<3),65 or under,test
+400554,5a. <3 Non-advanced adenomas,72.8321055239202,F,Non-advanced adenoma (<3),over 70,test
+667261,1. Negative,71.05416791523857,M,Non-advanced adenoma (<3),65 or under,train
+145278,4b. Serrated lesions,69.2911289293119,F,Non-advanced adenoma (<3),65-70,train
+793014,5b. >= 3 Non-advanced adenomas,66.54282728538743,M,Negative,65 or under,train
+247820,5b. >= 3 Non-advanced adenomas,66.97318255758333,M,Non-advanced adenoma (>=3),65-70,train
+357825,1. Negative,62.563109358024576,F,Negative,over 70,test
+316127,3. Non neoplastic findings,64.93006743123239,M,Negative,65 or under,train
+720983,1. Negative,63.04590878048909,M,Non-advanced adenoma (>=3),65 or under,train
+863221,5b. >= 3 Non-advanced adenomas,72.09266665696607,F,Non-advanced adenoma (<3),65-70,train
+770952,1. Negative,65.81272894754363,F,Non-advanced serrated/other lesions,65 or under,test
+158850,5c. Advanced adenoma,58.56942159882994,M,Negative,65-70,train
+970627,1. Negative,74.29620221185031,M,Advanced adenoma,over 70,train
+740322,5b. >= 3 Non-advanced adenomas,74.30608849712968,M,CRC,over 70,train
+224980,6. Cancer,69.37366052478554,M,Negative,over 70,test
+841164,5a. <3 Non-advanced adenomas,61.296299499907136,M,Advanced adenoma,65 or under,test
+395687,3. Non neoplastic findings,57.28009572548057,F,Negative,65 or under,test
+166567,5c. Advanced adenoma,68.89304934808754,M,Non-advanced adenoma (<3),over 70,train
+465467,5c. Advanced adenoma,62.43355063496246,M,Non-advanced adenoma (<3),65 or under,train
+581130,5d. Advanced serrated,61.65651386690732,F,no colonoscopy,65 or under,train
+248178,5a. <3 Non-advanced adenomas,58.65487031689415,F,Advanced adenoma,65 or under,test
+854309,5b. >= 3 Non-advanced adenomas,72.89702555524708,F,Negative,65-70,test
+726349,5a. <3 Non-advanced adenomas,71.3801775099253,F,Negative,over 70,test
+964239,5a. <3 Non-advanced adenomas,71.07065816833226,F,Negative,65-70,test
+292643,1. Negative,63.05951160732674,M,Negative,over 70,train
+147456,5c. Advanced adenoma,75.64636411928429,M,Negative,65 or under,train
+790214,4b. Serrated lesions,67.96852061951972,M,Negative,65 or under,train
+290293,5c. Advanced adenoma,65.97150656183538,M,Negative,over 70,train
+194697,5c. Advanced adenoma,59.14963676574718,M,Advanced adenoma,over 70,train
+860988,5a. <3 Non-advanced adenomas,59.15910282255424,M,Negative,65 or under,train
+911931,5b. >= 3 Non-advanced adenomas,61.401435725002635,M,Non-advanced serrated/other lesions,over 70,train
+864417,5b. >= 3 Non-advanced adenomas,65.72590981471387,F,Negative,65-70,train
+470455,5d. Advanced serrated,70.82600068151744,M,Advanced adenoma,65-70,test
+366343,5a. <3 Non-advanced adenomas,60.29342528166215,M,CRC,65 or under,test
+437108,3. Non neoplastic findings,68.22433687660325,F,Non-advanced adenoma (<3),over 70,test
+130526,6. Cancer,66.87682352058793,M,Negative,over 70,train
+612775,1. Negative,62.213387817333576,F,Advanced adenoma,65 or under,train
+608936,4b. Serrated lesions,66.63885475541592,M,Advanced serrated,65-70,train
+657090,5b. >= 3 Non-advanced adenomas,57.64516268344855,M,Non-advanced adenoma (<3),65-70,train
+795739,5a. <3 Non-advanced adenomas,71.23726422241862,M,Advanced adenoma,65 or under,train
+697876,5c. Advanced adenoma,74.741532187261555,F,Negative,65 or under,train
+892638,3. Non neoplastic findings,66.39073820854466,F,Non-advanced adenoma (<3),over 70,test
+521883,5c. Advanced adenoma,61.30632647289628,M,Advanced adenoma,65 or under,train
+414682,5b. >= 3 Non-advanced adenomas,70.1474747127751,M,Non-advanced adenoma (>=3),over 70,train
+341100,5a. <3 Non-advanced adenomas,60.47512663009353,F,Non-advanced adenoma (<3),65 or under,train
+560805,5b. >= 3 Non-advanced adenomas,62.98759703028221,F,Advanced adenoma,65 or under,test
+892937,1. Negative,62.58638176923541,M,Advanced adenoma,65 or under,test
+156336,1. Negative,66.98579775816587,M,Advanced adenoma,over 70,test
+541900,4b. Serrated lesions,57.86905000529073,F,Non-advanced adenoma (<3),65 or under,train
+410658,5a. <3 Non-advanced adenomas,66.55319640848872,F,Non-advanced adenoma (<3),65-70,train
+440602,2b. Polyp without histology,63.30032818767069,F,Non-advanced adenoma (<3),65-70,test
+171957,5c. Advanced adenoma,69.39181811679659,M,Advanced adenoma,65 or under,train
+731880,5a. <3 Non-advanced adenomas,66.23123210673866,M,Advanced adenoma,over 70,train
+735540,5a. <3 Non-advanced adenomas,58.24245563373267,M,Negative,over 70,train
+462030,5b. >= 3 Non-advanced adenomas,67.60846485644464,M,Negative,65 or under,test
+518806,5b. >= 3 Non-advanced adenomas,72.23032326058438,M,Advanced adenoma,over 70,test
+319379,5b. >= 3 Non-advanced adenomas,69.31230975871391,F,Advanced adenoma,65 or under,train
+448706,5a. <3 Non-advanced adenomas,76.77097691940436,M,Negative,65 or under,train
+859686,5d. Advanced serrated,73.3958242390923,F,Negative,65 or under,train
+901728,5c. Advanced adenoma,76.3132941756368,M,Negative,65 or under,train
+506324,5c. Advanced adenoma,56.97024322710379,F,Negative,over 70,train
+610210,5b. >= 3 Non-advanced adenomas,72.28840339472472,F,Non-advanced adenoma (<3),65-70,train
+965170,4b. Serrated lesions,66.3150082550801,F,Negative,over 70,train
+101817,5c. Advanced adenoma,75.8769031503865,M,Negative,65-70,train
+363014,5b. >= 3 Non-advanced adenomas,75.82522328085946,F,Non-advanced adenoma (>=3),65-70,test
+815775,3. Non neoplastic findings,63.374838438013505,M,Advanced adenoma,65-70,train
+349947,3. Non neoplastic findings,59.88234950298717,F,Advanced adenoma,over 70,train
+998988,6. Cancer,76.1933477163146,F,Negative,65 or under,train
+236054,5c. Advanced adenoma,57.45751848947991,M,no colonoscopy,65 or under,train
+657272,5d. Advanced serrated,62.60982025168002,M,Advanced adenoma,over 70,test
+395926,3. Non neoplastic findings,59.89199491518272,M,Advanced adenoma,over 70,train
+813970,3. Non neoplastic findings,68.55828315734814,M,CRC,over 70,train
+391437,5d. Advanced serrated,73.1513912869981,M,Negative,65-70,train
+377268,1. Negative,59.33430632838037,M,Negative,over 70,test
+856807,4b. Serrated lesions,63.384356405949845,M,Non-advanced adenoma (<3),65 or under,train
+421461,5b. >= 3 Non-advanced adenomas,61.5600987323526,F,Negative,65 or under,test
+258222,5a. <3 Non-advanced adenomas,73.32319266234998,M,Negative,65-70,train
+171336,1. Negative,65.21643155735823,F,Non-advanced adenoma (<3),over 70,train
+733023,5a. <3 Non-advanced adenomas,62.22260842857294,M,CRC,65-70,train
+545949,4b. Serrated lesions,69.14171891408056,F,Negative,65 or under,test
+349013,5a. <3 Non-advanced adenomas,60.568676489665776,F,Non-advanced adenoma (<3),65-70,train
+272743,3. Non neoplastic findings,75.83767763120126,M,Advanced adenoma,over 70,train
+122960,4. Other lesions,69.04964577434966,M,Negative,over 70,train
+242620,3. Non neoplastic findings,67.29023809002605,M,Negative,65-70,train
+516120,3. Non neoplastic findings,71.66647549192565,M,Non-advanced adenoma (<3),over 70,train
+541187,5a. <3 Non-advanced adenomas,59.050069856161805,F,Negative,65 or under,train
+493943,5b. >= 3 Non-advanced adenomas,71.57064739629726,F,Negative,65 or under,train
+418244,3. Non neoplastic findings,58.00356357530893,M,Non-advanced adenoma (<3),65-70,train
+557756,3. Non neoplastic findings,71.24395258874348,F,Negative,65-70,train
+950071,4b. Serrated lesions,62.42039868274701,M,Negative,65-70,test
+915728,5b. >= 3 Non-advanced adenomas,65.15344632436664,F,Non-advanced adenoma (<3),65 or under,train
+619204,5b. >= 3 Non-advanced adenomas,67.21234791305606,M,Non-advanced adenoma (<3),65 or under,train
+682094,3. Non neoplastic findings,57.48425870750329,M,Non-advanced adenoma (<3),over 70,train
+726358,5c. Advanced adenoma,67.83318953741566,F,Negative,65 or under,train
+961358,5c. Advanced adenoma,59.166435865144955,M,Non-advanced adenoma (>=3),65 or under,train
+234883,5a. <3 Non-advanced adenomas,73.99750822583985,M,Negative,65-70,test
+956376,3. Non neoplastic findings,67.13739518638867,M,CRC,65-70,train
+682987,5c. Advanced adenoma,61.451977523608576,M,Non-advanced adenoma (<3),65 or under,train
+865029,5c. Advanced adenoma,60.22131942072915,M,Negative,65-70,train
+797524,5c. Advanced adenoma,68.24032782324323,M,Negative,over 70,train
+239143,3. Non neoplastic findings,68.1385155012223,F,Advanced serrated,65 or under,train
+949081,3. Non neoplastic findings,62.317256175661065,M,Non-advanced adenoma (<3),over 70,train
+839186,3. Non neoplastic findings,71.71757709252029,M,Advanced adenoma,65-70,train
+687214,5c. Advanced adenoma,61.97856653092555,F,CRC,65-70,train
+995357,5d. Advanced serrated,75.8843072165155,M,Non-advanced adenoma (<3),65-70,train
+493321,5d. Advanced serrated,71.96891738396086,M,Non-advanced adenoma (>=3),over 70,train
+804448,5b. >= 3 Non-advanced adenomas,62.7715185001281,M,Non-advanced adenoma (<3),65-70,train
+168519,5a. <3 Non-advanced adenomas,74.38780421977472,F,Non-advanced adenoma (<3),over 70,train
+573187,5d. Advanced serrated,57.510103943452556,F,Non-advanced adenoma (<3),65-70,train
+327479,5d. Advanced serrated,60.48631843476126,F,Non-advanced adenoma (>=3),over 70,train
+260927,6. Cancer,74.39321496041441,M,CRC,over 70,train
+342740,5a. <3 Non-advanced adenomas,60.778307310626765,M,Negative,65 or under,train
+353094,3. Non neoplastic findings,68.80746472795181,M,Negative,65 or under,test
+257516,5a. <3 Non-advanced adenomas,58.156057934886526,F,Negative,65-70,train
+938493,5c. Advanced adenoma,59.967170090958405,M,Negative,over 70,train
+270039,5a. <3 Non-advanced adenomas,74.1351883693044,F,Negative,65-70,train
+339156,5c. Advanced adenoma,68.57118497651781,M,Non-advanced adenoma (<3),over 70,train
+821550,4b. Serrated lesions,74.31518443189302,M,Negative,over 70,test
+435941,5a. <3 Non-advanced adenomas,71.29110823311073,M,Non-advanced adenoma (<3),65-70,train
+180112,5a. <3 Non-advanced adenomas,76.5988725261222,M,Negative,65-70,test
+478949,5c. Advanced adenoma,68.44599651397183,F,Non-advanced serrated/other lesions,over 70,train
+633666,3. Non neoplastic findings,65.04274561630345,F,no colonoscopy,65 or under,train
+966924,5a. <3 Non-advanced adenomas,63.663237535944354,M,Non-advanced adenoma (<3),65 or under,train
+505498,5c. Advanced adenoma,74.32353287329506,M,Advanced adenoma,over 70,train
+606338,3. Non neoplastic findings,76.85823344006351,F,Negative,65-70,train
+330268,5c. Advanced adenoma,62.328749221058395,M,no colonoscopy,65 or under,test
+358971,1. Negative,59.17119365862846,F,Negative,65 or under,train
+770478,1. Negative,58.83281269701348,M,Negative,65 or under,test
+434194,5b. >= 3 Non-advanced adenomas,67.41470702016403,F,Negative,65 or under,test
+125124,5d. Advanced serrated,58.580064969068076,M,Negative,65-70,train
+117279,5d. Advanced serrated,66.7124632631453,M,Non-advanced adenoma (>=3),65 or under,train
+543505,"2a. FOBT+, no colonoscopy",59.90094657793126,M,Non-advanced adenoma (>=3),65 or under,test
+478730,"2a. FOBT+, no colonoscopy",73.16514124522043,F,Non-advanced serrated/other lesions,65 or under,train
+259687,5a. <3 Non-advanced adenomas,58.06427505560315,M,Advanced serrated,65-70,test
+117878,5c. Advanced adenoma,74.14752235422505,F,Advanced adenoma,over 70,train
+409682,5c. Advanced adenoma,58.165852779462,M,Negative,over 70,train
+586763,4b. Serrated lesions,74.80174155394594,M,Non-advanced serrated/other lesions,65-70,train
+491995,3. Non neoplastic findings,63.31308313371139,M,Advanced adenoma,65 or under,train
+791479,5a. <3 Non-advanced adenomas,57.00745692257529,M,Advanced adenoma,65-70,train
+979800,5c. Advanced adenoma,74.3311766784906,M,Non-advanced adenoma (<3),over 70,test
+850751,3. Non neoplastic findings,76.3140865714553,F,CRC,over 70,train
+279567,5a. <3 Non-advanced adenomas,61.814528955942706,F,Non-advanced serrated/other lesions,over 70,train
+864072,3. Non neoplastic findings,57.882445750750534,M,Non-advanced adenoma (<3),65 or under,train
+965658,5c. Advanced adenoma,72.97207463585292,M,Advanced adenoma,65-70,train
+980539,3. Non neoplastic findings,69.78156160691174,F,Non-advanced adenoma (<3),over 70,train
+762553,4b. Serrated lesions,72.11457427266772,F,Non-advanced adenoma (>=3),65-70,test
+312684,1. Negative,60.87241057917605,M,Non-advanced serrated/other lesions,65 or under,test
+885298,5c. Advanced adenoma,76.41412481614734,M,Negative,65 or under,train
+543909,5a. <3 Non-advanced adenomas,72.2416396962289,M,Advanced adenoma,65-70,train
+985895,5a. <3 Non-advanced adenomas,64.71993386453516,F,Negative,65 or under,train
+219664,5b. >= 3 Non-advanced adenomas,64.33341323271733,M,Advanced adenoma,over 70,train
+825530,5d. Advanced serrated,70.23257793465818,M,Advanced adenoma,65-70,train
+578584,5a. <3 Non-advanced adenomas,73.05354983954834,F,Non-advanced serrated/other lesions,65 or under,train
+940154,5a. <3 Non-advanced adenomas,75.07103342497369,M,Non-advanced adenoma (<3),65-70,test
+804258,1. Negative,76.21150458083201,M,Non-advanced adenoma (<3),over 70,test
+283373,5a. <3 Non-advanced adenomas,66.56333276606956,M,Non-advanced adenoma (>=3),65-70,train
+462254,5a. <3 Non-advanced adenomas,74.61771864266304,F,Advanced serrated,65 or under,test
+926485,5c. Advanced adenoma,73.33690297130914,M,CRC,over 70,train
+960185,3. Non neoplastic findings,64.38504235462888,M,Advanced adenoma,65 or under,train
+605705,"2a. FOBT+, no colonoscopy",64.49406377509361,F,Advanced serrated,65-70,train
+797581,5c. Advanced adenoma,74.33815870463441,M,Negative,65-70,train
+810812,3. Non neoplastic findings,64.63898164467496,M,Negative,65-70,train
+986467,5a. <3 Non-advanced adenomas,68.08458074691013,M,Non-advanced adenoma (<3),65-70,train
+722083,5a. <3 Non-advanced adenomas,66.99881092949738,M,Negative,65-70,train
+126851,5c. Advanced adenoma,63.069336321524496,M,Non-advanced serrated/other lesions,65 or under,train
+472004,5a. <3 Non-advanced adenomas,74.23379817668314,M,Advanced adenoma,65 or under,train
+279784,5c. Advanced adenoma,74.89969836274685,M,Negative,over 70,train
+328088,5c. Advanced adenoma,68.90506237790309,M,Advanced adenoma,65-70,train
+650378,5c. Advanced adenoma,69.0606847409792,M,Non-advanced adenoma (<3),over 70,train
+996679,5b. >= 3 Non-advanced adenomas,70.97116554224351,F,Advanced adenoma,65 or under,train
+253087,1. Negative,64.64800061011377,F,Non-advanced adenoma (<3),65-70,train
+499332,3. Non neoplastic findings,73.2106482400367,M,Advanced serrated,65 or under,train
+487819,3. Non neoplastic findings,64.54420622540454,M,CRC,over 70,train
+225810,3. Non neoplastic findings,58.0755376722972,F,Non-advanced adenoma (<3),65-70,test
+139353,3. Non neoplastic findings,76.46849993504574,F,Negative,over 70,train
+276670,5d. Advanced serrated,56.14713277169899,F,Negative,over 70,train
+425238,5d. Advanced serrated,62.77932604551962,M,Negative,over 70,test
+655530,5d. Advanced serrated,72.38446138650511,F,Non-advanced adenoma (<3),over 70,train
+411964,5a. <3 Non-advanced adenomas,68.41747554390611,F,CRC,over 70,train
+714604,5a. <3 Non-advanced adenomas,68.81962895485657,F,Negative,over 70,train
+855523,5a. <3 Non-advanced adenomas,59.17311619454654,M,Advanced adenoma,over 70,train
+446715,5a. <3 Non-advanced adenomas,74.81195521874669,M,Non-advanced serrated/other lesions,65 or under,train
+673339,5a. <3 Non-advanced adenomas,74.0098715146504,M,Non-advanced adenoma (>=3),over 70,train
+221954,1. Negative,57.1821797525666,M,Advanced adenoma,over 70,train
+256615,5c. Advanced adenoma,71.97443862932083,M,Advanced adenoma,over 70,train
+524278,3. Non neoplastic findings,67.47285365640516,M,no colonoscopy,65 or under,train
+122264,1. Negative,71.08150463399497,M,Non-advanced adenoma (>=3),over 70,test
+776517,3. Non neoplastic findings,60.79630166880689,F,Non-advanced adenoma (<3),65 or under,test
+563439,5b. >= 3 Non-advanced adenomas,76.31500320822205,M,Negative,65 or under,train
+101478,5a. <3 Non-advanced adenomas,58.01624463392924,F,Negative,65-70,train
+200078,1. Negative,70.3946846173164,F,Advanced adenoma,65-70,train
+315549,3. Non neoplastic findings,59.24632997976428,M,Non-advanced adenoma (>=3),65 or under,train
+894287,5a. <3 Non-advanced adenomas,68.63373725145199,F,Non-advanced serrated/other lesions,65 or under,test
+725370,5c. Advanced adenoma,71.97950053629657,F,CRC,65-70,train
+599863,5a. <3 Non-advanced adenomas,59.17267237017157,M,Negative,65-70,train
+804177,3. Non neoplastic findings,62.787332127309,F,Non-advanced adenoma (<3),over 70,train
+849864,3. Non neoplastic findings,57.31149834641601,M,Negative,65-70,train
+237400,1. Negative,73.87562952846127,M,Non-advanced serrated/other lesions,over 70,train
+343427,5a. <3 Non-advanced adenomas,75.12857706921744,F,Negative,over 70,train
+669914,3. Non neoplastic findings,71.08766193769401,F,Non-advanced adenoma (>=3),over 70,train
+347659,5a. <3 Non-advanced adenomas,60.812529592705566,F,Non-advanced adenoma (<3),over 70,train
+697418,5a. <3 Non-advanced adenomas,73.89238244308879,F,Non-advanced adenoma (>=3),65 or under,test
+246341,5a. <3 Non-advanced adenomas,67.97934387229172,M,Negative,over 70,train
+233729,5a. <3 Non-advanced adenomas,67.88900176546657,M,Negative,65 or under,train
+260984,5a. <3 Non-advanced adenomas,76.31637717356034,M,Non-advanced adenoma (<3),65 or under,train
+523296,5a. <3 Non-advanced adenomas,58.731235793019415,F,Negative,over 70,test
+841565,5b. >= 3 Non-advanced adenomas,75.4028951885131,M,Advanced serrated,65-70,train
+308498,5a. <3 Non-advanced adenomas,70.56008478206415,F,Non-advanced adenoma (>=3),65 or under,test
+266959,5c. Advanced adenoma,60.05197574531432,F,Advanced serrated,65 or under,train
+784062,5c. Advanced adenoma,71.7235901914578,F,Negative,65 or under,train
+394342,5c. Advanced adenoma,72.98309302363722,M,CRC,65-70,train
+838113,5c. Advanced adenoma,73.34935363525483,F,Non-advanced adenoma (<3),over 70,test
+857086,1. Negative,64.95079008508569,M,Non-advanced adenoma (<3),65 or under,train
+327737,1. Negative,61.58190603884508,F,Negative,65-70,train
+594740,5b. >= 3 Non-advanced adenomas,59.170513309208545,F,Non-advanced adenoma (<3),over 70,test
+545740,5d. Advanced serrated,68.83186679179181,M,Negative,over 70,train
+580959,3. Non neoplastic findings,59.26718824728117,F,Non-advanced adenoma (<3),65-70,train
+665219,5b. >= 3 Non-advanced adenomas,58.028670618373326,M,Negative,65 or under,train
+118307,5b. >= 3 Non-advanced adenomas,64.81580297578397,M,Advanced serrated,65 or under,train
+147557,1. Negative,69.88251678420437,M,Negative,65-70,test
+351391,4b. Serrated lesions,68.8441465022193,M,Non-advanced adenoma (<3),65 or under,train
+342013,5a. <3 Non-advanced adenomas,57.89599023210483,F,Negative,over 70,test
+152081,5a. <3 Non-advanced adenomas,71.09008470489675,F,Negative,over 70,train
+188883,1. Negative,74.1608475990946,F,Non-advanced adenoma (<3),over 70,train
+245294,"2a. FOBT+, no colonoscopy",55.815996018334666,F,Non-advanced adenoma (<3),65 or under,train
+545240,5a. <3 Non-advanced adenomas,58.868637581564556,M,Negative,65-70,test
+395891,1. Negative,65.73964549684457,M,Non-advanced adenoma (<3),65 or under,train
+535927,1. Negative,59.16729013536252,F,Non-advanced adenoma (<3),over 70,train
+698396,3. Non neoplastic findings,56.19623588170525,F,Advanced adenoma,over 70,train
+638981,4b. Serrated lesions,69.40816938281475,F,Non-advanced adenoma (<3),over 70,train
+889597,3. Non neoplastic findings,60.82646754464026,M,Negative,65-70,test
+302367,5b. >= 3 Non-advanced adenomas,67.07066098178565,M,Negative,over 70,test
+571859,5a. <3 Non-advanced adenomas,56.384156434282396,M,Non-advanced adenoma (<3),over 70,train
+449538,5b. >= 3 Non-advanced adenomas,65.04523704068689,F,CRC,over 70,train
+581527,5a. <3 Non-advanced adenomas,73.05799309851893,M,Negative,over 70,train
+729940,6. Cancer,58.66521265712302,M,Advanced serrated,65-70,train
+257643,5c. Advanced adenoma,72.54263771703249,M,Negative,65 or under,test
+881285,5c. Advanced adenoma,62.34022464368051,F,Negative,65 or under,test
+872926,5a. <3 Non-advanced adenomas,69.97314150738613,F,Negative,65 or under,train
+640274,5a. <3 Non-advanced adenomas,72.47566668480741,F,Advanced adenoma,65-70,train
+709805,3. Non neoplastic findings,61.41653286728868,M,Negative,65-70,train
+849523,5a. <3 Non-advanced adenomas,76.31854155509338,F,Non-advanced adenoma (>=3),over 70,train
+259299,5c. Advanced adenoma,61.89126607483988,M,Non-advanced adenoma (>=3),65-70,test
+306962,3. Non neoplastic findings,67.30939913196146,M,Negative,over 70,test
+903438,1. Negative,59.16365397233848,M,Non-advanced adenoma (<3),65 or under,train
+199075,3. Non neoplastic findings,69.88928566533058,F,Non-advanced adenoma (<3),65 or under,train
+720902,5c. Advanced adenoma,72.55174916817617,M,Non-advanced adenoma (<3),65 or under,train
+175157,5a. <3 Non-advanced adenomas,56.62924843378644,F,Advanced adenoma,over 70,train
+285698,6. Cancer,71.9847162337454,F,Negative,over 70,train
+165348,5c. Advanced adenoma,72.70667043017295,M,Advanced adenoma,65-70,train
+647393,1. Negative,68.64147651892408,M,CRC,65-70,test
+932672,5a. <3 Non-advanced adenomas,69.98585599189859,M,Advanced serrated,65 or under,train
+787360,3. Non neoplastic findings,64.55128630953789,F,Non-advanced adenoma (<3),65 or under,train
+892192,5c. Advanced adenoma,58.48002936104587,M,Advanced adenoma,65 or under,train
+793058,1. Negative,71.73083625754651,F,Non-advanced adenoma (<3),over 70,test
+785600,4b. Serrated lesions,59.160255943841435,M,Non-advanced adenoma (<3),65 or under,test
+156907,6. Cancer,66.40162778619006,M,Negative,65 or under,train
+925409,5a. <3 Non-advanced adenomas,60.171798795901296,F,Negative,over 70,test
+714054,5b. >= 3 Non-advanced adenomas,72.63772819439035,F,Negative,65 or under,train
+381360,3. Non neoplastic findings,67.9034085542298,M,Non-advanced adenoma (<3),over 70,train
+474420,5c. Advanced adenoma,74.96450191805728,M,Advanced adenoma,over 70,train
+717427,3. Non neoplastic findings,67.78752818800092,M,Non-advanced serrated/other lesions,over 70,train
+293400,5c. Advanced adenoma,63.7894173917418,F,Negative,65-70,train
+446682,4. Other lesions,62.79613297954771,M,Advanced adenoma,over 70,train
+301305,5b. >= 3 Non-advanced adenomas,65.15717950045378,M,Negative,over 70,train
+329485,5c. Advanced adenoma,62.14423570424177,F,Negative,over 70,train
+296214,5a. <3 Non-advanced adenomas,73.4782920040971,F,Negative,65 or under,test
+159499,4b. Serrated lesions,59.56219742658264,M,Advanced adenoma,over 70,train
+653821,5a. <3 Non-advanced adenomas,72.25020341884273,M,Negative,65 or under,train
+826186,5a. <3 Non-advanced adenomas,59.68207694073816,F,Non-advanced serrated/other lesions,65-70,test
+556743,3. Non neoplastic findings,66.2384050481863,M,Non-advanced adenoma (<3),65 or under,train
+107982,5a. <3 Non-advanced adenomas,69.1461997137999,M,Negative,65 or under,train
+278985,3. Non neoplastic findings,64.16319759103324,M,Negative,over 70,train
+676105,3. Non neoplastic findings,69.42285094770385,M,Negative,65 or under,test
+488598,5c. Advanced adenoma,68.25600028860612,M,Negative,65-70,train
+601256,1. Negative,57.34221914580225,F,Negative,over 70,train
+696797,3. Non neoplastic findings,56.67664829060824,M,CRC,65-70,train
+141436,5a. <3 Non-advanced adenomas,69.79759792949264,M,Advanced adenoma,over 70,test
+712408,5b. >= 3 Non-advanced adenomas,61.67082369310964,F,Negative,65 or under,test
+922151,5c. Advanced adenoma,73.06137924073342,M,Non-advanced adenoma (<3),65 or under,train
+803796,5c. Advanced adenoma,63.324833143134086,F,Advanced adenoma,65 or under,train
+510017,1. Negative,64.97042488901326,M,Non-advanced adenoma (<3),over 70,train
+388281,6. Cancer,64.98838151570953,M,Non-advanced adenoma (<3),65 or under,train
+641452,4b. Serrated lesions,69.53446922524401,F,Advanced adenoma,65 or under,train
+613643,1. Negative,70.4829868267281,M,Negative,65-70,train
+914617,5a. <3 Non-advanced adenomas,65.82240824201622,M,Non-advanced adenoma (<3),65 or under,train
+681965,4b. Serrated lesions,63.970475984716366,F,Non-advanced adenoma (<3),over 70,train
+203741,3. Non neoplastic findings,68.64874141043738,M,Negative,65 or under,train
+856480,5a. <3 Non-advanced adenomas,66.47785971044956,M,Negative,over 70,train
+477373,1. Negative,69.5474241759361,M,Non-advanced adenoma (<3),65-70,test
+480480,5a. <3 Non-advanced adenomas,70.71385256980916,F,no colonoscopy,over 70,train
+413597,6. Cancer,62.15528958573341,F,CRC,over 70,test
+413114,5d. Advanced serrated,75.89129107981412,F,Advanced serrated,over 70,test
+141152,3. Non neoplastic findings,65.45820663810977,M,Advanced serrated,over 70,test
+133479,5c. Advanced adenoma,63.129453359468656,F,Negative,over 70,train
+305726,3. Non neoplastic findings,66.41250395210074,M,Non-advanced adenoma (<3),65-70,train
+642694,5a. <3 Non-advanced adenomas,60.49726239102263,M,Non-advanced adenoma (>=3),65 or under,test
+705574,5a. <3 Non-advanced adenomas,61.740284698795044,F,Non-advanced adenoma (<3),over 70,test
+522442,1. Negative,59.157747173576425,M,Advanced adenoma,65 or under,train
+751427,1. Negative,63.21787807614662,F,Non-advanced serrated/other lesions,65-70,train
+168287,5a. <3 Non-advanced adenomas,72.99396580403399,M,Advanced adenoma,65 or under,train
+166055,3. Non neoplastic findings,72.29783167619217,F,Negative,over 70,train
+210601,5a. <3 Non-advanced adenomas,71.0897275610705,F,Negative,over 70,train
+100544,4. Other lesions,64.72634500036995,M,Non-advanced adenoma (<3),65-70,train
+132990,4. Other lesions,72.84695253116804,M,Negative,65-70,train
+291959,1. Negative,73.63240863136558,M,Non-advanced serrated/other lesions,over 70,train
+468091,5c. Advanced adenoma,76.87305325700497,M,Advanced adenoma,65 or under,test
+226826,"2a. FOBT+, no colonoscopy",75.65866584810495,F,Negative,over 70,train
+389824,5c. Advanced adenoma,66.24551345246407,M,Negative,65 or under,train
+465743,2b. Polyp without histology,60.83759198692845,M,Non-advanced serrated/other lesions,65-70,train
+671949,5b. >= 3 Non-advanced adenomas,70.6395806475234,M,Advanced adenoma,over 70,train
+536932,1. Negative,63.23645058208584,M,Negative,65 or under,train
+134979,1. Negative,70.04523638126761,F,Negative,over 70,train
+822579,5a. <3 Non-advanced adenomas,69.89599788165218,M,Negative,65 or under,train
+614416,5b. >= 3 Non-advanced adenomas,59.289041687886055,F,Negative,65 or under,train
+107467,4b. Serrated lesions,75.84921085651607,F,Negative,over 70,train
+535587,5a. <3 Non-advanced adenomas,67.99116634268151,M,Non-advanced adenoma (>=3),65-70,train
+148523,1. Negative,72.56157215466837,M,Negative,65 or under,train
+898051,5a. <3 Non-advanced adenomas,66.64518991188717,M,Negative,65 or under,train
+530556,"2a. FOBT+, no colonoscopy",69.60662136656713,M,Negative,65 or under,train
+924901,2b. Polyp without histology,63.55732327728163,F,Non-advanced adenoma (<3),over 70,train
+163839,5a. <3 Non-advanced adenomas,63.89107737228679,M,Negative,65 or under,train
+779637,5c. Advanced adenoma,61.47214399451236,M,Advanced adenoma,65-70,train
+252022,6. Cancer,68.65569052106208,M,Advanced adenoma,65-70,train
+821915,3. Non neoplastic findings,70.42414215954028,F,Non-advanced adenoma (<3),over 70,train
+616411,6. Cancer,65.89113466063354,M,Non-advanced adenoma (>=3),over 70,train
+581375,5a. <3 Non-advanced adenomas,73.06398232067197,F,Advanced adenoma,over 70,train
+240729,5c. Advanced adenoma,74.24794425365053,F,Advanced adenoma,65-70,train
+452490,5c. Advanced adenoma,74.07007415669996,F,Non-advanced serrated/other lesions,65 or under,test
+836650,5a. <3 Non-advanced adenomas,73.55496723304445,F,Negative,over 70,train
+844478,5a. <3 Non-advanced adenomas,61.75242563756666,M,Advanced adenoma,over 70,train
+701990,5c. Advanced adenoma,75.55200036575137,F,Advanced adenoma,65 or under,train
+969718,5a. <3 Non-advanced adenomas,56.85228809263361,F,Negative,65 or under,train
+802481,4b. Serrated lesions,59.15677878524846,M,Advanced adenoma,65 or under,train
+710697,1. Negative,65.83149212859323,F,Non-advanced adenoma (<3),65 or under,train
+415398,5c. Advanced adenoma,58.98283664649104,F,Advanced adenoma,65-70,train
+246988,1. Negative,64.5582712981356,F,Negative,65 or under,train
+494862,4b. Serrated lesions,73.00454478156215,M,Non-advanced adenoma (<3),over 70,test
+861417,5a. <3 Non-advanced adenomas,73.01468176074054,F,Negative,65-70,train
+938426,5a. <3 Non-advanced adenomas,70.05468891576054,F,Advanced adenoma,65 or under,train
+610421,5a. <3 Non-advanced adenomas,75.72956657890451,M,CRC,65-70,train
+511007,3. Non neoplastic findings,71.08754513168259,F,Non-advanced adenoma (>=3),65 or under,train
+529662,1. Negative,75.28564770941891,M,Non-advanced serrated/other lesions,65 or under,train
+433606,5a. <3 Non-advanced adenomas,66.6510790989271,F,Negative,over 70,train
+785877,5a. <3 Non-advanced adenomas,65.23283846280239,M,Non-advanced adenoma (<3),over 70,train
+731220,5c. Advanced adenoma,59.15800190256255,F,Non-advanced adenoma (<3),over 70,train
+780103,1. Negative,76.62161606096375,M,CRC,65-70,train
+245786,3. Non neoplastic findings,64.73237762450842,M,Non-advanced serrated/other lesions,65-70,train
+909587,5b. >= 3 Non-advanced adenomas,72.25658766062648,M,Negative,65 or under,train
+750338,5a. <3 Non-advanced adenomas,65.90088194494994,M,Advanced adenoma,over 70,train
+442853,"2a. FOBT+, no colonoscopy",66.32547762201865,M,Non-advanced adenoma (<3),65 or under,train
+402307,5b. >= 3 Non-advanced adenomas,65.00406963786902,M,Non-advanced adenoma (<3),over 70,train
+883093,5a. <3 Non-advanced adenomas,66.48882471182377,F,Non-advanced adenoma (<3),over 70,train
+206528,1. Negative,71.473387013206235,F,Negative,over 70,train
+528106,4b. Serrated lesions,70.0632178371637,F,Non-advanced adenoma (>=3),65-70,train
+171076,5a. <3 Non-advanced adenomas,66.72125080657659,F,Non-advanced adenoma (<3),65 or under,test
+126959,"2a. FOBT+, no colonoscopy",61.98664743372735,M,Non-advanced serrated/other lesions,65 or under,train
+829188,5c. Advanced adenoma,63.71165808380592,M,Non-advanced adenoma (>=3),65-70,train
+742006,5b. >= 3 Non-advanced adenomas,59.494913157448345,M,Non-advanced adenoma (>=3),65 or under,train
+137905,5c. Advanced adenoma,59.06079770087255,M,Negative,65 or under,train
+234786,1. Negative,65.15964402805757,M,Negative,65-70,train
+286663,5a. <3 Non-advanced adenomas,70.73466782630608,M,Non-advanced adenoma (<3),over 70,test
+225103,6. Cancer,73.3603220613206,F,Non-advanced serrated/other lesions,65-70,train
+304245,5d. Advanced serrated,71.39648305535867,F,Negative,over 70,train
+490390,5c. Advanced adenoma,72.57214731719571,M,Negative,over 70,test
+563013,5a. <3 Non-advanced adenomas,73.64086457988326,M,Advanced adenoma,65 or under,train
+742342,5b. >= 3 Non-advanced adenomas,68.15644232618195,F,Negative,over 70,train
+155151,5c. Advanced adenoma,75.14043081325408,M,Non-advanced adenoma (<3),65 or under,train
+515669,5d. Advanced serrated,63.672096512764355,F,Advanced adenoma,65-70,train
+796411,3. Non neoplastic findings,73.49136878109897,M,Advanced adenoma,65-70,train
+383203,5b. >= 3 Non-advanced adenomas,59.90934386458188,M,CRC,65 or under,test
+900864,5a. <3 Non-advanced adenomas,65.04960521093959,M,Advanced adenoma,65 or under,test
+674293,5a. <3 Non-advanced adenomas,69.07169087726689,M,Negative,over 70,train
+977703,3. Non neoplastic findings,70.24036697081583,M,Advanced serrated,65 or under,train
+915261,6. Cancer,69.99860767454018,F,Advanced adenoma,65 or under,train
+334650,5a. <3 Non-advanced adenomas,62.071702071051604,F,Non-advanced adenoma (<3),over 70,train
+441643,4. Other lesions,71.58733605985621,F,Negative,65 or under,train
+831952,5a. <3 Non-advanced adenomas,62.16578958076835,M,Advanced serrated,65 or under,train
+140204,1. Negative,66.65651364699335,M,Non-advanced serrated/other lesions,65 or under,train
+198872,3. Non neoplastic findings,64.56526190990694,M,Non-advanced adenoma (<3),over 70,train
+163325,5a. <3 Non-advanced adenomas,69.90290970601245,F,Advanced adenoma,65 or under,train
+594848,3. Non neoplastic findings,64.83079786877285,F,Negative,65 or under,train
+692051,5a. <3 Non-advanced adenomas,59.16206764922371,M,Non-advanced adenoma (<3),65 or under,train
+981216,5a. <3 Non-advanced adenomas,71.4796311598365,M,Advanced serrated,65 or under,train
+537014,3. Non neoplastic findings,58.746827281594406,F,Negative,over 70,train
+585935,4b. Serrated lesions,73.71828972757734,M,Non-advanced adenoma (<3),65-70,train
+108221,5a. <3 Non-advanced adenomas,69.4361204866586,F,Non-advanced adenoma (<3),65-70,train
+967784,5a. <3 Non-advanced adenomas,71.12622707177387,M,Negative,65 or under,train
+446217,5c. Advanced adenoma,56.76739798951196,F,Negative,over 70,train
+812766,5a. <3 Non-advanced adenomas,72.5835152964448,M,Negative,over 70,train
+551761,5a. <3 Non-advanced adenomas,71.48570898359151,M,Non-advanced adenoma (<3),over 70,train
+388405,5c. Advanced adenoma,63.72167545022237,M,Non-advanced adenoma (<3),over 70,train
+455661,1. Negative,57.72933661686612,F,Non-advanced adenoma (<3),over 70,train
+542671,3. Non neoplastic findings,62.3516200094312,F,Negative,65 or under,train
+986582,4b. Serrated lesions,69.49030642423229,F,Advanced adenoma,65 or under,train
+118832,"2a. FOBT+, no colonoscopy",64.65695333210854,M,Non-advanced serrated/other lesions,over 70,test
+112839,3. Non neoplastic findings,63.33575905299692,M,no colonoscopy,65 or under,train
+521444,4b. Serrated lesions,55.02903923762853,M,Negative,over 70,train
+745228,5a. <3 Non-advanced adenomas,70.64892184717264,M,Negative,over 70,test
+215573,5a. <3 Non-advanced adenomas,73.7319287925851,M,Advanced adenoma,over 70,train
+964103,5a. <3 Non-advanced adenomas,69.62298282447081,F,Non-advanced serrated/other lesions,over 70,train
+280595,5c. Advanced adenoma,58.2541251752318,F,Negative,over 70,train
+849625,5b. >= 3 Non-advanced adenomas,65.16130903652848,M,Advanced serrated,over 70,train
+184774,3. Non neoplastic findings,72.65366986754701,M,Non-advanced adenoma (<3),65 or under,train
+947440,4b. Serrated lesions,72.2613656537808,F,no colonoscopy,65-70,train
+507341,3. Non neoplastic findings,61.433341374736834,M,Negative,65 or under,train
+351884,3. Non neoplastic findings,70.24584615058681,M,Negative,65 or under,train
+507380,5a. <3 Non-advanced adenomas,71.49200445916121,M,Non-advanced adenoma (<3),65 or under,train
+188383,3. Non neoplastic findings,58.382069804707584,M,Non-advanced adenoma (<3),65 or under,train
+872420,3. Non neoplastic findings,60.06666584042112,M,Negative,65-70,train
+990625,5c. Advanced adenoma,58.88612181467162,M,Advanced adenoma,65 or under,train
+377369,5b. >= 3 Non-advanced adenomas,60.99052363950812,M,Non-advanced serrated/other lesions,65 or under,train
+743254,4b. Serrated lesions,73.56562277852821,M,Advanced adenoma,over 70,train
+300680,5b. >= 3 Non-advanced adenomas,62.23195646500379,F,Non-advanced adenoma (>=3),65 or under,train
+381868,6. Cancer,67.08651769630458,M,Non-advanced serrated/other lesions,over 70,test
+834006,3. Non neoplastic findings,72.90798410975563,F,Non-advanced adenoma (<3),65 or under,train
+941424,5a. <3 Non-advanced adenomas,74.63745614277985,M,Non-advanced adenoma (<3),65-70,train
+569367,1. Negative,62.447731244496055,M,Advanced adenoma,over 70,train
+240594,3. Non neoplastic findings,75.57084855213684,M,Negative,65-70,train
+607512,1. Negative,63.80396713774603,F,CRC,over 70,train
+696919,5a. <3 Non-advanced adenomas,69.14975335145343,M,Negative,65 or under,train
+907065,5a. <3 Non-advanced adenomas,65.40765331943429,M,Non-advanced adenoma (>=3),65-70,train
+834449,5c. Advanced adenoma,62.80632483628716,F,Non-advanced adenoma (>=3),over 70,train
+333463,5a. <3 Non-advanced adenomas,61.23931218487577,M,Non-advanced adenoma (<3),over 70,test
+297621,"2a. FOBT+, no colonoscopy",64.73801619300359,F,Negative,over 70,train
+168118,1. Negative,75.15258222794054,F,Negative,over 70,train
+556680,1. Negative,69.15274843240573,F,Advanced adenoma,65-70,train
+427988,5a. <3 Non-advanced adenomas,65.41615168760349,M,Advanced adenoma,65-70,test
+209832,1. Negative,75.42453297784613,M,Negative,65 or under,train
+135370,5a. <3 Non-advanced adenomas,65.1626436552169,M,Non-advanced adenoma (>=3),65 or under,test
+813335,5c. Advanced adenoma,67.32823011192954,F,Advanced adenoma,over 70,train
+605804,5b. >= 3 Non-advanced adenomas,68.98448337940874,M,Non-advanced adenoma (<3),over 70,train
+161997,5c. Advanced adenoma,58.763055915449755,M,Non-advanced adenoma (<3),65 or under,train
+309096,5b. >= 3 Non-advanced adenomas,62.24152925686159,F,Non-advanced serrated/other lesions,65 or under,train
+550785,5a. <3 Non-advanced adenomas,60.40143772068288,M,Advanced adenoma,65-70,test
+678765,"2a. FOBT+, no colonoscopy",75.89815913697642,F,Advanced adenoma,65-70,test
+284602,3. Non neoplastic findings,61.99340308971536,M,Advanced serrated,over 70,train
+574895,1. Negative,68.99534130090791,F,Advanced serrated,65-70,train
+445499,1. Negative,58.39252586919436,M,Advanced serrated,over 70,train
+368177,3. Non neoplastic findings,65.84013211616843,F,Non-advanced adenoma (>=3),65 or under,train
+792951,5c. Advanced adenoma,70.65635695299116,M,Negative,over 70,train
+369071,5a. <3 Non-advanced adenomas,73.06607639281478,F,Negative,65 or under,train
+726211,6. Cancer,63.07586885374545,F,Non-advanced adenoma (<3),65 or under,test
+395507,6. Cancer,67.48567861675313,F,Negative,65-70,train
+473744,1. Negative,73.64988113900208,M,Non-advanced adenoma (<3),65-70,train
+620361,1. Negative,60.315252403058125,M,Non-advanced adenoma (>=3),65 or under,train
+200047,3. Non neoplastic findings,64.05730371653671,M,Non-advanced serrated/other lesions,65 or under,test
+929558,"2a. FOBT+, no colonoscopy",65.46592666682206,F,Non-advanced adenoma (<3),over 70,train
+381491,1. Negative,74.1749199740275,M,Advanced serrated,65 or under,train
+589460,5c. Advanced adenoma,58.58925714128526,F,Non-advanced serrated/other lesions,65 or under,test
+471328,5c. Advanced adenoma,73.22694346383076,M,Negative,65 or under,train
+518223,3. Non neoplastic findings,65.2888072542188,M,Negative,65-70,train
+919185,5b. >= 3 Non-advanced adenomas,73.57538991613785,M,no colonoscopy,65 or under,train
+200040,1. Negative,74.97610347187428,M,no colonoscopy,65-70,train
+884764,5c. Advanced adenoma,70.07104983554079,F,Negative,over 70,train
+769403,5a. <3 Non-advanced adenomas,73.06793551164199,M,Negative,65-70,train
+466456,1. Negative,74.0746462722521,M,Advanced adenoma,65 or under,train
+710883,3. Non neoplastic findings,61.251582512780224,M,Negative,65 or under,test
+246689,3. Non neoplastic findings,62.36287288421435,M,Negative,65 or under,train
+769771,5c. Advanced adenoma,73.4010030061071,F,Negative,over 70,train
+322724,1. Negative,65.75316050002219,M,Non-advanced adenoma (>=3),over 70,train
+107130,5a. <3 Non-advanced adenomas,70.07841160095545,M,Non-advanced adenoma (>=3),65-70,train
+865412,6. Cancer,60.50789837380416,M,Non-advanced adenoma (<3),65 or under,train
+937615,5d. Advanced serrated,66.88921512678257,M,Non-advanced adenoma (>=3),65-70,train
+783587,5b. >= 3 Non-advanced adenomas,70.248789257274,M,Advanced adenoma,65-70,train
+410487,5b. >= 3 Non-advanced adenomas,69.08252385686954,M,Non-advanced serrated/other lesions,65 or under,train
+727193,1. Negative,62.17583301958206,M,Non-advanced adenoma (<3),65-70,train
+548074,3. Non neoplastic findings,67.1029132671557,M,Negative,over 70,train
+462392,5c. Advanced adenoma,66.66148488654356,F,Non-advanced serrated/other lesions,65-70,train
+235426,4b. Serrated lesions,66.13821809251078,F,Non-advanced adenoma (>=3),over 70,train
+806416,5a. <3 Non-advanced adenomas,60.51816625803234,F,Negative,over 70,train
+296263,1. Negative,68.17406289416485,F,Non-advanced adenoma (<3),65 or under,test
+213899,5b. >= 3 Non-advanced adenomas,62.37396550579375,F,Advanced adenoma,65 or under,train
+246403,3. Non neoplastic findings,69.81262104398225,F,Advanced adenoma,over 70,train
+403752,5c. Advanced adenoma,67.49777628148097,M,Advanced serrated,over 70,test
+867600,5a. <3 Non-advanced adenomas,74.34452180888123,M,CRC,65 or under,train
+366261,5b. >= 3 Non-advanced adenomas,70.66200592097186,M,Advanced adenoma,over 70,train
+446183,3. Non neoplastic findings,71.41202780241522,F,Advanced adenoma,65-70,train
+763469,3. Non neoplastic findings,65.42382238434453,M,Negative,over 70,train
+862862,1. Negative,63.07982296903394,M,Negative,65 or under,train
+896260,5b. >= 3 Non-advanced adenomas,65.55150854948435,F,Non-advanced adenoma (>=3),over 70,test
+472912,1. Negative,57.40146215225206,F,Non-advanced adenoma (<3),65 or under,train
+180507,5c. Advanced adenoma,69.15555356202144,F,Non-advanced adenoma (<3),65 or under,train
+681257,4b. Serrated lesions,65.05621701508703,M,Negative,65-70,train
+121700,5b. >= 3 Non-advanced adenomas,65.16411701347333,M,Advanced adenoma,over 70,test
+468926,5a. <3 Non-advanced adenomas,63.81800744825468,F,Negative,over 70,train
+893842,"2a. FOBT+, no colonoscopy",65.06477653124986,M,Negative,65 or under,test
+267961,3. Non neoplastic findings,69.91027741125464,M,Non-advanced adenoma (>=3),over 70,train
+474188,3. Non neoplastic findings,72.4840099456925,F,Negative,65-70,train
+673454,5c. Advanced adenoma,65.98516598025388,M,Non-advanced adenoma (<3),over 70,train
+770988,4b. Serrated lesions,60.845565721546095,M,Non-advanced serrated/other lesions,65 or under,train
+446235,5a. <3 Non-advanced adenomas,75.16510959852839,M,Advanced serrated,65-70,train
+547399,1. Negative,73.58442964792617,F,Non-advanced serrated/other lesions,over 70,train
+954927,5b. >= 3 Non-advanced adenomas,61.999173581684545,M,no colonoscopy,65-70,test
+729039,5a. <3 Non-advanced adenomas,60.415147720510696,M,Non-advanced adenoma (<3),65 or under,train
+693748,3. Non neoplastic findings,72.59571673310221,M,no colonoscopy,over 70,train
+442300,3. Non neoplastic findings,56.93204329962936,F,Advanced adenoma,65-70,train
+978102,5c. Advanced adenoma,68.66248244586832,F,Non-advanced serrated/other lesions,65-70,train
+498163,4b. Serrated lesions,59.97325185451089,M,Advanced adenoma,65 or under,train
+621395,5a. <3 Non-advanced adenomas,66.57319822885137,F,Non-advanced adenoma (>=3),65 or under,train
+389571,5a. <3 Non-advanced adenomas,73.40621848257526,M,Non-advanced adenoma (<3),over 70,train
+653200,5b. >= 3 Non-advanced adenomas,65.84847971363561,M,Advanced serrated,over 70,test
+559900,5a. <3 Non-advanced adenomas,76.2286675898474,F,Non-advanced adenoma (<3),over 70,train
+970476,5c. Advanced adenoma,65.30805029775824,M,Negative,65-70,train
+217590,3. Non neoplastic findings,60.574747716829165,M,Advanced adenoma,65 or under,train
+550036,5a. <3 Non-advanced adenomas,75.8596168228611,M,Non-advanced adenoma (<3),65-70,train
+284723,3. Non neoplastic findings,75.0825730945359,M,Non-advanced adenoma (<3),65 or under,test
+479065,1. Negative,68.28654587744307,M,CRC,over 70,train
+319324,5a. <3 Non-advanced adenomas,70.86226675881609,F,Advanced adenoma,65 or under,train
+634593,6. Cancer,58.90305916981785,M,Non-advanced adenoma (>=3),65-70,train
+674340,1. Negative,72.72534857482854,M,Advanced adenoma,65 or under,train
+626401,5a. <3 Non-advanced adenomas,60.850796909103,F,Negative,65 or under,test
+446723,5b. >= 3 Non-advanced adenomas,56.0895626704838,F,Advanced adenoma,over 70,train
+627178,5c. Advanced adenoma,60.580351054049444,F,CRC,65-70,train
+100924,3. Non neoplastic findings,73.90889969402308,M,Negative,over 70,test
+730142,5b. >= 3 Non-advanced adenomas,69.44823567487374,F,Advanced adenoma,over 70,train
+452710,3. Non neoplastic findings,60.585807585451235,M,Non-advanced serrated/other lesions,65 or under,test
+164084,5c. Advanced adenoma,65.25070256315267,M,Negative,65-70,train
+773214,"2a. FOBT+, no colonoscopy",64.50385421687928,M,Non-advanced serrated/other lesions,65 or under,train
+877788,5d. Advanced serrated,64.57235886356113,F,Negative,65 or under,train
+442332,5a. <3 Non-advanced adenomas,68.46023960606362,F,Non-advanced serrated/other lesions,65-70,train
+837868,5a. <3 Non-advanced adenomas,61.90978063671258,M,Non-advanced serrated/other lesions,65 or under,train
+799623,5c. Advanced adenoma,71.91447063686394,M,Non-advanced adenoma (<3),over 70,train
+256598,5a. <3 Non-advanced adenomas,61.12715705999723,M,Non-advanced adenoma (<3),65 or under,train
+676043,5c. Advanced adenoma,65.91123144578246,M,Non-advanced adenoma (<3),65 or under,test
+848616,4b. Serrated lesions,58.17584929275391,F,Non-advanced serrated/other lesions,65-70,train
+289446,3. Non neoplastic findings,74.54069913071812,F,Non-advanced adenoma (>=3),65 or under,test
+376262,5a. <3 Non-advanced adenomas,64.6657719904515,F,Negative,over 70,test
+194061,5a. <3 Non-advanced adenomas,69.56117330275842,M,Non-advanced adenoma (<3),65 or under,train
+392295,5c. Advanced adenoma,75.99990095041278,M,Negative,65 or under,train
+211239,5a. <3 Non-advanced adenomas,67.62626379391975,M,Advanced serrated,65 or under,train
+781168,6. Cancer,71.99069885052478,M,Negative,65-70,train
+314563,5b. >= 3 Non-advanced adenomas,75.09401900848977,F,CRC,over 70,train
+465576,5a. <3 Non-advanced adenomas,64.40669695422348,F,Negative,65-70,train
+653474,3. Non neoplastic findings,61.008768574814866,F,Advanced serrated,65 or under,train
+212165,4b. Serrated lesions,61.31590671158523,M,Advanced adenoma,65-70,train
+926540,5a. <3 Non-advanced adenomas,69.76470577416382,M,Advanced serrated,65-70,train
+430373,4b. Serrated lesions,62.2514241343818,F,Advanced serrated,65-70,test
+856649,5c. Advanced adenoma,73.92507165566761,F,CRC,65 or under,train
+364867,6. Cancer,62.18551723240996,M,Negative,65 or under,train
+501079,1. Negative,62.08354297209488,M,Non-advanced adenoma (>=3),over 70,train
+615629,4b. Serrated lesions,66.07645345304316,M,CRC,65-70,train
+209679,"2a. FOBT+, no colonoscopy",71.24943173338188,M,CRC,over 70,train
+342104,5b. >= 3 Non-advanced adenomas,62.004298992429995,M,Advanced adenoma,65 or under,train
+812329,5a. <3 Non-advanced adenomas,76.24463449054201,F,Non-advanced serrated/other lesions,over 70,train
+259838,3. Non neoplastic findings,58.67659965025054,F,Negative,65-70,train
+780315,5c. Advanced adenoma,69.15853734566515,M,Non-advanced adenoma (>=3),over 70,train
+529312,5a. <3 Non-advanced adenomas,58.68896337834032,M,Negative,65 or under,train
+862212,1. Negative,60.52800591863369,F,Advanced adenoma,65-70,train
+656327,3. Non neoplastic findings,57.372219841720515,M,Advanced adenoma,65-70,test
+711199,1. Negative,75.1054494520869,F,Non-advanced adenoma (<3),65-70,train
+665316,5a. <3 Non-advanced adenomas,67.81093595608371,M,CRC,over 70,train
+486443,3. Non neoplastic findings,68.30149705188836,F,Advanced serrated,65-70,train
+848409,2b. Polyp without histology,73.65958931214652,M,Negative,over 70,train
+203565,1. Negative,66.15229933034085,M,Negative,65-70,train
+122374,3. Non neoplastic findings,71.25414428364905,M,Non-advanced adenoma (<3),65 or under,test
+717847,"2a. FOBT+, no colonoscopy",71.30270078316792,M,Negative,65 or under,train
+637288,3. Non neoplastic findings,63.39411775393354,F,Non-advanced adenoma (>=3),65-70,train
+293655,5c. Advanced adenoma,70.24968882691773,M,Advanced adenoma,65-70,train
+878181,3. Non neoplastic findings,64.84810486267207,F,Non-advanced serrated/other lesions,65 or under,train
+555587,5b. >= 3 Non-advanced adenomas,75.46833000117745,F,Non-advanced adenoma (>=3),over 70,train
+578100,4b. Serrated lesions,73.06983373163379,F,Non-advanced adenoma (<3),65 or under,test
+894696,5c. Advanced adenoma,73.50466484961392,F,Advanced serrated,over 70,test
+580423,5a. <3 Non-advanced adenomas,75.17809121026926,F,Non-advanced serrated/other lesions,65 or under,train
+924479,5a. <3 Non-advanced adenomas,64.74324516190848,M,Non-advanced serrated/other lesions,65 or under,test
+516763,1. Negative,56.241877440627526,M,Negative,over 70,train
+812986,1. Negative,66.82323848871796,F,Non-advanced serrated/other lesions,65-70,train
+501731,5a. <3 Non-advanced adenomas,74.82183507615999,F,CRC,65 or under,test
+779298,1. Negative,73.41176092519675,M,Non-advanced adenoma (>=3),over 70,train
+831557,3. Non neoplastic findings,56.810534485093264,F,CRC,over 70,train
+848286,5a. <3 Non-advanced adenomas,70.01115905505439,M,Negative,over 70,test
+349267,3. Non neoplastic findings,71.31618333074461,F,Negative,65 or under,train
+262267,5a. <3 Non-advanced adenomas,62.69681002210148,M,Negative,over 70,test
+974712,5a. <3 Non-advanced adenomas,62.00911940474677,M,Non-advanced serrated/other lesions,65-70,test
+969018,5d. Advanced serrated,63.08191243243435,M,Negative,over 70,train
+160916,5a. <3 Non-advanced adenomas,76.01750623869877,M,Non-advanced adenoma (<3),65 or under,test
+318239,5c. Advanced adenoma,67.0122516443595,M,Advanced adenoma,65-70,train
+118388,5a. <3 Non-advanced adenomas,58.70223592345598,M,Non-advanced serrated/other lesions,65-70,train
+128915,5c. Advanced adenoma,71.49890156123554,M,Non-advanced adenoma (<3),65 or under,train
+811830,5c. Advanced adenoma,58.31745149147337,M,Negative,65-70,train
+968112,5a. <3 Non-advanced adenomas,74.75518657408622,F,CRC,over 70,test
+954014,1. Negative,60.85388004986742,F,Negative,over 70,test
+440725,5b. >= 3 Non-advanced adenomas,70.6659887071077,M,Non-advanced adenoma (<3),65 or under,test
+576204,5a. <3 Non-advanced adenomas,73.51792646935394,M,Non-advanced adenoma (>=3),over 70,train
+488301,3. Non neoplastic findings,65.99932648801828,M,Advanced adenoma,65 or under,train
+498557,3. Non neoplastic findings,59.91732614848376,F,Non-advanced adenoma (<3),over 70,train
+305259,5a. <3 Non-advanced adenomas,69.09304335344402,F,Advanced adenoma,over 70,test
+106842,1. Negative,59.978983105889995,M,Negative,65-70,train
+414555,1. Negative,65.0168989281862,F,Non-advanced adenoma (<3),65 or under,train
+248261,5d. Advanced serrated,69.57566016836698,M,Non-advanced adenoma (<3),over 70,train
+436193,3. Non neoplastic findings,73.17965455835535,M,Advanced adenoma,over 70,train
+760421,5d. Advanced serrated,57.90963189381688,M,Negative,over 70,test
+779758,5a. <3 Non-advanced adenomas,70.89937649113918,M,Non-advanced adenoma (>=3),over 70,train
+977899,3. Non neoplastic findings,70.24921708374276,M,CRC,over 70,train
+478508,3. Non neoplastic findings,72.40049736001394,F,Negative,65 or under,train
+163320,1. Negative,71.50678426450447,F,Non-advanced adenoma (<3),65 or under,train
+364336,4b. Serrated lesions,63.08285100899102,M,Negative,65 or under,train
+150274,1. Negative,62.81850393157883,F,Non-advanced adenoma (<3),over 70,train
+240797,5a. <3 Non-advanced adenomas,71.00336417171717,M,Non-advanced adenoma (<3),65 or under,test
+948284,1. Negative,60.59143839515917,F,Non-advanced adenoma (>=3),over 70,train
+228941,5a. <3 Non-advanced adenomas,71.0844920422003,F,Advanced adenoma,65 or under,train
+445595,5a. <3 Non-advanced adenomas,63.67855416877883,M,Non-advanced adenoma (>=3),65-70,test
+619333,5a. <3 Non-advanced adenomas,65.64641816917826,F,Non-advanced adenoma (>=3),65-70,train
+462102,5c. Advanced adenoma,65.65866544687513,M,Advanced adenoma,over 70,train
+492739,3. Non neoplastic findings,69.639856271785,F,Non-advanced adenoma (<3),65-70,train
+480785,3. Non neoplastic findings,66.90133831619912,M,Non-advanced adenoma (<3),65-70,train
+191458,"2a. FOBT+, no colonoscopy",75.670495752961,F,Advanced adenoma,65 or under,train
+863377,6. Cancer,60.64686380881625,M,Negative,over 70,test
+357268,5a. <3 Non-advanced adenomas,68.70853866023567,F,Non-advanced adenoma (>=3),65 or under,train
+955118,5a. <3 Non-advanced adenomas,76.25920303009714,M,Non-advanced serrated/other lesions,65 or under,train
+397127,5c. Advanced adenoma,64.51292055932966,M,Non-advanced serrated/other lesions,65-70,test
+636032,5a. <3 Non-advanced adenomas,63.68296655371887,F,Negative,65-70,train
+727243,5c. Advanced adenoma,72.13672615040605,M,Advanced serrated,65 or under,test
+980701,6. Cancer,61.493440069143425,F,no colonoscopy,over 70,train
+205053,5d. Advanced serrated,56.48256173512262,F,Advanced adenoma,over 70,train
+656896,4b. Serrated lesions,64.09136763904287,F,Non-advanced adenoma (<3),over 70,train
+256106,6. Cancer,72.26511063050636,M,Non-advanced adenoma (<3),over 70,train
+308444,5c. Advanced adenoma,61.76566977659624,F,Negative,over 70,train
+920098,3. Non neoplastic findings,76.64423948677211,F,Advanced adenoma,over 70,train
+401554,5a. <3 Non-advanced adenomas,60.42806817072776,M,Advanced adenoma,over 70,train
+411780,5c. Advanced adenoma,70.58075579076082,M,Negative,over 70,train
+176598,5d. Advanced serrated,59.802103383874254,M,Negative,65 or under,train
+932058,3. Non neoplastic findings,69.16206838870151,F,Non-advanced serrated/other lesions,over 70,train
+996725,5c. Advanced adenoma,62.833266499474135,F,Non-advanced adenoma (<3),over 70,train
+965752,5a. <3 Non-advanced adenomas,66.66601280328415,M,Negative,65 or under,test
+629109,5a. <3 Non-advanced adenomas,76.8868248326361,F,Non-advanced adenoma (<3),over 70,train
+821510,3. Non neoplastic findings,74.0786360027582,M,Non-advanced adenoma (<3),65-70,train
+337160,3. Non neoplastic findings,64.42591007020923,M,Advanced serrated,over 70,train
+555522,6. Cancer,67.2318018976383,M,CRC,over 70,train
+559125,6. Cancer,68.85643634960086,F,Non-advanced adenoma (<3),65-70,train
+220199,"2a. FOBT+, no colonoscopy",71.67826050928394,F,CRC,65 or under,train
+847453,5a. <3 Non-advanced adenomas,55.286030600805766,F,Non-advanced adenoma (<3),over 70,train
+463895,5c. Advanced adenoma,69.1031090406471,M,Negative,65-70,train
+589008,5a. <3 Non-advanced adenomas,70.24804625197383,M,Non-advanced adenoma (>=3),65 or under,train
+335417,3. Non neoplastic findings,69.65718527116577,M,Non-advanced adenoma (<3),65 or under,train
+105365,5a. <3 Non-advanced adenomas,72.30930072924241,F,CRC,65 or under,train
+229622,5a. <3 Non-advanced adenomas,70.0232726331847,M,Advanced adenoma,65 or under,train
+680547,5a. <3 Non-advanced adenomas,58.597290525125096,M,Non-advanced serrated/other lesions,over 70,train
+744713,3. Non neoplastic findings,70.66842526739158,M,Negative,65-70,train
+708970,5c. Advanced adenoma,74.39919481818181,M,Non-advanced adenoma (<3),65 or under,train
+350844,3. Non neoplastic findings,69.16651529649509,F,Negative,over 70,train
+945655,5a. <3 Non-advanced adenomas,66.16550269337458,M,Non-advanced adenoma (>=3),65 or under,train
+890274,3. Non neoplastic findings,59.818838133083965,F,Non-advanced adenoma (<3),65-70,test
+808260,5a. <3 Non-advanced adenomas,70.59892092566217,F,Non-advanced adenoma (<3),over 70,train
+317683,5a. <3 Non-advanced adenomas,74.40586627360082,M,Negative,65-70,test
+155448,1. Negative,71.08152291809103,M,Non-advanced adenoma (<3),65-70,test
+886877,1. Negative,74.65689610676475,F,Non-advanced adenoma (>=3),65-70,train
+880223,3. Non neoplastic findings,66.73130427060869,M,Non-advanced adenoma (<3),over 70,train
+924245,6. Cancer,76.89944279310915,M,Non-advanced adenoma (<3),over 70,train
+535053,4b. Serrated lesions,61.26342864676955,F,Non-advanced adenoma (>=3),over 70,train
+393144,5a. <3 Non-advanced adenomas,73.3696711315678,F,Advanced adenoma,over 70,test
+775357,3. Non neoplastic findings,64.4429305705601,M,Non-advanced adenoma (<3),over 70,train
+904644,4b. Serrated lesions,57.2153981466371,M,Negative,65 or under,train
+459145,5d. Advanced serrated,68.66927577992622,F,Non-advanced serrated/other lesions,65-70,train
+215042,5a. <3 Non-advanced adenomas,59.07281228024987,F,Non-advanced adenoma (<3),65-70,train
+913255,3. Non neoplastic findings,59.35700364828005,M,Negative,65-70,train
+754213,5a. <3 Non-advanced adenomas,60.08393073124567,M,Non-advanced adenoma (<3),65 or under,train
+218192,5b. >= 3 Non-advanced adenomas,68.71801602527718,M,Advanced adenoma,65 or under,test
+111141,"2a. FOBT+, no colonoscopy",72.49161988368904,F,Non-advanced adenoma (<3),65-70,train
+832272,5b. >= 3 Non-advanced adenomas,67.85387336995491,F,Non-advanced adenoma (>=3),65 or under,train
+139413,3. Non neoplastic findings,74.90992992371105,F,Non-advanced adenoma (<3),65 or under,train
+748664,5a. <3 Non-advanced adenomas,60.246051754189494,M,Non-advanced adenoma (<3),65-70,train
+645301,5a. <3 Non-advanced adenomas,58.32588658991221,F,Negative,65 or under,train
+225120,5b. >= 3 Non-advanced adenomas,57.83027073964565,M,Negative,over 70,train
+670409,6. Cancer,69.17224667441056,M,Negative,65 or under,train
+887695,5c. Advanced adenoma,66.67023200391677,M,Negative,65 or under,train
+129808,5a. <3 Non-advanced adenomas,63.6858255431805,M,Advanced adenoma,65-70,train
+466532,6. Cancer,65.47419532630794,M,Non-advanced serrated/other lesions,65 or under,train
+631671,1. Negative,75.74269705403746,F,Negative,over 70,train
+337968,3. Non neoplastic findings,68.19124343754963,M,Non-advanced adenoma (<3),over 70,test
+890506,3. Non neoplastic findings,72.67060349841027,F,Negative,65 or under,train
+743990,5c. Advanced adenoma,60.85540964410761,F,Advanced adenoma,over 70,train
+602194,3. Non neoplastic findings,72.74415306783776,F,Negative,65 or under,train
+400592,3. Non neoplastic findings,62.19493954948756,M,Non-advanced adenoma (<3),65-70,train
+146280,5a. <3 Non-advanced adenomas,74.02140010242086,F,Negative,65-70,train
+147167,5c. Advanced adenoma,62.851000528142094,F,Non-advanced adenoma (<3),over 70,train
+575570,"2a. FOBT+, no colonoscopy",60.3353924685073,M,Non-advanced adenoma (<3),over 70,train
+175897,1. Negative,70.76096087060866,M,Non-advanced serrated/other lesions,over 70,train
+278599,5a. <3 Non-advanced adenomas,59.50963901597511,F,Advanced adenoma,65-70,train
+895329,"2a. FOBT+, no colonoscopy",57.84291094420156,M,Advanced serrated,over 70,train
+809886,1. Negative,57.53503244639656,M,Non-advanced adenoma (>=3),over 70,train
+514952,5b. >= 3 Non-advanced adenomas,59.92503280298601,F,Advanced serrated,over 70,train
+732272,5b. >= 3 Non-advanced adenomas,69.91835727022199,M,no colonoscopy,65-70,train
+987155,5c. Advanced adenoma,65.5615182433354,M,Advanced serrated,over 70,train
+915690,5c. Advanced adenoma,65.02646621232338,M,Negative,over 70,train
+122122,5c. Advanced adenoma,76.48873503371027,M,Negative,65-70,train
+721250,1. Negative,59.702359100193796,F,Non-advanced adenoma (<3),65 or under,train
+421233,5b. >= 3 Non-advanced adenomas,59.16945913832032,M,Non-advanced adenoma (<3),65 or under,train
+687583,5a. <3 Non-advanced adenomas,76.50977262059196,F,Non-advanced adenoma (<3),over 70,test
+355401,3. Non neoplastic findings,69.45945418754398,M,Negative,65 or under,train
+307415,5c. Advanced adenoma,64.23554156247093,F,Negative,over 70,train
+712571,5c. Advanced adenoma,76.32182944044442,M,Non-advanced adenoma (<3),over 70,train
+610217,3. Non neoplastic findings,76.91080176457635,M,Advanced adenoma,over 70,train
+459247,5b. >= 3 Non-advanced adenomas,65.1661982406482,M,Non-advanced adenoma (<3),65-70,train
+117559,5b. >= 3 Non-advanced adenomas,76.1349365179374,F,no colonoscopy,over 70,train
+142772,4b. Serrated lesions,64.57966287780746,M,Negative,over 70,train
+986523,3. Non neoplastic findings,57.743279065565396,F,Non-advanced adenoma (>=3),65 or under,train
+562974,1. Negative,75.44641612326697,F,Advanced adenoma,65 or under,train
+693594,5a. <3 Non-advanced adenomas,64.12688670336787,M,Non-advanced adenoma (<3),65-70,train
+586577,6. Cancer,65.85668642988854,F,CRC,65 or under,train
+367146,4b. Serrated lesions,59.72309679946454,M,Non-advanced serrated/other lesions,65 or under,train
+614143,5b. >= 3 Non-advanced adenomas,63.99619457089493,M,Negative,65-70,test
+775560,5c. Advanced adenoma,58.265665839092854,F,Negative,65 or under,train
+492830,1. Negative,68.00427479950925,M,Negative,over 70,train
+501870,6. Cancer,63.90216145912069,M,Non-advanced adenoma (<3),over 70,test
+477589,5c. Advanced adenoma,61.83328402315461,F,Advanced serrated,65 or under,train
+326587,5a. <3 Non-advanced adenomas,69.50051498666998,F,Non-advanced adenoma (<3),65-70,train
+143372,5c. Advanced adenoma,61.78037037621364,M,Advanced adenoma,65 or under,train
+330657,5c. Advanced adenoma,74.41333739611879,M,Advanced adenoma,65-70,train
+894367,4b. Serrated lesions,74.98785890614595,M,Non-advanced adenoma (<3),65-70,test
+223792,3. Non neoplastic findings,64.19963698356042,M,Advanced adenoma,65-70,train
+780853,5a. <3 Non-advanced adenomas,72.49871698815993,M,CRC,65-70,train
+440035,3. Non neoplastic findings,62.09575597256534,M,Non-advanced adenoma (<3),65-70,train
+211655,1. Negative,59.085789489646885,M,Advanced adenoma,65 or under,test
+440198,5c. Advanced adenoma,58.60445753023119,M,CRC,65-70,train
+517729,3. Non neoplastic findings,57.756549257707356,M,Advanced adenoma,over 70,train
+170039,3. Non neoplastic findings,63.145128669791234,F,Negative,over 70,train
+590488,5c. Advanced adenoma,70.08552982347136,M,Advanced serrated,65 or under,train
+323945,4b. Serrated lesions,68.58352471009782,M,Negative,65 or under,train
+272929,5a. <3 Non-advanced adenomas,64.58727467135523,M,no colonoscopy,65 or under,test
+544966,5a. <3 Non-advanced adenomas,57.923319180349964,M,Non-advanced adenoma (<3),65 or under,train
+596182,5a. <3 Non-advanced adenomas,58.18612703085141,M,Advanced adenoma,65 or under,test
+534116,1. Negative,74.99972748070788,F,Non-advanced serrated/other lesions,65-70,train
+448149,5c. Advanced adenoma,70.16006740695704,F,Non-advanced adenoma (>=3),over 70,train
+666267,"2a. FOBT+, no colonoscopy",65.07482213507264,F,Non-advanced adenoma (<3),65 or under,train
+890950,3. Non neoplastic findings,68.67622911830594,M,Non-advanced adenoma (<3),65 or under,train
+527577,6. Cancer,71.25853286686026,M,Negative,65 or under,test
+817968,5a. <3 Non-advanced adenomas,72.86071422798128,F,Negative,65 or under,train
+734259,1. Negative,60.353915545156525,F,Non-advanced adenoma (<3),65 or under,train
+457161,4b. Serrated lesions,64.67438876493485,F,Negative,65 or under,test
+666832,5a. <3 Non-advanced adenomas,63.68762301275972,F,CRC,65 or under,train
+490681,3. Non neoplastic findings,59.98433323707818,F,Negative,65-70,train
+754556,5b. >= 3 Non-advanced adenomas,68.01859193554478,M,Non-advanced serrated/other lesions,over 70,train
+190049,5c. Advanced adenoma,72.41601486875956,M,Negative,65 or under,train
+683286,3. Non neoplastic findings,65.32675544185105,F,Non-advanced adenoma (>=3),over 70,train
+692783,5c. Advanced adenoma,63.83117694266962,M,Negative,over 70,train
+227419,1. Negative,72.32244494868311,F,Non-advanced adenoma (>=3),65 or under,train
+730980,5b. >= 3 Non-advanced adenomas,70.66953608687592,F,CRC,65-70,train
+434823,5a. <3 Non-advanced adenomas,62.204197301050286,M,Advanced adenoma,over 70,train
+613579,3. Non neoplastic findings,67.50917754242029,F,Non-advanced adenoma (>=3),65-70,train
+749288,4b. Serrated lesions,62.46314610841141,F,Non-advanced adenoma (<3),over 70,train
+526379,6. Cancer,68.31628584699892,F,Non-advanced adenoma (<3),over 70,train
+979607,5a. <3 Non-advanced adenomas,68.91692686198158,M,Negative,65-70,train
+374153,5a. <3 Non-advanced adenomas,75.30354723217332,F,Negative,65 or under,test
+490130,1. Negative,73.94078870242588,F,Negative,over 70,test
+964988,5a. <3 Non-advanced adenomas,71.81825415285203,F,Negative,65-70,train
+807801,5c. Advanced adenoma,55.499516891899226,M,Negative,65 or under,train
+797237,1. Negative,76.92079637318994,M,Advanced serrated,65 or under,train
+767769,5a. <3 Non-advanced adenomas,63.57489605217817,F,Non-advanced adenoma (<3),over 70,test
+315645,5b. >= 3 Non-advanced adenomas,68.68350105607765,F,Advanced serrated,65 or under,train
+166819,5a. <3 Non-advanced adenomas,57.55902246540418,F,Negative,65 or under,train
+815319,5a. <3 Non-advanced adenomas,76.03596054726042,F,Negative,65-70,train
+328013,5a. <3 Non-advanced adenomas,73.0720451072704,M,Advanced adenoma,over 70,train
+419788,3. Non neoplastic findings,59.834042892751775,F,CRC,65-70,train
+194179,5c. Advanced adenoma,74.42165861087676,F,Negative,65 or under,train
+789696,5c. Advanced adenoma,73.74615654222667,F,Negative,over 70,train
+335614,5a. <3 Non-advanced adenomas,63.254326394998856,F,Advanced serrated,over 70,train
+551472,1. Negative,74.26137268136833,M,Negative,over 70,train
+713058,5c. Advanced adenoma,75.1916053484148,M,Advanced serrated,over 70,test
+653928,5a. <3 Non-advanced adenomas,63.08335246374832,M,Non-advanced serrated/other lesions,65-70,train
+677004,5c. Advanced adenoma,76.43105226720158,M,Non-advanced serrated/other lesions,over 70,train
+883407,5d. Advanced serrated,67.15549842526177,M,Advanced adenoma,65 or under,train
+710956,5a. <3 Non-advanced adenomas,72.76285633107861,M,Advanced adenoma,65 or under,test
+576823,5a. <3 Non-advanced adenomas,68.92861106378481,M,Negative,65 or under,train
+980803,1. Negative,65.76631927490074,M,Non-advanced adenoma (<3),over 70,train
+466942,3. Non neoplastic findings,64.52138821269813,M,Advanced serrated,over 70,train
+735891,1. Negative,65.86490377382101,M,Non-advanced adenoma (<3),over 70,train
+583478,5c. Advanced adenoma,74.35030884838582,F,Advanced adenoma,65 or under,test
+744999,5a. <3 Non-advanced adenomas,67.64611513208453,F,Non-advanced adenoma (>=3),65 or under,train
+481268,1. Negative,76.92932124510217,M,Advanced serrated,65-70,train
+217383,5a. <3 Non-advanced adenomas,58.1967655498437,M,Non-advanced adenoma (<3),65 or under,train
+490753,5c. Advanced adenoma,74.35557595086449,F,Non-advanced adenoma (<3),65 or under,train
+772171,3. Non neoplastic findings,76.32651518922283,F,Advanced adenoma,65-70,train
+187175,1. Negative,66.17766122862113,F,Non-advanced adenoma (<3),65 or under,train
+664398,5b. >= 3 Non-advanced adenomas,68.595205339193285,M,Non-advanced adenoma (>=3),over 70,train
+360702,3. Non neoplastic findings,75.01166845539582,M,Negative,over 70,train
+890939,5c. Advanced adenoma,63.40421560531328,F,Negative,65 or under,train
+861589,3. Non neoplastic findings,61.14249027944794,F,Advanced adenoma,65-70,test
+547474,5a. <3 Non-advanced adenomas,71.83813445479184,F,Negative,65-70,train
+427237,5a. <3 Non-advanced adenomas,71.4263699517789,F,Non-advanced adenoma (>=3),over 70,train
+402871,4b. Serrated lesions,62.01397490142988,F,Non-advanced adenoma (<3),65 or under,train
+116545,5a. <3 Non-advanced adenomas,58.919253593116814,F,Non-advanced adenoma (<3),65 or under,train
+641307,4b. Serrated lesions,63.16223417400351,M,Advanced serrated,over 70,test
+425302,5d. Advanced serrated,63.3460417003581,M,CRC,over 70,test
+374417,5a. <3 Non-advanced adenomas,59.56733538275046,M,Advanced serrated,65-70,train
+986465,5c. Advanced adenoma,66.67430575039187,M,Non-advanced adenoma (>=3),65 or under,train
+877409,6. Cancer,74.08233160254967,F,Non-advanced adenoma (<3),65-70,train
+119607,5a. <3 Non-advanced adenomas,63.73335166473217,M,Negative,65 or under,train
+420327,5b. >= 3 Non-advanced adenomas,58.40429911037758,F,Negative,65-70,train
+871180,3. Non neoplastic findings,71.51603654365793,F,Non-advanced adenoma (<3),65 or under,train
+315891,5d. Advanced serrated,72.50552174846801,F,Advanced adenoma,65 or under,test
+687028,5c. Advanced adenoma,64.74809520304673,M,Negative,65-70,train
+899231,5a. <3 Non-advanced adenomas,67.25133674234225,M,Advanced adenoma,over 70,train
+959878,5d. Advanced serrated,69.82643725245633,F,Non-advanced adenoma (<3),65 or under,train
+830433,5c. Advanced adenoma,67.17409344634552,F,Non-advanced adenoma (<3),65-70,train
+776663,5a. <3 Non-advanced adenomas,65.03311692781443,M,Negative,65-70,test
+339963,5a. <3 Non-advanced adenomas,71.60434391044501,M,Non-advanced serrated/other lesions,over 70,train
+329156,3. Non neoplastic findings,57.248049564914666,M,Advanced adenoma,65 or under,train
+935831,5d. Advanced serrated,66.67839730465994,M,Negative,65 or under,train
+237925,6. Cancer,73.41792059067147,F,Advanced adenoma,65 or under,test
+921451,4b. Serrated lesions,75.49005998797931,M,Non-advanced adenoma (>=3),65-70,test
+997636,5b. >= 3 Non-advanced adenomas,58.27696378239149,M,Advanced adenoma,65 or under,train
+172221,5b. >= 3 Non-advanced adenomas,71.07959238482205,M,Negative,over 70,train
+559228,5a. <3 Non-advanced adenomas,60.881899199598735,M,Negative,over 70,train
+649158,5a. <3 Non-advanced adenomas,71.99806151549201,M,Non-advanced serrated/other lesions,over 70,train
+495726,5a. <3 Non-advanced adenomas,69.83885285699051,F,Non-advanced adenoma (<3),65 or under,train
+131354,5a. <3 Non-advanced adenomas,60.893445442286605,F,Negative,over 70,train
+307188,5c. Advanced adenoma,67.57821034493912,M,Non-advanced serrated/other lesions,over 70,train
+378035,"2a. FOBT+, no colonoscopy",57.664134018807495,M,Advanced adenoma,over 70,train
+668696,5a. <3 Non-advanced adenomas,70.6699437668511,M,Advanced adenoma,65-70,train
+270323,5d. Advanced serrated,71.26304011033076,F,Non-advanced adenoma (<3),65-70,train
+766247,5d. Advanced serrated,60.10348350851414,F,Negative,over 70,train
+129622,5c. Advanced adenoma,71.68779966773408,M,Non-advanced serrated/other lesions,65 or under,train
+185303,5a. <3 Non-advanced adenomas,70.67037143766697,F,Advanced adenoma,65-70,train
+619264,5b. >= 3 Non-advanced adenomas,69.11258059213561,M,CRC,65 or under,test
+990878,1. Negative,58.08647367929248,F,Advanced adenoma,65-70,train
+996643,5a. <3 Non-advanced adenomas,76.44922109080672,M,Negative,over 70,train
+454112,5a. <3 Non-advanced adenomas,66.83723632625717,M,Non-advanced serrated/other lesions,over 70,train
+415037,3. Non neoplastic findings,59.522634226666426,M,Negative,over 70,train
+623239,5a. <3 Non-advanced adenomas,65.4309067194141,M,Negative,over 70,test
+502437,5a. <3 Non-advanced adenomas,73.4249877356994,F,Negative,65-70,train
+808492,6. Cancer,70.61470014276111,M,Non-advanced adenoma (<3),65-70,train
+338376,5a. <3 Non-advanced adenomas,64.27024800928626,M,CRC,over 70,train
+479506,6. Cancer,57.76929393823468,M,Negative,65 or under,train
+496327,5c. Advanced adenoma,69.92740555575777,M,Advanced adenoma,over 70,train
+198770,3. Non neoplastic findings,70.09263119315219,M,Negative,65 or under,train
+104242,1. Negative,75.3220981612563,F,Advanced adenoma,65 or under,test
+821707,1. Negative,68.69125018831146,M,Non-advanced adenoma (<3),65-70,train
+484254,5d. Advanced serrated,59.93257487121001,F,no colonoscopy,65 or under,train
+418791,4b. Serrated lesions,74.08602132595797,M,Advanced adenoma,65-70,train
+226007,5b. >= 3 Non-advanced adenomas,75.51139146007439,F,CRC,over 70,train
+320085,3. Non neoplastic findings,74.08999342731454,M,Non-advanced adenoma (<3),65-70,train
+882464,3. Non neoplastic findings,59.93995007536598,M,Advanced adenoma,over 70,test
+828953,3. Non neoplastic findings,63.74632534673717,M,Advanced serrated,over 70,test
+578406,5c. Advanced adenoma,65.16935646609194,M,Non-advanced adenoma (<3),65 or under,train
+112525,5a. <3 Non-advanced adenomas,67.91617004578188,M,Advanced adenoma,65-70,train
+157988,5b. >= 3 Non-advanced adenomas,69.470033699864,F,Advanced serrated,over 70,test
+145018,5c. Advanced adenoma,69.84974915478853,F,Non-advanced serrated/other lesions,65-70,train
+831065,5c. Advanced adenoma,75.5884397294227,M,Advanced adenoma,65-70,train
+689425,5a. <3 Non-advanced adenomas,74.27388716112439,M,Negative,65-70,test
+246920,3. Non neoplastic findings,65.08589220219977,M,Advanced serrated,65-70,train
+980936,5d. Advanced serrated,62.633003561773656,F,Non-advanced adenoma (<3),65-70,train
+424224,5d. Advanced serrated,58.934509030682115,F,Negative,over 70,train
+907386,3. Non neoplastic findings,73.07484369303197,M,Advanced adenoma,65-70,train
+319487,4b. Serrated lesions,58.99192124854678,M,CRC,65 or under,train
+877091,1. Negative,61.515465029196996,M,Negative,65-70,test
+666701,5d. Advanced serrated,59.84785703622687,F,Negative,65 or under,test
+345927,5c. Advanced adenoma,63.084130561750584,F,Non-advanced adenoma (>=3),over 70,train
+438014,5a. <3 Non-advanced adenomas,68.6061298449093,M,Negative,65-70,train
+910106,5d. Advanced serrated,66.49978572334891,F,Non-advanced adenoma (<3),over 70,train
+112456,3. Non neoplastic findings,61.92719626822133,F,Negative,over 70,train
+748118,5c. Advanced adenoma,59.764238895286525,F,Non-advanced adenoma (<3),over 70,train
+129225,3. Non neoplastic findings,66.85089635377662,F,Non-advanced serrated/other lesions,65-70,train
+783363,5a. <3 Non-advanced adenomas,73.4332526169805,M,Negative,65-70,train
+925337,5b. >= 3 Non-advanced adenomas,61.026869800033204,M,Non-advanced adenoma (<3),65 or under,train
+477472,3. Non neoplastic findings,70.24684855583561,M,Non-advanced serrated/other lesions,over 70,train
+668079,4b. Serrated lesions,69.25048317018312,M,Negative,65-70,train
+769537,4b. Serrated lesions,56.58089238192484,F,Negative,65-70,train
+722812,5a. <3 Non-advanced adenomas,67.66772121779191,M,Advanced serrated,65-70,train
+691518,5a. <3 Non-advanced adenomas,75.90521578469642,M,Advanced serrated,over 70,train
+210584,5b. >= 3 Non-advanced adenomas,60.9067741406955,M,Non-advanced adenoma (<3),over 70,train
+262499,5c. Advanced adenoma,68.72798451358814,F,Advanced adenoma,65-70,test
+995751,5c. Advanced adenoma,61.325221238863904,F,Non-advanced adenoma (>=3),over 70,train
+220078,5a. <3 Non-advanced adenomas,70.67154222967339,F,CRC,over 70,train
+490554,5b. >= 3 Non-advanced adenomas,66.68266992867137,M,Advanced adenoma,65 or under,train
+174064,5c. Advanced adenoma,63.009298250723546,M,Non-advanced adenoma (<3),over 70,train
+448192,5a. <3 Non-advanced adenomas,63.41472554069594,F,Negative,over 70,train
+461857,4b. Serrated lesions,63.760235115639205,M,Advanced serrated,over 70,test
+551383,5a. <3 Non-advanced adenomas,60.66256415185616,M,Advanced adenoma,over 70,test
+191902,5c. Advanced adenoma,72.68834621199287,M,Non-advanced serrated/other lesions,65 or under,train
+341451,5a. <3 Non-advanced adenomas,74.43086593193928,M,Advanced adenoma,65 or under,train
+388031,1. Negative,61.60283935754099,M,Non-advanced adenoma (<3),65 or under,train
+978461,5c. Advanced adenoma,68.73839590308097,F,Negative,over 70,test
+426389,5c. Advanced adenoma,58.94862942862733,M,Advanced adenoma,over 70,train
+877668,5a. <3 Non-advanced adenomas,68.74920197166806,M,Non-advanced adenoma (<3),65-70,train
+307281,5c. Advanced adenoma,63.84311424039266,F,Negative,over 70,train
+292098,3. Non neoplastic findings,65.48294106022942,M,Advanced adenoma,65-70,train
+471974,5b. >= 3 Non-advanced adenomas,66.74249700321333,M,Negative,over 70,train
+842449,3. Non neoplastic findings,71.52704237338585,F,Negative,65-70,train
+470928,4b. Serrated lesions,70.29394353651908,M,Negative,over 70,train
+868367,5a. <3 Non-advanced adenomas,74.83149923852488,M,Negative,65-70,test
+193699,5b. >= 3 Non-advanced adenomas,72.33689872932204,F,Advanced adenoma,over 70,train
+958443,5c. Advanced adenoma,76.33263824898259,M,Advanced serrated,65 or under,train
+452870,1. Negative,68.33095128826041,M,Advanced adenoma,65-70,train
+684740,3. Non neoplastic findings,70.09994240006161,F,Advanced adenoma,over 70,test
+575238,5a. <3 Non-advanced adenomas,74.92036091422754,M,CRC,65-70,train
+671088,5d. Advanced serrated,68.03394942454534,M,Negative,over 70,train
+997705,5a. <3 Non-advanced adenomas,73.07850354339865,M,Non-advanced adenoma (<3),65 or under,train
+316831,5a. <3 Non-advanced adenomas,61.33448972990702,F,CRC,65-70,train
+515019,4b. Serrated lesions,74.09453616095075,F,Advanced adenoma,over 70,test
+564240,1. Negative,59.17998744047414,M,Negative,65 or under,train
+721351,5a. <3 Non-advanced adenomas,61.343931859889274,F,Negative,over 70,train
+794506,4b. Serrated lesions,64.7527818513245,F,Negative,over 70,train
+189645,3. Non neoplastic findings,65.03738366516106,M,Non-advanced adenoma (>=3),65 or under,train
+417369,3. Non neoplastic findings,74.84106581818058,F,Negative,65 or under,train
+629187,3. Non neoplastic findings,72.00741735750455,M,Negative,65-70,train
+455681,5c. Advanced adenoma,65.49209231224849,F,Negative,65 or under,train
+862828,4b. Serrated lesions,71.14204393149855,M,Advanced adenoma,65 or under,train
+618299,4b. Serrated lesions,67.19307751911771,M,Non-advanced adenoma (<3),65-70,test
+722370,3. Non neoplastic findings,72.01937950541972,F,Negative,65-70,train
+821941,1. Negative,63.8536132241424,M,Non-advanced adenoma (>=3),65-70,train
+684708,4b. Serrated lesions,76.34017933926381,M,Negative,65 or under,train
+108872,5a. <3 Non-advanced adenomas,63.8630888299044,F,Negative,over 70,test
+584184,5a. <3 Non-advanced adenomas,66.68728688437668,M,Negative,65 or under,test
+125666,5a. <3 Non-advanced adenomas,71.93016507471513,F,Negative,over 70,train
+503116,5c. Advanced adenoma,74.36043232627962,M,Advanced serrated,over 70,test
+709888,"2a. FOBT+, no colonoscopy",74.85063750159829,M,no colonoscopy,65 or under,train
+221791,5c. Advanced adenoma,69.85930742356565,M,Advanced adenoma,over 70,test
+304570,5a. <3 Non-advanced adenomas,72.60879226785453,F,Non-advanced adenoma (<3),over 70,test
+434373,5a. <3 Non-advanced adenomas,73.08329871285066,F,Advanced adenoma,65-70,test
+920974,3. Non neoplastic findings,58.41753670836217,F,Non-advanced adenoma (>=3),65 or under,train
+580053,5a. <3 Non-advanced adenomas,65.03979901486494,M,Non-advanced adenoma (>=3),over 70,train
+303739,3. Non neoplastic findings,70.17319157892292,F,Non-advanced serrated/other lesions,over 70,test
+966556,3. Non neoplastic findings,58.432028291725636,M,Non-advanced adenoma (<3),over 70,train
+419045,5b. >= 3 Non-advanced adenomas,68.616201208351,M,Non-advanced adenoma (>=3),65 or under,train
+131985,5c. Advanced adenoma,68.62536501295104,F,CRC,65 or under,train
+235742,5c. Advanced adenoma,63.4761017988914,M,Negative,65 or under,train
+625167,5b. >= 3 Non-advanced adenomas,74.36500045515511,F,Negative,over 70,train
+571792,5c. Advanced adenoma,65.67147128358086,F,Non-advanced serrated/other lesions,65-70,train
+776970,1. Negative,59.9892716400579,M,Non-advanced adenoma (<3),over 70,train
+159041,5a. <3 Non-advanced adenomas,57.781659852090065,F,Non-advanced adenoma (<3),over 70,train
+393268,5a. <3 Non-advanced adenomas,63.425723140688305,F,Non-advanced adenoma (>=3),over 70,train
+421982,5b. >= 3 Non-advanced adenomas,74.44099537337085,F,Non-advanced adenoma (<3),over 70,train
+525058,5a. <3 Non-advanced adenomas,57.68203636464333,M,Non-advanced adenoma (<3),65 or under,test
+670922,5a. <3 Non-advanced adenomas,66.5107046157464,M,Negative,65 or under,test
+359313,5a. <3 Non-advanced adenomas,68.3455274780645,F,Negative,65-70,train
+111297,4b. Serrated lesions,55.928999733926595,M,Non-advanced adenoma (<3),65 or under,train
+898981,3. Non neoplastic findings,68.47448375209082,M,Non-advanced adenoma (>=3),65 or under,test
+139329,5c. Advanced adenoma,65.92216871639246,M,Non-advanced adenoma (<3),65-70,train
+899153,5a. <3 Non-advanced adenomas,63.08589906804218,F,Non-advanced adenoma (<3),over 70,train
+663023,5c. Advanced adenoma,69.51111524953633,M,Negative,over 70,train
+488797,5b. >= 3 Non-advanced adenomas,73.59290297594596,M,Advanced adenoma,65-70,train
+437056,5b. >= 3 Non-advanced adenomas,66.01397363839,M,Negative,over 70,train
+994307,3. Non neoplastic findings,70.51088905349499,M,Non-advanced adenoma (<3),65 or under,train
+346295,3. Non neoplastic findings,71.1585434730283,M,Non-advanced adenoma (<3),65-70,train
+439572,1. Negative,66.33616312671664,M,Non-advanced adenoma (<3),65 or under,test
+246886,5d. Advanced serrated,64.7575668574186,M,Negative,65-70,train
+890958,3. Non neoplastic findings,60.855980192091835,M,Non-advanced adenoma (<3),65 or under,train
+546076,5a. <3 Non-advanced adenomas,73.95595047428219,F,Negative,65 or under,train
+786501,2b. Polyp without histology,73.44291482505001,M,Non-advanced adenoma (<3),65 or under,train
+702643,5c. Advanced adenoma,64.68274454806091,M,Non-advanced adenoma (>=3),over 70,test
+410781,5c. Advanced adenoma,68.76035449726186,F,Non-advanced adenoma (>=3),65 or under,train
+162163,3. Non neoplastic findings,71.43906770413365,F,Non-advanced adenoma (<3),65-70,train
+359748,3. Non neoplastic findings,70.03471090867463,F,Non-advanced adenoma (<3),over 70,train
+929857,1. Negative,64.76271197200579,F,Negative,over 70,train
+819652,5a. <3 Non-advanced adenomas,61.68376389726081,M,CRC,65-70,train
+218463,3. Non neoplastic findings,75.11694271057891,M,Negative,over 70,train
+114861,2b. Polyp without histology,65.50157752602718,F,Non-advanced adenoma (<3),65 or under,train
+842894,1. Negative,64.5952668730941,M,Negative,over 70,train
+352719,1. Negative,60.85618619408836,M,Negative,over 70,train
+997579,5a. <3 Non-advanced adenomas,65.68473418806362,M,Negative,over 70,train
+927155,1. Negative,76.93627100646526,M,Non-advanced adenoma (<3),over 70,train
+159369,1. Negative,64.69081508317251,F,Negative,over 70,test
+412629,3. Non neoplastic findings,76.79000482285376,M,Non-advanced adenoma (<3),over 70,train
+300984,5c. Advanced adenoma,76.05509156534728,F,CRC,65 or under,train
+846246,5c. Advanced adenoma,73.08944412139954,F,Non-advanced adenoma (<3),65 or under,train
+546316,5b. >= 3 Non-advanced adenomas,62.87126102222184,F,Negative,65-70,test
+159385,5c. Advanced adenoma,71.54004596850343,F,Advanced adenoma,65-70,train
+850474,5b. >= 3 Non-advanced adenomas,62.26171180041126,M,Non-advanced adenoma (<3),65 or under,test
+199402,5b. >= 3 Non-advanced adenomas,66.02909298463042,F,Negative,65 or under,train
+342264,5c. Advanced adenoma,74.18949534913833,M,Negative,65 or under,train
+888628,5c. Advanced adenoma,70.24629621955289,M,Non-advanced adenoma (<3),over 70,train
+249290,4b. Serrated lesions,66.25272121151603,M,Non-advanced adenoma (<3),65 or under,test
+734030,5a. <3 Non-advanced adenomas,66.91327776485939,F,Non-advanced adenoma (<3),65 or under,train
+228588,5c. Advanced adenoma,76.27217095569404,F,Non-advanced adenoma (<3),65 or under,train
+558867,3. Non neoplastic findings,65.04089556742785,M,Advanced adenoma,over 70,train
+122933,5c. Advanced adenoma,67.69066648900002,M,Non-advanced adenoma (<3),over 70,train
+505143,5a. <3 Non-advanced adenomas,73.67000010822774,F,Non-advanced adenoma (<3),65-70,train
+891449,1. Negative,74.03203995703976,F,Negative,over 70,train
+789929,3. Non neoplastic findings,67.52012209099912,M,Negative,over 70,test
+370070,1. Negative,68.94009337733117,M,Non-advanced adenoma (<3),over 70,train
+311242,1. Negative,66.42337349930017,M,Non-advanced adenoma (<3),65-70,train
+640366,5a. <3 Non-advanced adenomas,75.68205379559907,M,Non-advanced adenoma (<3),65-70,train
+236482,3. Non neoplastic findings,68.77180525777473,M,Non-advanced adenoma (<3),65 or under,train
+171181,6. Cancer,66.52154325973768,F,Negative,over 70,train
+434733,5a. <3 Non-advanced adenomas,73.60097090225008,F,Negative,65 or under,train
+843132,3. Non neoplastic findings,63.27108013750248,M,Advanced adenoma,over 70,train
+393759,3. Non neoplastic findings,65.34442391290904,M,Non-advanced adenoma (<3),65-70,test
+624148,5c. Advanced adenoma,66.18866312391222,M,Non-advanced adenoma (>=3),over 70,train
+444215,5b. >= 3 Non-advanced adenomas,71.03144507760014,F,Non-advanced adenoma (>=3),65 or under,train
+314572,5c. Advanced adenoma,72.91862640354643,M,Negative,over 70,train
+500411,5c. Advanced adenoma,60.270222719936555,M,Non-advanced serrated/other lesions,65-70,train
+255979,3. Non neoplastic findings,63.68885083805253,F,Non-advanced adenoma (<3),65 or under,test
+251436,6. Cancer,69.17963112781248,F,Non-advanced adenoma (<3),65 or under,train
+522936,"2a. FOBT+, no colonoscopy",64.02535825432788,M,CRC,over 70,train
+202080,5a. <3 Non-advanced adenomas,66.58275466755558,M,Non-advanced serrated/other lesions,65 or under,train
+965465,"2a. FOBT+, no colonoscopy",63.69000089465496,M,Advanced adenoma,over 70,train
+878290,5a. <3 Non-advanced adenomas,73.24353719267621,M,CRC,65-70,test
+531674,3. Non neoplastic findings,74.0999377811981,M,Non-advanced adenoma (<3),over 70,train
+270440,3. Non neoplastic findings,73.45381128578462,M,Non-advanced serrated/other lesions,65-70,train
+500663,5a. <3 Non-advanced adenomas,66.75464436956645,M,Non-advanced adenoma (<3),over 70,train
+974139,5a. <3 Non-advanced adenomas,69.18903726206548,M,Non-advanced adenoma (<3),65 or under,train
+910028,5b. >= 3 Non-advanced adenomas,71.07965506786068,M,Non-advanced adenoma (<3),65 or under,test
+163668,5b. >= 3 Non-advanced adenomas,58.49653929288143,M,Non-advanced adenoma (>=3),65 or under,train
+726572,5b. >= 3 Non-advanced adenomas,62.108136409239144,M,Advanced adenoma,65 or under,train
+169496,5a. <3 Non-advanced adenomas,73.76095398678494,M,Non-advanced adenoma (<3),over 70,test
+478995,5c. Advanced adenoma,71.0826655926743,F,Negative,65 or under,train
+842014,1. Negative,62.48000082377218,M,Advanced adenoma,65 or under,test
+306893,5c. Advanced adenoma,68.48873843897552,M,Negative,65-70,train
+575348,5a. <3 Non-advanced adenomas,64.60359975263583,M,CRC,over 70,train
+498394,1. Negative,61.852602246449216,F,Non-advanced adenoma (<3),65-70,train
+991539,5b. >= 3 Non-advanced adenomas,69.33343771895379,M,Advanced adenoma,65 or under,test
+292859,5a. <3 Non-advanced adenomas,61.04459894096609,M,Advanced adenoma,over 70,train
+157473,4b. Serrated lesions,65.57150136025716,M,Non-advanced adenoma (>=3),65 or under,train
+356611,5a. <3 Non-advanced adenomas,70.24706146735036,M,Non-advanced adenoma (<3),65 or under,train
+116691,3. Non neoplastic findings,70.31508054530666,F,Advanced adenoma,65 or under,train
+482733,5a. <3 Non-advanced adenomas,65.51132514522743,M,Advanced adenoma,65-70,train
+786684,5a. <3 Non-advanced adenomas,70.1076901342633,F,Negative,65 or under,test
+778839,5a. <3 Non-advanced adenomas,65.69831861097738,F,Negative,65 or under,train
+792552,4b. Serrated lesions,68.3600288264272,F,Non-advanced adenoma (<3),65 or under,train
+396926,5a. <3 Non-advanced adenomas,71.2681086413758,F,Negative,65 or under,train
+933108,5c. Advanced adenoma,59.42194839734667,F,Non-advanced adenoma (<3),over 70,train
+287613,1. Negative,57.69884797002496,M,Advanced serrated,65 or under,train
+873503,4b. Serrated lesions,63.4372839858972,M,Non-advanced adenoma (<3),over 70,test
+601199,5a. <3 Non-advanced adenomas,68.3744648202706,F,CRC,65-70,train
+529226,5a. <3 Non-advanced adenomas,74.8602552717776,F,Non-advanced adenoma (<3),65 or under,train
+329442,5b. >= 3 Non-advanced adenomas,72.62278254138837,M,Non-advanced serrated/other lesions,65-70,train
+135104,5b. >= 3 Non-advanced adenomas,62.27235644824245,M,Non-advanced adenoma (>=3),65-70,train
+670446,5a. <3 Non-advanced adenomas,71.0893121543044,F,Non-advanced adenoma (>=3),over 70,test
+847658,5c. Advanced adenoma,60.37098712084364,M,Non-advanced adenoma (>=3),65 or under,train
+448401,5a. <3 Non-advanced adenomas,58.51280441357415,M,Negative,over 70,test
+406109,1. Negative,68.43174498889337,M,Advanced adenoma,over 70,train
+960438,5b. >= 3 Non-advanced adenomas,66.09237666015053,F,Advanced adenoma,over 70,train
+882227,3. Non neoplastic findings,72.26839582300376,M,Non-advanced adenoma (<3),over 70,train
+882650,6. Cancer,58.33374632115335,F,Advanced adenoma,over 70,test
+482986,3. Non neoplastic findings,75.75634934174286,M,Non-advanced adenoma (<3),65 or under,train
+300435,4b. Serrated lesions,63.089371747667464,F,Advanced adenoma,65-70,test
+448069,6. Cancer,61.53781815636832,M,Non-advanced adenoma (<3),65-70,train
+489750,1. Negative,71.69545068978694,M,Negative,65-70,train
+631607,4b. Serrated lesions,59.993825095797476,M,Non-advanced adenoma (<3),65 or under,train
+241257,4b. Serrated lesions,66.19861713036931,M,Negative,65 or under,train
+768214,5c. Advanced adenoma,63.28638746795377,F,Non-advanced serrated/other lesions,over 70,train
+246916,4b. Serrated lesions,72.43064830754966,M,Non-advanced adenoma (<3),over 70,train
+323833,5d. Advanced serrated,75.34130629590686,M,Advanced adenoma,65-70,train
+514981,5b. >= 3 Non-advanced adenomas,69.12131768156638,M,Negative,65 or under,train
+248749,3. Non neoplastic findings,74.28548271890014,F,Non-advanced serrated/other lesions,65 or under,train
+294258,5d. Advanced serrated,71.7398354747111,F,Advanced adenoma,65-70,train
+269306,3. Non neoplastic findings,73.19485047407133,F,Non-advanced adenoma (<3),over 70,train
+916016,5c. Advanced adenoma,60.440364559171925,M,Non-advanced adenoma (<3),over 70,train
+532383,5c. Advanced adenoma,71.75110802687637,F,Advanced adenoma,65 or under,train
+143181,3. Non neoplastic findings,71.27418108731065,M,Non-advanced adenoma (<3),65 or under,test
+858506,3. Non neoplastic findings,63.18034449472227,F,Non-advanced adenoma (<3),65-70,test
+708183,5c. Advanced adenoma,65.09752510827579,M,Non-advanced adenoma (<3),65 or under,train
+373124,5a. <3 Non-advanced adenomas,71.94346632900157,F,Advanced adenoma,65-70,train
+852860,5d. Advanced serrated,66.59196395290361,M,Advanced adenoma,over 70,train
+346938,1. Negative,61.1574437350372,F,Negative,65 or under,train
+778710,5a. <3 Non-advanced adenomas,59.09928709417272,F,Advanced adenoma,65 or under,train
+765645,5d. Advanced serrated,67.53090181854472,M,Negative,65-70,train
+223900,5b. >= 3 Non-advanced adenomas,69.20083368253421,F,Non-advanced adenoma (<3),65-70,train
+441471,5a. <3 Non-advanced adenomas,74.452082949236,F,Non-advanced serrated/other lesions,65 or under,train
+469057,3. Non neoplastic findings,66.43424322081181,M,Non-advanced adenoma (<3),65 or under,test
+185674,5a. <3 Non-advanced adenomas,72.35229646596686,F,Negative,65 or under,train
+106745,5a. <3 Non-advanced adenomas,64.86727564317314,M,Negative,65-70,train
+334007,5a. <3 Non-advanced adenomas,62.71476020694395,M,no colonoscopy,65 or under,test
+580649,4b. Serrated lesions,65.26952508482086,F,Negative,over 70,train
+759051,5c. Advanced adenoma,64.52935789569392,M,Negative,65-70,train
+747234,5c. Advanced adenoma,66.26019221728617,M,Non-advanced serrated/other lesions,65 or under,train
+604608,5a. <3 Non-advanced adenomas,66.26809036171854,F,Negative,65-70,test
+800954,5b. >= 3 Non-advanced adenomas,72.92910624656284,M,Negative,65-70,train
+912145,1. Negative,62.01920556527438,M,Non-advanced adenoma (<3),over 70,train
+835469,5a. <3 Non-advanced adenomas,69.00616148440167,M,Non-advanced adenoma (<3),over 70,test
+302107,5a. <3 Non-advanced adenomas,59.86041993685837,M,Non-advanced serrated/other lesions,over 70,train
+834669,5a. <3 Non-advanced adenomas,66.44511990965908,F,Negative,65 or under,train
+328417,3. Non neoplastic findings,60.921610128281216,M,Non-advanced serrated/other lesions,over 70,train
+747836,5a. <3 Non-advanced adenomas,63.35586192227581,F,Negative,65 or under,train
+770604,5d. Advanced serrated,66.27654180774292,F,Non-advanced adenoma (<3),65 or under,train
+717517,5b. >= 3 Non-advanced adenomas,65.52126361351128,F,Non-advanced adenoma (<3),65 or under,train
+666019,5b. >= 3 Non-advanced adenomas,67.43022808231653,M,Non-advanced adenoma (<3),over 70,train
+864465,5a. <3 Non-advanced adenomas,63.69156505816301,M,Negative,65 or under,train
+329478,5a. <3 Non-advanced adenomas,72.44403207119196,M,Negative,over 70,train
+826713,3. Non neoplastic findings,58.71634936766115,F,Advanced adenoma,65 or under,train
+220585,3. Non neoplastic findings,70.45382371237703,F,Advanced adenoma,65-70,train
+840284,6. Cancer,73.7763021365427,M,Negative,65 or under,test
+403292,4b. Serrated lesions,75.91276541966822,M,Advanced adenoma,65-70,train
+199260,"2a. FOBT+, no colonoscopy",70.67417927322026,M,Advanced adenoma,over 70,train
+522344,1. Negative,70.24981652345278,M,Non-advanced adenoma (<3),65-70,test
+558380,1. Negative,59.00027834292878,F,Negative,over 70,train
+856179,5c. Advanced adenoma,72.51225465397619,M,Advanced serrated,65-70,train
+527494,5a. <3 Non-advanced adenomas,71.76500095560475,M,Negative,65 or under,train
+208360,5a. <3 Non-advanced adenomas,70.33941136110106,F,Advanced adenoma,over 70,train
+400688,4b. Serrated lesions,63.19903425456437,M,Non-advanced serrated/other lesions,65 or under,train
+550434,5a. <3 Non-advanced adenomas,73.60879442889129,M,Advanced adenoma,over 70,train
+893200,3. Non neoplastic findings,76.34911917960657,F,Non-advanced adenoma (<3),65 or under,train
+457219,5a. <3 Non-advanced adenomas,58.34126725318357,M,Non-advanced adenoma (>=3),65-70,train
+463252,5c. Advanced adenoma,60.59756456729792,M,Advanced serrated,over 70,train
+916553,4b. Serrated lesions,68.69960064055125,F,Negative,over 70,train
+863643,5a. <3 Non-advanced adenomas,76.359438489551,M,Non-advanced serrated/other lesions,65 or under,train
+961427,3. Non neoplastic findings,75.92111243858582,F,Non-advanced adenoma (<3),65 or under,train
+722145,5a. <3 Non-advanced adenomas,65.17406081915503,F,Non-advanced adenoma (<3),65 or under,train
+854233,5a. <3 Non-advanced adenomas,57.79379374421619,M,Non-advanced serrated/other lesions,65 or under,train
+415446,1. Negative,58.44747410116362,F,Negative,65 or under,test
+354323,5c. Advanced adenoma,76.9415402834315,F,no colonoscopy,65 or under,test
+159020,5a. <3 Non-advanced adenomas,64.76847894576285,M,Negative,65 or under,train
+199711,3. Non neoplastic findings,69.93759624518863,M,Non-advanced serrated/other lesions,over 70,test
+298693,5a. <3 Non-advanced adenomas,66.60079286557297,M,CRC,65 or under,train
+369909,5c. Advanced adenoma,67.59254433722683,M,no colonoscopy,65 or under,train
+253079,"2a. FOBT+, no colonoscopy",74.4641646735992,M,Non-advanced serrated/other lesions,65 or under,train
+118852,3. Non neoplastic findings,63.09526236567079,F,Non-advanced adenoma (>=3),65 or under,train
+181806,6. Cancer,62.730349001511776,F,Advanced serrated,65-70,train
+573339,5a. <3 Non-advanced adenomas,59.94712780743635,M,Advanced serrated,over 70,train
+332622,3. Non neoplastic findings,59.99824994120884,M,Negative,65 or under,train
+232684,1. Negative,65.10925922894518,F,Negative,65 or under,train
+718929,5d. Advanced serrated,70.11610108582089,M,Non-advanced adenoma (<3),over 70,test
+849393,5b. >= 3 Non-advanced adenomas,61.943097447754425,M,Advanced adenoma,over 70,train
+554001,5d. Advanced serrated,61.62249797013555,M,Negative,65-70,train
+792834,5c. Advanced adenoma,66.60922782606524,M,Negative,65 or under,train
+380213,5b. >= 3 Non-advanced adenomas,57.8058423595557,M,Non-advanced adenoma (<3),over 70,train
+658833,5b. >= 3 Non-advanced adenomas,67.11986624647251,M,Advanced serrated,65 or under,train
+635282,5a. <3 Non-advanced adenomas,68.50299540267035,M,Non-advanced serrated/other lesions,65 or under,train
+713291,5a. <3 Non-advanced adenomas,76.28333601451398,F,Negative,65 or under,train
+488492,"2a. FOBT+, no colonoscopy",60.53735723053471,F,Non-advanced adenoma (<3),65-70,train
+161111,3. Non neoplastic findings,73.3776056277686,M,Non-advanced adenoma (<3),65-70,train
+710070,4b. Serrated lesions,65.53132137454071,F,Negative,over 70,train
+945924,5c. Advanced adenoma,60.85662215036547,M,Non-advanced adenoma (<3),over 70,train
+401895,5a. <3 Non-advanced adenomas,65.5815266995888,M,Non-advanced adenoma (<3),65-70,train
+508302,5c. Advanced adenoma,65.59166306066948,M,Negative,over 70,train
+971160,4b. Serrated lesions,73.26020683370665,F,Non-advanced adenoma (>=3),over 70,train
+830297,1. Negative,74.86994468585033,M,Non-advanced adenoma (<3),over 70,train
+824894,5d. Advanced serrated,65.77898627213418,M,Negative,65 or under,train
+968711,4b. Serrated lesions,76.15486143204855,M,Advanced adenoma,65 or under,train
+188404,5a. <3 Non-advanced adenomas,66.92511814878532,F,Negative,over 70,train
+833642,5b. >= 3 Non-advanced adenomas,62.49850098764201,M,Non-advanced adenoma (<3),65 or under,test
+369676,5a. <3 Non-advanced adenomas,59.53373653190431,F,Non-advanced adenoma (<3),65-70,test
+786343,5c. Advanced adenoma,68.20798842320058,M,Negative,65 or under,test
+651878,5a. <3 Non-advanced adenomas,73.53089990003103,M,Non-advanced adenoma (<3),over 70,test
+244715,1. Negative,66.69241143372625,M,Non-advanced adenoma (<3),over 70,train
+487645,5a. <3 Non-advanced adenomas,59.11286285893654,F,Non-advanced adenoma (<3),65 or under,train
+824859,1. Negative,74.36940281801488,M,Negative,over 70,train
+836431,5a. <3 Non-advanced adenomas,65.12063293985234,M,Non-advanced adenoma (<3),65-70,train
+404673,1. Negative,73.68109453752861,M,Negative,65 or under,train
+965587,"2a. FOBT+, no colonoscopy",58.34868595398962,M,no colonoscopy,65 or under,train
+152634,4b. Serrated lesions,76.29249595373827,M,Non-advanced adenoma (>=3),over 70,train
+429873,5a. <3 Non-advanced adenomas,59.954077459403585,F,Negative,65-70,test
+283455,5a. <3 Non-advanced adenomas,61.17202301430373,M,Negative,65 or under,test
+246712,4b. Serrated lesions,59.19329561569033,F,CRC,over 70,train
+190776,5a. <3 Non-advanced adenomas,60.68016282439221,F,Non-advanced adenoma (>=3),65 or under,train
+471130,5c. Advanced adenoma,72.45589823692002,M,Non-advanced adenoma (>=3),65 or under,test
+493566,5d. Advanced serrated,69.94877413377465,M,Non-advanced adenoma (<3),65 or under,train
+180424,5c. Advanced adenoma,64.88771988297059,F,Negative,65 or under,train
+951205,5c. Advanced adenoma,75.3611774353638,M,Non-advanced adenoma (<3),65 or under,train
+916477,"2a. FOBT+, no colonoscopy",68.95139271886538,M,Non-advanced adenoma (<3),65-70,train
+941243,4b. Serrated lesions,75.93056123814334,F,CRC,65 or under,train
+436120,5b. >= 3 Non-advanced adenomas,66.34700228703292,F,CRC,65 or under,train
+126145,5c. Advanced adenoma,71.44981688916442,M,Negative,over 70,test
+957983,5a. <3 Non-advanced adenomas,69.67491338526916,M,Non-advanced adenoma (>=3),65 or under,train
+172739,5a. <3 Non-advanced adenomas,60.60450718599211,F,Non-advanced serrated/other lesions,65 or under,test
+564068,3. Non neoplastic findings,73.02422854608811,M,Non-advanced adenoma (>=3),over 70,train
+412699,5b. >= 3 Non-advanced adenomas,65.1807804291879,M,Negative,65 or under,train
+635816,3. Non neoplastic findings,61.2748383483098,F,Advanced serrated,over 70,test
+741244,5c. Advanced adenoma,58.35623899155827,F,Negative,65 or under,train
+115518,5a. <3 Non-advanced adenomas,61.957068653700226,M,Advanced adenoma,65-70,train
+382751,5a. <3 Non-advanced adenomas,75.77031730807796,M,Negative,65-70,test
+204004,1. Negative,60.12491713591835,M,Advanced adenoma,65 or under,test
+641915,5a. <3 Non-advanced adenomas,67.34662829940798,F,Negative,65-70,train
+580910,3. Non neoplastic findings,66.2855218022324,F,Negative,over 70,train
+102974,3. Non neoplastic findings,73.69285361033192,F,Non-advanced serrated/other lesions,65 or under,train
+945454,1. Negative,71.17508173927561,M,Advanced adenoma,65-70,train
+548714,4b. Serrated lesions,65.04120591335143,M,Negative,over 70,train
+725154,3. Non neoplastic findings,70.6790056986574,F,Advanced adenoma,over 70,test
+263754,1. Negative,67.92766402795552,M,Non-advanced adenoma (<3),65-70,train
+193621,5c. Advanced adenoma,59.311533361584075,M,Non-advanced adenoma (<3),65 or under,train
+652911,5c. Advanced adenoma,68.38884494651683,F,Negative,65-70,test
+967667,5a. <3 Non-advanced adenomas,71.33111407652474,M,Negative,65-70,test
+470683,5c. Advanced adenoma,61.186233704786275,M,Non-advanced serrated/other lesions,over 70,train
+606398,5b. >= 3 Non-advanced adenomas,70.62821339805053,F,Advanced serrated,65 or under,train
+604521,3. Non neoplastic findings,74.93101689142811,M,Negative,over 70,train
+740829,5a. <3 Non-advanced adenomas,76.66658903733891,M,Non-advanced adenoma (<3),65 or under,test
+132885,5b. >= 3 Non-advanced adenomas,59.572525269298055,F,Negative,65 or under,train
+588055,5d. Advanced serrated,59.12607454904745,M,Advanced adenoma,65-70,train
+742928,3. Non neoplastic findings,63.59219323755841,F,Negative,65-70,test
+680493,6. Cancer,61.79675256642516,F,Non-advanced adenoma (<3),65-70,train
+943817,"2a. FOBT+, no colonoscopy",63.449483656929466,M,Non-advanced adenoma (<3),over 70,train
+186979,5c. Advanced adenoma,62.02515147907535,M,Negative,over 70,train
+787404,5c. Advanced adenoma,72.15852725563637,F,Negative,over 70,train
+939670,5c. Advanced adenoma,75.60462837156823,M,Non-advanced adenoma (>=3),over 70,train
+756592,5a. <3 Non-advanced adenomas,57.714575166666876,M,Advanced adenoma,65-70,train
+980308,5c. Advanced adenoma,71.09921722608932,F,Non-advanced adenoma (<3),65-70,train
+617189,5b. >= 3 Non-advanced adenomas,69.59082833541787,F,Negative,over 70,train
+868341,5a. <3 Non-advanced adenomas,57.58205224954432,M,Non-advanced adenoma (>=3),over 70,train
+849330,4b. Serrated lesions,60.00285990218978,F,Negative,65 or under,test
+925378,1. Negative,61.3537673039854,M,Advanced adenoma,65-70,train
+382810,4b. Serrated lesions,73.03303694212379,M,Negative,65 or under,train
+443454,5c. Advanced adenoma,59.57818850491569,F,no colonoscopy,65 or under,train
+561715,"2a. FOBT+, no colonoscopy",61.69568773969071,M,Negative,65-70,test
+938079,3. Non neoplastic findings,71.70173375936726,F,Negative,65-70,train
+237787,5a. <3 Non-advanced adenomas,58.961418733066054,M,Non-advanced adenoma (>=3),over 70,test
+136849,5a. <3 Non-advanced adenomas,63.774719590840135,M,Negative,65-70,train
+378412,1. Negative,71.78116873300947,F,Negative,over 70,test
+126310,5c. Advanced adenoma,73.79216689580292,M,Non-advanced serrated/other lesions,over 70,test
+456153,5a. <3 Non-advanced adenomas,62.03215272562779,M,Advanced adenoma,65-70,train
+519445,3. Non neoplastic findings,66.86407882159324,F,Non-advanced adenoma (<3),65-70,train
+765047,5a. <3 Non-advanced adenomas,57.04378355005334,M,Negative,over 70,train
+941586,1. Negative,76.29953774395514,M,Advanced serrated,65-70,train
+134046,5c. Advanced adenoma,69.21524945589074,F,Negative,65 or under,train
+967748,5c. Advanced adenoma,69.69296129998783,F,Negative,65-70,train
+350595,5a. <3 Non-advanced adenomas,58.207812172651,F,Advanced adenoma,65 or under,train
+877239,5c. Advanced adenoma,65.60197924283831,M,Advanced adenoma,65 or under,train
+649782,3. Non neoplastic findings,73.61653455792239,M,Non-advanced adenoma (<3),65 or under,test
+564443,5c. Advanced adenoma,58.52852496381971,F,Non-advanced adenoma (>=3),65 or under,test
+195619,5a. <3 Non-advanced adenomas,76.37111798863718,F,Non-advanced serrated/other lesions,65 or under,train
+615283,1. Negative,63.462397734391935,M,Advanced adenoma,over 70,test
+878612,5a. <3 Non-advanced adenomas,60.69913628874191,F,Negative,65 or under,train
+950170,5c. Advanced adenoma,75.94141621503478,F,Advanced adenoma,over 70,train
+978513,1. Negative,66.3579326208264,M,Negative,65-70,test
+969761,3. Non neoplastic findings,59.584746508293584,M,Non-advanced adenoma (<3),65-70,train
+420943,6. Cancer,74.5591738504418,M,Advanced adenoma,65-70,train
+674879,5b. >= 3 Non-advanced adenomas,72.78123078642922,F,Non-advanced adenoma (<3),over 70,test
+954736,5b. >= 3 Non-advanced adenomas,74.6757932421256,M,Non-advanced adenoma (<3),over 70,train
+529878,5b. >= 3 Non-advanced adenomas,76.82579877597871,M,Negative,65-70,train
+374243,5a. <3 Non-advanced adenomas,69.71115819416093,M,Advanced adenoma,over 70,test
+782580,1. Negative,63.104094830025254,M,Advanced adenoma,65-70,train
+472646,5a. <3 Non-advanced adenomas,74.50673487832238,M,Negative,65 or under,train
+628954,5d. Advanced serrated,69.52236488802602,F,Non-advanced adenoma (>=3),65 or under,test
+653998,5c. Advanced adenoma,60.718961007222745,M,Advanced serrated,65-70,train
+363799,5a. <3 Non-advanced adenomas,69.72931036986414,F,Advanced adenoma,over 70,train
+586532,1. Negative,69.9607017212593,M,Negative,65 or under,train
+913118,5a. <3 Non-advanced adenomas,74.47727656052501,M,Non-advanced adenoma (<3),65 or under,train
+609923,5b. >= 3 Non-advanced adenomas,56.531892645533546,F,Advanced adenoma,over 70,train
+270384,3. Non neoplastic findings,73.09691815118231,M,Negative,65 or under,train
+178950,4. Other lesions,59.542880953455445,M,Non-advanced adenoma (>=3),65-70,train
+640472,3. Non neoplastic findings,64.77512952936658,F,Negative,65 or under,train
+181285,5a. <3 Non-advanced adenomas,62.28329564377917,M,Non-advanced adenoma (>=3),65-70,test
+374138,5c. Advanced adenoma,65.13118461664185,M,Non-advanced adenoma (<3),65 or under,test
+805371,5d. Advanced serrated,65.61254404543446,M,Negative,65 or under,train
+949126,5b. >= 3 Non-advanced adenomas,68.05017894026824,F,Non-advanced serrated/other lesions,65 or under,test
+270432,5c. Advanced adenoma,68.96253813518882,F,Non-advanced serrated/other lesions,over 70,test
+472678,3. Non neoplastic findings,72.93957744874827,F,Non-advanced adenoma (<3),65 or under,train
+924190,5a. <3 Non-advanced adenomas,71.45886385256013,M,Non-advanced adenoma (<3),65-70,train
+872707,5c. Advanced adenoma,69.48023188702852,F,CRC,65-70,train
+962331,5c. Advanced adenoma,74.94192341244455,F,Non-advanced adenoma (>=3),65 or under,train
+287369,5b. >= 3 Non-advanced adenomas,74.6939022563703,M,Negative,65 or under,train
+152627,3. Non neoplastic findings,57.93700053616731,M,Negative,over 70,train
+466268,5c. Advanced adenoma,58.46357437737182,M,Negative,over 70,train
+837993,5c. Advanced adenoma,61.200078423011455,F,Negative,over 70,train
+124737,3. Non neoplastic findings,73.04095875336644,F,Advanced serrated,65-70,train
+879854,5a. <3 Non-advanced adenomas,63.87211125698093,M,Non-advanced serrated/other lesions,65 or under,train
+112823,5a. <3 Non-advanced adenomas,70.79181860389704,M,Non-advanced serrated/other lesions,over 70,train
+747502,3. Non neoplastic findings,70.68674463633468,M,Negative,65-70,train
+226458,5b. >= 3 Non-advanced adenomas,58.77985377664904,F,Non-advanced adenoma (<3),65 or under,train
+390655,5a. <3 Non-advanced adenomas,66.10808980442481,M,Negative,over 70,train
+411136,5b. >= 3 Non-advanced adenomas,58.040827221536695,M,Advanced serrated,65 or under,train
+149993,5b. >= 3 Non-advanced adenomas,65.18998442554103,F,Negative,over 70,train
+122701,5a. <3 Non-advanced adenomas,76.94502370215304,F,Negative,65 or under,train
+320933,5a. <3 Non-advanced adenomas,69.01697297669139,M,Negative,65 or under,test
+717612,1. Negative,71.28170007545054,M,CRC,over 70,train
+763399,5c. Advanced adenoma,72.27179446347365,M,Negative,over 70,train
+996999,5a. <3 Non-advanced adenomas,74.57833220400188,M,Non-advanced serrated/other lesions,over 70,test
+792850,1. Negative,65.71208900297614,M,Advanced adenoma,over 70,test
+523513,"2a. FOBT+, no colonoscopy",67.02613845488577,M,Negative,over 70,test
+130431,4b. Serrated lesions,72.79904885576767,M,Non-advanced adenoma (<3),over 70,train
+973128,6. Cancer,60.1964327558637,M,Advanced adenoma,65-70,train
+255076,3. Non neoplastic findings,63.49067143103471,M,Negative,65 or under,train
+333922,5c. Advanced adenoma,57.604100047885844,F,Advanced adenoma,over 70,train
+158307,3. Non neoplastic findings,73.10564004986732,M,Non-advanced adenoma (<3),65 or under,train
+106901,1. Negative,71.85821492441191,M,Negative,65 or under,train
+988863,4b. Serrated lesions,67.27084971664557,M,Advanced adenoma,over 70,test
+963442,5c. Advanced adenoma,63.69403520417269,M,Non-advanced adenoma (<3),65-70,train
+561912,5a. <3 Non-advanced adenomas,64.61220548977258,F,Advanced serrated,65 or under,train
+770705,"2a. FOBT+, no colonoscopy",76.68852798705694,F,Non-advanced adenoma (<3),over 70,test
+878155,4b. Serrated lesions,62.75411408233288,F,Negative,65 or under,train
+819736,6. Cancer,75.69353993776582,F,Negative,over 70,train
+961524,1. Negative,75.25177968594033,F,Negative,65-70,train
+344813,1. Negative,64.78292547349378,M,Negative,65 or under,test
+532868,5c. Advanced adenoma,68.51717537524989,M,Negative,65 or under,train
+601917,5c. Advanced adenoma,66.53226352604422,M,Advanced adenoma,65 or under,train
+935635,3. Non neoplastic findings,75.86877448473304,F,Non-advanced adenoma (<3),over 70,test
+824262,5b. >= 3 Non-advanced adenomas,65.43764600256877,M,Negative,over 70,train
+951908,3. Non neoplastic findings,58.85080252438304,M,Non-advanced adenoma (<3),65 or under,train
+579671,5a. <3 Non-advanced adenomas,67.04048991320983,F,CRC,over 70,train
+746754,5c. Advanced adenoma,62.89339474047009,M,Advanced adenoma,over 70,train
+697127,5a. <3 Non-advanced adenomas,72.36827255342533,F,Negative,65-70,train
+246593,5d. Advanced serrated,72.51913619404735,F,Negative,65-70,train
+223292,5c. Advanced adenoma,61.061914792805105,M,Non-advanced adenoma (<3),65-70,train
+543887,5a. <3 Non-advanced adenomas,60.007968704638124,M,Non-advanced adenoma (<3),over 70,test
+479151,5c. Advanced adenoma,72.03435972752794,F,Negative,over 70,test
+959274,5a. <3 Non-advanced adenomas,73.27672979405565,F,Negative,over 70,test
+744340,5a. <3 Non-advanced adenomas,67.9382682885834,M,Negative,over 70,test
+524360,1. Negative,58.0527001363148,M,Non-advanced adenoma (>=3),65 or under,train
+393293,5c. Advanced adenoma,71.19101477315306,M,Non-advanced serrated/other lesions,65-70,train
+654336,1. Negative,70.25523361208484,F,Non-advanced adenoma (<3),65 or under,train
+706417,6. Cancer,59.96076842325013,M,Non-advanced adenoma (>=3),65 or under,train
+130753,5b. >= 3 Non-advanced adenomas,71.70716906039974,M,Negative,65-70,train
+324149,3. Non neoplastic findings,75.53210979386448,M,Non-advanced adenoma (<3),65 or under,train
+191033,3. Non neoplastic findings,69.12917998259626,M,Negative,over 70,test
+992927,5d. Advanced serrated,68.06711215647074,M,Non-advanced serrated/other lesions,65 or under,train
+428877,5b. >= 3 Non-advanced adenomas,76.07472698220887,F,Negative,65-70,train
+725090,3. Non neoplastic findings,58.097068769484416,M,Non-advanced adenoma (<3),65 or under,train
+801773,5b. >= 3 Non-advanced adenomas,74.523153337323,F,Non-advanced adenoma (>=3),over 70,train
+188552,5b. >= 3 Non-advanced adenomas,63.91507316447832,F,Advanced adenoma,65-70,test
+435475,"2a. FOBT+, no colonoscopy",75.0236410900454,F,Non-advanced serrated/other lesions,65 or under,train
+374288,"2a. FOBT+, no colonoscopy",65.44428154356521,M,Negative,over 70,train
+440856,3. Non neoplastic findings,67.36450453428374,M,Advanced serrated,65 or under,train
+580752,5a. <3 Non-advanced adenomas,64.62101626429656,M,Non-advanced adenoma (>=3),over 70,train
+145533,5b. >= 3 Non-advanced adenomas,56.433212161202206,M,Non-advanced adenoma (<3),65 or under,test
+261451,5b. >= 3 Non-advanced adenomas,76.70998777272376,F,Non-advanced adenoma (>=3),65-70,test
+664870,3. Non neoplastic findings,75.38171737886611,M,Advanced adenoma,65-70,train
+442789,5a. <3 Non-advanced adenomas,64.45800732324999,F,Negative,over 70,train
+538134,5c. Advanced adenoma,66.45601035886551,M,Non-advanced adenoma (<3),65 or under,test
+636697,5c. Advanced adenoma,65.04126264313742,M,Non-advanced adenoma (<3),65 or under,train
+244057,5d. Advanced serrated,63.88125070467428,F,Non-advanced adenoma (<3),over 70,train
+167225,5a. <3 Non-advanced adenomas,64.79212852882121,F,Non-advanced serrated/other lesions,65 or under,test
+222629,5b. >= 3 Non-advanced adenomas,63.50618221142869,F,no colonoscopy,65-70,train
+133059,5a. <3 Non-advanced adenomas,59.55039163062539,F,Advanced adenoma,65 or under,train
+752540,5d. Advanced serrated,65.87328325432681,F,Advanced serrated,65 or under,train
+168980,5a. <3 Non-advanced adenomas,75.2057182172145,M,Non-advanced adenoma (<3),65-70,train
+875855,5b. >= 3 Non-advanced adenomas,64.47138919625291,F,Non-advanced adenoma (<3),65-70,train
+469934,4b. Serrated lesions,74.10648654238796,F,Negative,65 or under,train
+842343,5c. Advanced adenoma,59.00817447621003,F,Negative,65 or under,train
+718871,5b. >= 3 Non-advanced adenomas,74.7679165918279,F,Advanced adenoma,65-70,train
+166274,5c. Advanced adenoma,70.2639849574713,M,Negative,65 or under,train
+975201,1. Negative,74.77984035282567,F,no colonoscopy,65 or under,test
+211142,"2a. FOBT+, no colonoscopy",60.61258733536639,M,Advanced adenoma,65-70,train
+718596,5b. >= 3 Non-advanced adenomas,66.3688916459559,M,Advanced adenoma,over 70,train
+101227,5c. Advanced adenoma,76.73091687173812,F,Non-advanced adenoma (<3),65-70,train
+506223,5c. Advanced adenoma,76.80829594924562,M,Advanced adenoma,65-70,train
+780256,1. Negative,75.78439481909994,F,Advanced serrated,65 or under,train
+224684,5a. <3 Non-advanced adenomas,65.93367931004133,M,Negative,65 or under,train
+903029,5a. <3 Non-advanced adenomas,70.18644132379121,F,Negative,over 70,train
+250080,5a. <3 Non-advanced adenomas,76.94661588878219,M,Non-advanced adenoma (<3),65-70,train
+218769,5a. <3 Non-advanced adenomas,58.36416293387632,M,Non-advanced serrated/other lesions,over 70,train
+845563,5a. <3 Non-advanced adenomas,74.20432959454153,F,Non-advanced adenoma (<3),over 70,train
+255257,5b. >= 3 Non-advanced adenomas,71.11173685094163,F,CRC,65-70,train
+613014,5b. >= 3 Non-advanced adenomas,66.93694414399877,F,Advanced adenoma,65-70,train
+306007,3. Non neoplastic findings,59.59262069812201,F,Advanced serrated,65 or under,train
+772934,3. Non neoplastic findings,69.27036385753816,M,Non-advanced adenoma (<3),65-70,train
+909122,4b. Serrated lesions,69.02780482457838,F,Non-advanced adenoma (>=3),65 or under,test
+887241,6. Cancer,70.27674278383687,F,Negative,over 70,train
+131274,3. Non neoplastic findings,66.61726016483802,F,Negative,65-70,train
+234086,3. Non neoplastic findings,63.93038268766194,M,Non-advanced adenoma (>=3),over 70,train
+283339,5c. Advanced adenoma,59.0158761949636,F,Non-advanced adenoma (<3),65-70,train
+339557,5c. Advanced adenoma,62.518747723643145,F,Non-advanced serrated/other lesions,65 or under,train
+208690,5c. Advanced adenoma,68.78350603111907,M,Negative,over 70,train
+919213,4b. Serrated lesions,57.95062440573223,F,Negative,over 70,train
+661422,5c. Advanced adenoma,68.79540859520729,F,Non-advanced adenoma (<3),65-70,train
+680518,6. Cancer,76.30470524938083,M,Negative,65 or under,train
+883672,5c. Advanced adenoma,61.28579937886699,M,Negative,65 or under,train
+439325,5a. <3 Non-advanced adenomas,74.11447069885176,M,Non-advanced adenoma (<3),65 or under,test
+672778,5b. >= 3 Non-advanced adenomas,68.40317869208796,M,Negative,over 70,train
+287438,3. Non neoplastic findings,61.078822943089015,M,Advanced serrated,65-70,train
+779197,5c. Advanced adenoma,75.03560464449231,F,Negative,65 or under,train
+743225,3. Non neoplastic findings,71.20569861757316,F,Advanced adenoma,65-70,train
+234459,1. Negative,66.76756173484401,M,Non-advanced adenoma (<3),over 70,train
+810921,5d. Advanced serrated,70.1994107366804,F,Advanced adenoma,over 70,train
+403635,5c. Advanced adenoma,73.80845374494896,F,Advanced serrated,over 70,test
+617080,5a. <3 Non-advanced adenomas,73.11552906512303,F,CRC,65 or under,train
+264306,5b. >= 3 Non-advanced adenomas,73.12650444461781,F,Non-advanced serrated/other lesions,65 or under,train
+570950,5a. <3 Non-advanced adenomas,76.38413839640523,M,Non-advanced serrated/other lesions,65-70,train
+435790,5c. Advanced adenoma,61.36421573737008,M,Negative,65-70,train
+740143,3. Non neoplastic findings,66.62488121234898,F,Non-advanced adenoma (<3),65 or under,test
+286678,5a. <3 Non-advanced adenomas,59.023650045762516,M,Non-advanced adenoma (<3),over 70,train
+455515,5b. >= 3 Non-advanced adenomas,66.20768713993651,M,Non-advanced adenoma (<3),65 or under,train
+624093,5b. >= 3 Non-advanced adenomas,69.86778393616515,F,Negative,over 70,train
+753837,4b. Serrated lesions,60.45220237368103,F,Non-advanced adenoma (<3),65 or under,train
+957274,5b. >= 3 Non-advanced adenomas,63.52264327731345,M,Non-advanced serrated/other lesions,65 or under,train
+723919,5a. <3 Non-advanced adenomas,61.37549683521804,M,Advanced adenoma,65 or under,train
+740793,5b. >= 3 Non-advanced adenomas,60.013890074451695,F,Advanced adenoma,65-70,test
+243024,3. Non neoplastic findings,74.95309498485928,M,Negative,65-70,train
+461816,5c. Advanced adenoma,58.28790516220325,M,Advanced serrated,65-70,train
+133276,3. Non neoplastic findings,74.71097785700677,M,Advanced adenoma,65-70,train
+290629,5d. Advanced serrated,71.9540443626586,M,Non-advanced adenoma (<3),65 or under,test
+965443,6. Cancer,56.89275797614246,F,Non-advanced adenoma (<3),65 or under,train
+113395,3. Non neoplastic findings,74.04173704639562,F,no colonoscopy,over 70,train
+596338,5d. Advanced serrated,65.45105465216,M,Non-advanced adenoma (<3),65-70,train
+942089,5c. Advanced adenoma,71.34705122119226,F,Non-advanced adenoma (<3),65 or under,test
+347338,1. Negative,59.03176257517983,M,Non-advanced serrated/other lesions,65 or under,train
+172848,3. Non neoplastic findings,57.07932227354745,M,Advanced adenoma,65-70,train
+934788,5a. <3 Non-advanced adenomas,63.697903208279996,F,Non-advanced adenoma (<3),65-70,train
+203865,5b. >= 3 Non-advanced adenomas,74.72683531901477,F,Non-advanced adenoma (<3),65 or under,train
+473497,5c. Advanced adenoma,65.20198062040839,F,Advanced serrated,over 70,train
+324213,5b. >= 3 Non-advanced adenomas,65.36055693734397,M,Negative,over 70,train
+910833,3. Non neoplastic findings,62.91674844164355,M,Advanced serrated,65 or under,train
+578011,1. Negative,72.27587978411668,F,Negative,over 70,train
+446204,5c. Advanced adenoma,62.385058799373084,F,Non-advanced adenoma (>=3),over 70,train
+763365,1. Negative,70.36619353480378,F,Advanced adenoma,65-70,train
+840607,5b. >= 3 Non-advanced adenomas,75.79837574086602,F,Advanced serrated,over 70,train
+161462,3. Non neoplastic findings,67.38182393808003,M,no colonoscopy,65 or under,train
+806772,3. Non neoplastic findings,71.36355296543114,M,Non-advanced adenoma (>=3),over 70,test
+152087,5b. >= 3 Non-advanced adenomas,60.02093773752829,M,Non-advanced serrated/other lesions,65-70,test
+808309,5a. <3 Non-advanced adenomas,58.61105056624712,M,Negative,65 or under,train
+893564,1. Negative,72.52638685804438,M,Advanced adenoma,over 70,train
+644513,5b. >= 3 Non-advanced adenomas,67.44510708111929,F,Non-advanced adenoma (<3),over 70,train
+906643,1. Negative,64.62996425599995,M,Non-advanced adenoma (<3),65 or under,train
+745806,"2a. FOBT+, no colonoscopy",63.36540055580822,F,Non-advanced adenoma (<3),65-70,train
+398615,5c. Advanced adenoma,69.7472241291732,F,Non-advanced adenoma (>=3),over 70,test
+600296,4b. Serrated lesions,60.73911344215217,F,Non-advanced adenoma (<3),65-70,test
+511181,5a. <3 Non-advanced adenomas,65.37477908879183,F,Non-advanced serrated/other lesions,over 70,train
+805396,3. Non neoplastic findings,68.10241638534366,M,Non-advanced serrated/other lesions,65 or under,train
+615573,3. Non neoplastic findings,66.69820683867057,M,Non-advanced adenoma (<3),65-70,train
+946136,5c. Advanced adenoma,72.95019382004602,M,Negative,65 or under,train
+635086,4b. Serrated lesions,59.60223249309119,M,Non-advanced serrated/other lesions,65-70,train
+217559,6. Cancer,63.11563362041893,F,Negative,65-70,train
+942616,5c. Advanced adenoma,60.85788256119141,M,Non-advanced serrated/other lesions,over 70,test
+890661,5c. Advanced adenoma,72.2812250171335,M,Non-advanced serrated/other lesions,65-70,train
+533910,4b. Serrated lesions,62.12047961889238,M,Advanced serrated,65 or under,train
+260562,5a. <3 Non-advanced adenomas,60.86056192683443,F,Negative,over 70,test
+200835,5a. <3 Non-advanced adenomas,71.87797689146332,M,Non-advanced adenoma (<3),over 70,train
+185838,5d. Advanced serrated,62.94066888449892,M,Non-advanced adenoma (<3),65 or under,train
+955394,5c. Advanced adenoma,73.04784578433498,M,Non-advanced adenoma (<3),65 or under,train
+430344,5a. <3 Non-advanced adenomas,66.78106446422198,M,Non-advanced serrated/other lesions,65-70,train
+842220,5d. Advanced serrated,63.53979799246223,F,Negative,65 or under,train
+257503,4b. Serrated lesions,66.79496792287631,M,Negative,over 70,train
+812506,5d. Advanced serrated,66.04464466229228,M,Non-advanced adenoma (<3),over 70,train
+235701,5c. Advanced adenoma,64.69858482632274,F,Negative,65-70,train
+527749,5a. <3 Non-advanced adenomas,65.94574877999052,F,Non-advanced adenoma (>=3),65-70,train
+825520,5c. Advanced adenoma,67.54180861638429,F,Advanced adenoma,over 70,test
+663641,4b. Serrated lesions,67.71453538366687,M,Advanced serrated,65 or under,train
+137965,5a. <3 Non-advanced adenomas,60.8652547475628,M,Non-advanced adenoma (<3),65 or under,test
+821184,5a. <3 Non-advanced adenomas,66.94884042652168,F,Non-advanced adenoma (<3),over 70,train
+267240,5c. Advanced adenoma,59.7438650580092,F,Negative,over 70,test
+550866,3. Non neoplastic findings,62.540424261632246,M,Non-advanced adenoma (>=3),over 70,train
+512165,1. Negative,65.54142687197775,F,Non-advanced adenoma (<3),65 or under,train
+945467,"2a. FOBT+, no colonoscopy",75.22044769690937,M,Negative,over 70,test
+976620,5a. <3 Non-advanced adenomas,76.53145892948235,F,Non-advanced serrated/other lesions,over 70,test
+759037,3. Non neoplastic findings,58.61736204281648,M,Negative,65 or under,train
+215419,1. Negative,75.61954534276255,F,no colonoscopy,over 70,train
+518640,5a. <3 Non-advanced adenomas,64.80300044602568,M,Non-advanced serrated/other lesions,65 or under,train
+181789,5b. >= 3 Non-advanced adenomas,76.75126376149873,F,Advanced adenoma,over 70,train
+451832,5c. Advanced adenoma,73.62435229139622,M,Non-advanced adenoma (<3),65 or under,train
+180265,5c. Advanced adenoma,68.5311813378193,F,Negative,65 or under,train
+911261,6. Cancer,76.09469448709474,M,Non-advanced adenoma (>=3),over 70,train
+632505,3. Non neoplastic findings,72.53419716055078,F,Negative,65 or under,train
+111369,5c. Advanced adenoma,76.94621146947115,M,Negative,65 or under,train
+709085,5b. >= 3 Non-advanced adenomas,60.62212609954542,M,Negative,65 or under,train
+625105,5a. <3 Non-advanced adenomas,70.21169391270895,M,Negative,65-70,train
+100156,5a. <3 Non-advanced adenomas,60.029425419765715,F,Non-advanced adenoma (<3),65 or under,test
+480796,3. Non neoplastic findings,58.10732427963414,F,Non-advanced adenoma (>=3),65 or under,train
