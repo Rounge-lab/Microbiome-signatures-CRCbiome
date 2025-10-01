@@ -1,0 +1,201 @@
+Model	Resid. df	Resid. Dev	Test	   Df	LR stat.	Pr(Chi)	var_id	model_complexity
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	Alko	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2304.5660171479876	1 vs 2	6	14.480237706021398	0.024708295035361205	Alko	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Alko	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2219.2854486493566	1 vs 2	6	14.352891932269813	0.025933211107920462	Alko	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Arbeid_lump	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2474.331759553736	1 vs 2	6	15.726175561241234	0.01530164653870758	Arbeid_lump	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Arbeid_lump	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2219.3075578712014	1 vs 2	6	14.330782710424955	0.026151672007750926	Arbeid_lump	standard_model
+senter + age_invitation + kjonn	2814	2306.5044702684627		NA	NA	NA	BMI	host_assoc_model
+value + senter + age_invitation + kjonn	2808	2291.12689492144	1 vs 2	6	15.377575347022685	0.01751479955620716	BMI	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2222.6058987750685		NA	NA	NA	BMI	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2742	2210.764308999803	1 vs 2	6	11.841589775265675	0.06559749272095883	BMI	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Blindtarm	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2477.7098265132563	1 vs 2	6	12.348108601720924	0.05463852655613488	Blindtarm	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Blindtarm	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2225.5163067706944	1 vs 2	6	8.122033810931953	0.22929847346390142	Blindtarm	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Bowel_disorder_merged	host_assoc_model
+value + senter + age_invitation + kjonn	3018	2466.577619760255	1 vs 2	15	23.48031535472228	0.07446067769829956	Bowel_disorder_merged	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Bowel_disorder_merged	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2739	2213.015509570702	1 vs 2	15	20.62283101092453	0.14931894183742522	Bowel_disorder_merged	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	Ca	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2309.5320495292553	1 vs 2	6	9.514205324753675	0.1466573742005821	Ca	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Ca	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2225.083355635718	1 vs 2	6	8.554984945908473	0.2001951024094728	Ca	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	Energi_kcal	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2311.082955875547	1 vs 2	6	7.963298978461808	0.2408044702210339	Energi_kcal	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Energi_kcal	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2224.706862598483	1 vs 2	6	8.931477983143395	0.1774685335996078	Energi_kcal	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	FISK_modified	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2313.955840414588	1 vs 2	6	5.090414439421238	0.5322702682128715	FISK_modified	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	FISK_modified	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2230.047453362432	1 vs 2	6	3.5908872191944283	0.7318409038823889	FISK_modified	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	FRUKTB_modified	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2314.2171475132336	1 vs 2	6	4.829107340775408	0.5659109968228413	FRUKTB_modified	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	FRUKTB_modified	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2231.0853195467353	1 vs 2	6	2.553021034891117	0.8624872130912347	FRUKTB_modified	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	Fiber	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2310.735080183721	1 vs 2	6	8.311174670287983	0.21618068534210222	Fiber	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Fiber	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2229.7817622911775	1 vs 2	6	3.8565782904488515	0.696077966883597	Fiber	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	GRSAK_modified	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2312.800835926127	1 vs 2	6	6.2454189278819285	0.3962672644813341	GRSAK_modified	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	GRSAK_modified	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2229.4534843130496	1 vs 2	6	4.184856268576823	0.6516762397452701	GRSAK_modified	standard_model
+senter + age_invitation + kjonn	2817	2312.2185855888147		NA	NA	NA	Høyde	host_assoc_model
+value + senter + age_invitation + kjonn	2811	2301.175317466738	1 vs 2	6	11.043268122076825	0.08704834851978271	Høyde	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2229.071220812794		NA	NA	NA	Høyde	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2745	2220.4899265928743	1 vs 2	6	8.581294219919528	0.198530867507423	Høyde	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	MILK	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2315.356429188437	1 vs 2	6	3.6898256655722435	0.7185665539031219	MILK	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	MILK	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2229.757514683699	1 vs 2	6	3.8808258979274797	0.6928000338037553	MILK	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Nasj_cat2	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2474.7201943461455	1 vs 2	6	15.337740768831736	0.017786393971431225	Nasj_cat2	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Nasj_cat2	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2222.1549993851504	1 vs 2	6	11.483341196475976	0.07453856196345798	Nasj_cat2	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	OST	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2307.81710899191	1 vs 2	6	11.229145862098903	0.08154737613957375	OST	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	OST	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2221.273698200588	1 vs 2	6	12.364642381038266	0.05431127478671394	OST	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	PPI_antacids_reg_quest_comb	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2512.874531925553	1 vs 2	3	18.820931842604296	2.9772391558036126e-4	PPI_antacids_reg_quest_comb	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	PPI_antacids_reg_quest_comb	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2221.717662596884	1 vs 2	3	11.92067798474227	0.007659882985829758	PPI_antacids_reg_quest_comb	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	PROKJOT_red	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2308.5871771470815	1 vs 2	6	10.459077706927474	0.10660345243739267	PROKJOT_red	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	PROKJOT_red	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2217.9378650999365	1 vs 2	6	15.700475481689864	0.015455195534496147	PROKJOT_red	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	PhysAct_Score	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2472.2188812068885	1 vs 2	6	17.839053908088772	0.006647249946978184	PhysAct_Score	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	PhysAct_Score	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2224.3851924835626	1 vs 2	6	9.253148098063775	0.1598337435287297	PhysAct_Score	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	ROKJOT_nonproc	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2316.0665041655643	1 vs 2	6	2.9797506884447102	0.8113840136581217	ROKJOT_nonproc	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	ROKJOT_nonproc	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2229.1943628059635	1 vs 2	6	4.4439777756629155	0.6168236538470633	ROKJOT_nonproc	standard_model
+senter + age_invitation + kjonn	2823	2319.046254854009		NA	NA	NA	SABR_S	host_assoc_model
+value + senter + age_invitation + kjonn	2817	2306.11701248593	1 vs 2	6	12.92924236807903	0.04417344584090532	SABR_S	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	SABR_S	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2224.9908167304584	1 vs 2	6	8.647523851167989	0.19439285562803177	SABR_S	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Sivilstatus_cat2	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2487.559645280641	1 vs 2	6	2.498289834336447	0.8686590111548931	Sivilstatus_cat2	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Sivilstatus_cat2	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2228.5341331457544	1 vs 2	6	5.104207435872013	0.5305189959739568	Sivilstatus_cat2	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Smoking	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2479.76076782721	1 vs 2	6	10.297167287767024	0.11268267040183733	Smoking	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2760	2243.8886489651964		NA	NA	NA	Smoking	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816287	1 vs 2	6	10.250308383567699	0.114499098578829	Smoking	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Snus	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2486.63175705308	1 vs 2	6	3.4261780618971898	0.7537640695975188	Snus	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Snus	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2229.1251793552765	1 vs 2	6	4.513161226349894	0.6075842601368288	Snus	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Tarmkreft_Familie	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2487.9805634937916	1 vs 2	6	2.077371621185648	0.9124468958195261	Tarmkreft_Familie	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	Tarmkreft_Familie	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2231.1766644895056	1 vs 2	6	2.461676092120797	0.872731824089373	Tarmkreft_Familie	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	Utdanning	host_assoc_model
+value + senter + age_invitation + kjonn	3024	2478.4424107392256	1 vs 2	9	11.615524375751647	0.23586191811609036	Utdanning	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2763	2239.978414903855		NA	NA	NA	Utdanning	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816287	1 vs 2	9	6.340074322226428	0.7054585228314378	Utdanning	standard_model
+senter + kjonn	3093	2541.391356014836		NA	NA	NA	age_invitation	host_assoc_model
+value + senter + kjonn	3087	2531.148559034541	1 vs 2	6	10.242796980295225	0.1147926918394524	age_invitation	host_assoc_model
+senter + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2757	2241.2046923199546		NA	NA	NA	age_invitation	standard_model
+value + senter + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2231.807219355292	1 vs 2	6	9.397472964662484	0.15242739076042477	age_invitation	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	antibiotics_reg_quest_comb	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2525.4456738527288	1 vs 2	3	6.249789915428664	0.1000700395892955	antibiotics_reg_quest_comb	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD	2757	2240.5055178964817		NA	NA	NA	antibiotics_reg_quest_comb	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD	2754	2233.6383405816273	1 vs 2	3	6.867177314854416	0.07625396273473195	antibiotics_reg_quest_comb	standard_model
+senter + age_invitation + kjonn	3033	2490.0579351149772		NA	NA	NA	bowel_disorder_merged_2	host_assoc_model
+value + senter + age_invitation + kjonn	3027	2473.1483815211036	1 vs 2	6	16.909553593873625	0.009621459487442974	bowel_disorder_merged_2	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	bowel_disorder_merged_2	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2218.4641700677757	1 vs 2	6	15.17417051385064	0.018944467759847483	bowel_disorder_merged_2	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	colo_IBD	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2528.751361752245	1 vs 2	3	2.944102015912449	0.4003240832586721	colo_IBD	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + antibiotics_reg_quest_comb	2757	2240.903237337785		NA	NA	NA	colo_IBD	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + antibiotics_reg_quest_comb	2754	2233.6383405816305	1 vs 2	3	7.264896756154485	0.06391715143008314	colo_IBD	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	colo_diverticulitis	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2526.9681286580085	1 vs 2	3	4.7273351101489425	0.19288697005440714	colo_diverticulitis	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	colo_diverticulitis	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2231.021545414791	1 vs 2	3	2.6167951668353453	0.4545527422613984	colo_diverticulitis	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	colo_hemorrhoids	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2521.265198684313	1 vs 2	3	10.43026508384446	0.015241488164327466	colo_hemorrhoids	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_IBD + antibiotics_reg_quest_comb	2757	2242.2188103244835		NA	NA	NA	colo_hemorrhoids	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_IBD + antibiotics_reg_quest_comb	2754	2233.638340581631	1 vs 2	3	8.580469742852529	0.035421485158911414	colo_hemorrhoids	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	detect_worthy_lesions	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2521.300744198279	1 vs 2	3	10.394719569878362	0.015492348960506552	detect_worthy_lesions	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	detect_worthy_lesions	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2221.1869759697465	1 vs 2	3	12.451364611879853	0.005986582004186114	detect_worthy_lesions	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	final_result	host_assoc_model
+value + senter + age_invitation + kjonn	3072	2502.756155557177	1 vs 2	18	28.93930821098047	0.04912587029042215	final_result	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	final_result	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2736	2209.5575912615595	1 vs 2	18	24.080749320066843	0.15240006301287468	final_result	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	final_result_cat_neg	host_assoc_model
+value + senter + age_invitation + kjonn	3078	2514.4356231298416	1 vs 2	12	17.259840638315836	0.14008163228090809	final_result_cat_neg	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	final_result_cat_neg	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2742	2214.8703666950178	1 vs 2	12	18.767973886608615	0.09428389024029027	final_result_cat_neg	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	first_round	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2527.62775504562	1 vs 2	3	4.067708722537645	0.25424502043528263	first_round	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	first_round	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2230.60279952163	1 vs 2	3	3.035541059996376	0.38617783851565557	first_round	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	fobt_verdi	host_assoc_model
+value + senter + age_invitation + kjonn	3084	2530.0213715472933	1 vs 2	6	1.6740922208641678	0.9471038170136475	fobt_verdi	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	fobt_verdi	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2231.0688783283786	1 vs 2	6	2.5694622532478206	0.86061417132413	fobt_verdi	standard_model
+senter + age_invitation	3093	2548.4297423187595		NA	NA	NA	kjonn	host_assoc_model
+value + senter + age_invitation	3090	2531.695463768156	1 vs 2	3	16.73427855060345	8.014718441956559e-4	kjonn	host_assoc_model
+senter + age_invitation + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2757	2249.0075330371615		NA	NA	NA	kjonn	standard_model
+value + senter + age_invitation + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.638340581628	1 vs 2	3	15.369192455533266	0.0015268452697320134	kjonn	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	runde	host_assoc_model
+value + senter + age_invitation + kjonn	3084	2525.6934192029785	1 vs 2	6	6.002044565178949	0.4229610861149107	runde	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	runde	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2228.8887975919747	1 vs 2	6	4.7495429896516725	0.5763137725147114	runde	standard_model
+age_invitation + kjonn	3093	2543.916337274746		NA	NA	NA	senter	host_assoc_model
+value + age_invitation + kjonn	3090	2531.6954637681574	1 vs 2	3	12.22087350658876	0.0066635982140111905	senter	host_assoc_model
+age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2757	2237.6117064196715		NA	NA	NA	senter	standard_model
+value + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264	1 vs 2	3	3.9733658380450834	0.26435453794949415	senter	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symptoms_GI_related_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3084	2528.8764939096186	1 vs 2	6	2.8189698585388214	0.8312009323836005	symptoms_GI_related_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symptoms_GI_related_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2231.8566975343265	1 vs 2	6	1.7816430472998945	0.9386459023647861	symptoms_GI_related_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symptoms_overall_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3084	2527.8283836076016	1 vs 2	6	3.8670801605558154	0.6946584290850732	symptoms_overall_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symptoms_overall_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2748	2230.8639376452593	1 vs 2	6	2.774402936367096	0.8365821423494867	symptoms_overall_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_annet_se_fritekst_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2529.8609271380005	1 vs 2	3	1.8345366301568902	0.6074483711955683	symtomduration_annet_se_fritekst_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_annet_se_fritekst_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2232.7913205247282	1 vs 2	3	0.8470200568981454	0.838190497957921	symtomduration_annet_se_fritekst_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_diare_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2522.5027186660154	1 vs 2	3	9.192745102141998	0.026835022004828013	symtomduration_diare_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_diare_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2226.521948048838	1 vs 2	3	7.116392532788268	0.06827903655951573	symtomduration_diare_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_endrede_avforingsvaner_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2531.064357187715	1 vs 2	3	0.6311065804425198	0.8892757515529496	symtomduration_endrede_avforingsvaner_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_endrede_avforingsvaner_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2233.3606864657554	1 vs 2	3	0.27765411587097333	0.9641748505006174	symtomduration_endrede_avforingsvaner_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_luftplager_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2529.7341239496177	1 vs 2	3	1.9613398185397273	0.5804694176416063	symtomduration_luftplager_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_luftplager_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2231.8528361310905	1 vs 2	3	1.785504450535882	0.6180943988140741	symtomduration_luftplager_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_obstipasjon_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2526.5069811639905	1 vs 2	3	5.188482604166893	0.15850447912625898	symtomduration_obstipasjon_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_obstipasjon_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2228.728807572403	1 vs 2	3	4.909533009223196	0.17854271194060822	symtomduration_obstipasjon_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_smerter_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2523.7730344511383	1 vs 2	3	7.922429317019123	0.04764235849998877	symtomduration_smerter_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_smerter_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2227.4773249604727	1 vs 2	3	6.161015621153638	0.10403390980943716	symtomduration_smerter_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_synlig_blod_i_avforingen_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2531.090670784018	1 vs 2	3	0.6047929841392943	0.8953342578688595	symtomduration_synlig_blod_i_avforingen_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_synlig_blod_i_avforingen_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2232.6255469192943	1 vs 2	3	1.0127936623321148	0.7981563071135532	symtomduration_synlig_blod_i_avforingen_cat	standard_model
+senter + age_invitation + kjonn	3090	2531.6954637681574		NA	NA	NA	symtomduration_vekslende_avforing_cat	host_assoc_model
+value + senter + age_invitation + kjonn	3087	2531.180095413739	1 vs 2	3	0.5153683544185697	0.9155023088538377	symtomduration_vekslende_avforing_cat	host_assoc_model
+senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2754	2233.6383405816264		NA	NA	NA	symtomduration_vekslende_avforing_cat	standard_model
+value + senter + age_invitation + kjonn + wcrf_index_main + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2233.1629674991887	1 vs 2	3	0.47537308243772713	0.9242675529487314	symtomduration_vekslende_avforing_cat	standard_model
+senter + age_invitation + kjonn	2817	2314.827955423364		NA	NA	NA	wcrf_index_main	host_assoc_model
+value + senter + age_invitation + kjonn	2811	2289.6456345674023	1 vs 2	6	25.182320855961734	3.1590488888821877e-4	wcrf_index_main	host_assoc_model
+senter + age_invitation + kjonn + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2757	2245.463647250444		NA	NA	NA	wcrf_index_main	standard_model
+value + senter + age_invitation + kjonn + Smoking + Utdanning + colo_hemorrhoids + colo_IBD + antibiotics_reg_quest_comb	2751	2224.703442893556	1 vs 2	6	20.760204356888153	0.002025731120414598	wcrf_index_main	standard_model
