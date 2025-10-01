@@ -2,7 +2,7 @@
 
 # env ---------------------------------------------------------------------
 
-setwd("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/development/einar/main_repo/crcbiome_2023/")
+setwd("")
 
 library(tidyverse)
 library(pROC)
@@ -14,6 +14,8 @@ library(gt)
 library(gtsummary)
 library(ggpubr)
 library(cowplot)
+library(ggstats)
+library(paletteer)
 
 
 # set variables -----------------------------------------------------------
