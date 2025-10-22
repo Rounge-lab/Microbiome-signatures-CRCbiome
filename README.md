@@ -7,7 +7,7 @@ Some calls to perform analyses is commented out, but scripts are available. This
 
 Code for conducting classification is provided as a snakemake workflow, organized in the snakefile `workflow/classification.smk`. To run this, it is necessary to prep datasets using the `prep_ml_datasets.R` script, which is found in `scripts/analyses/`. Running the snakemake pipeline will carry out the analyses defined in `data/models.tsv`, requires installation of snakemake, with package handling using conda (the software requirements for running the R-encoded scripts are defined in `workflow/envs/tidymodels.yaml`).
 
-The code has been run using Linux CentOS on an HPC system, with sufficient resources to carry out the analyses in a reasonable amount of time. 
+The code has been run using Linux Red Hat (v9.6) on an HPC system, with sufficient resources to carry out the analyses in a reasonable amount of time. 
 
 
 [medrxiv]: https://www.medrxiv.org/content/10.1101/2025.10.06.25336873v1
