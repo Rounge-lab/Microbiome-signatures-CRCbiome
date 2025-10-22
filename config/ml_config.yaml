@@ -1,0 +1,56 @@
+dataset_folder: data/ml-datasets/
+model_list: data/models.tsv
+
+n_iter: 50
+
+min_feature_frac: 4
+max_feature_frac: 102
+
+n_sample_fractions: 20
+min_sample_fraction: 0.2
+
+## The order of steps defined here gives the order of steps conducted in prepping
+ml_params:
+  rf:
+    steps:
+  svm:
+    steps:
+      step_normalize: TRUE
+      step_dummy: TRUE
+  lasso:
+    steps:
+      step_normalize: TRUE
+      step_dummy: TRUE
+  xgb:
+    steps:
+      step_dummy: TRUE
+  nnet:
+    steps:
+      step_normalize: TRUE
+      step_dummy: TRUE
+  log_reg:
+    steps:
+  secondary_lr:
+    steps:
+      step_impute_median_mode: TRUE
+      step_dummy: TRUE
+
+target_var:
+  name: target
+  ref_level: negative
+
+dataset_proc_steps:
+  default:
+    step_impute_median_mode: TRUE
+    step_dummy: TRUE
+    step_adasyn:
+      over_ratio: 0.50
+    # step_prevalence:
+    #   min_p: 0.7
+    #   max_p: 1
+    # step_select_forests:
+    #   top_p: 100
+    step_nzv:
+      unique_cut: 30
+      freq_cut: 19
+    

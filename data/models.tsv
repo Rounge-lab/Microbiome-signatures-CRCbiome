@@ -65,14 +65,6 @@ hum-kegg-neg-v-aa-serr-crc	read-based	outcome-strat	False	rf
 hum-kegg-neg-v-crc	read-based	outcome-strat	False	rf
 hum-kegg-neg-v-naa-aa-serr-crc	read-based	outcome-strat	False	rf
 hum-kegg-neg-v-serr	read-based	outcome-strat	False	rf
-CRCbiome_CRC_advad_v_norm	read-based	LODO-internal	False	rf
-CRCbiome_CRC_v_norm_clean	read-based	LODO-internal	False	rf
-CRCbiome_full	read-based	LODO-internal	False	rf
-none	read-based	LODO-external	False	rf
-None	read-based	LODO-external	False	rf
-ThomasAM_2018a	read-based	LODO-external	False	rf
-ThomasAM_2018b	read-based	LODO-external	False	rf
-lee	read-based	LODO-external	False	rf
 hum-kegg	read-based	base	False	lasso
 hum-kegg-lididem	read-based	base	False	lasso
 lididem	other	base	False	lasso

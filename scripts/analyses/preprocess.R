@@ -17,7 +17,7 @@ preprocess_input_data <- function() {
   prior_samples <- read_tsv("data/input_preprocessed/screening/20221108_FIT_prior_samples.tsv")
   
   first_round_invitation <- 
-    read_csv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/RAW/screening/mb_screening_all_rounds_2021-12-08.csv", 
+    read_csv("data/input_preprocessed/screening/mb_screening_all_rounds_2021-12-08.csv", 
              col_types = cols()) %>% 
     filter(runde == 1)
   
@@ -30,7 +30,7 @@ preprocess_input_data <- function() {
   diet_data <- read_rds("data/input_preprocessed/diet/241122_diet_proc.rds") %>% 
     tibble()
   
-  lesions_data <- read_csv("/tsd/p1068/data/durable/007-f_smei/001-trro/CRCbiome/RAW/screening/2021_10/mb_lesions_2021-10-15.csv")
+  lesions_data <- read_csv("data/input_preprocessed/screening/mb_lesions_2021-10-15.csv")
   lesions_size_data <- read_csv("data/input_preprocessed/Lesions_count_final.csv", col_types = cols()) %>% 
     select(diameter, Polyp_vol, deltaker_id, lesionno)
   
@@ -41,9 +41,8 @@ preprocess_input_data <- function() {
            sum_proximal_polyp_volume = TotVol_Proximal,
            sum_distal_polyp_volume = TotVol_Distal)
   
-  # screening_unproc <- read_csv("/tsd/p1068/data/durable/001-trro/CRCbiome/RAW/screening/2021_10/mb_screening_2021-10-15.csv")
   
-  ## WCRF - Already excluded those with low quality questionnaires. Also excluded stage IV cancers (n = 2)
+  ## WCRF - Already excluded those with low quality questionnaires. 
   diet_wcrf <- read_csv2("data/input_preprocessed/diet/151222_wcrf_proc_CRCbiome.csv")
   
   ## energy-adjusted foodgroups
@@ -149,7 +148,7 @@ preprocess_input_data <- function() {
   median_coverage_genomes <- read_tsv("data/input_preprocessed/metagenome/median_coverage_genomes.tsv")
   raw_counts_genomes <- read_tsv("data/input_preprocessed/metagenome/raw_counts_genomes.tsv")
   
-  mags_taxonomy_db_metadata <- read_tsv("/ess/p1068/cluster/databases/atlas_db/GTDB_V05/metadata/genome_metadata.tsv") %>% 
+  mags_taxonomy_db_metadata <- read_tsv("data/input_preprocessed/metagenome/genome_metadata.tsv") %>% 
     select(accession, ncbi_taxid, ncbi_taxonomy) %>% 
     rename(taxonomy_id = ncbi_taxid)
   
@@ -172,8 +171,6 @@ preprocess_input_data <- function() {
     left_join(mags_taxonomy_db_metadata)
   
   
-  ## MAG eggnog - full
-  # MAG_eggnog <- read_tsv("data/input_preprocessed/metagenome/MAG_eggnog.tsv")
   ## MAG eggnog - COGs
   MAG_COG <- read_tsv("data/input_preprocessed/metagenome/MAG_COGs.tsv")
   ## MAG GO
@@ -185,9 +182,6 @@ preprocess_input_data <- function() {
   ## Bracken
   bracken_reads <- read_tsv("data/input_preprocessed/metagenome/bracken_reads.tsv")
   bracken_relabund <- read_tsv("data/input_preprocessed/metagenome/bracken_rel_abund.tsv")
-  
-  ## Viruses
-  viral_abundance <- read_tsv("data/input_preprocessed/metagenome/coverage_table_min75.tsv")
   
   ## Pathways
   pathway_abundance <- read_tsv("data/input_preprocessed/metagenome/pathabundance.tsv")
@@ -219,19 +213,11 @@ preprocess_input_data <- function() {
   kegg <- import_genedata("data/input_preprocessed/metagenome/KEGG_orthogroups.tsv")
   go <- import_genedata("data/input_preprocessed/metagenome/go.tsv")
   l4ec <- import_genedata("data/input_preprocessed/metagenome/l4ec.tsv")
-  ## Need different input function for genefamilies - too big for dplyr.
-  # genefamilies <- import_genedata("data/input_preprocessed/metagenome/genefamilies.tsv")
   
   ## Annotation of ko's
   ko_annotation <- read_rds("data/input_preprocessed/metagenome/KO_function_annotation.Rds") %>% tibble()
   ko_annotation_h <- read_tsv("data/input_preprocessed/metagenome/humann_rerun/map_ko_name.txt", col_names = FALSE) %>% 
     dplyr::rename(ko_id = 1, ko_name = 2)
-  
-  # ko_annotation_h %>% 
-  #   full_join(ko_annotation) %>% 
-  #   mutate(a = is.na(KO_Name),
-  #          b = is.na(KO_name)) %>% 
-  #   count(a,b)
   
   ko_annotation %>% 
     write_tsv("data/input_processed/ko_annotations_w_brite.tsv")
@@ -253,8 +239,6 @@ preprocess_input_data <- function() {
   kegg <- import_genedata("data/input_preprocessed/metagenome/humann_rerun/ko_no_tax.tsv")
   go <- import_genedata("data/input_preprocessed/metagenome/humann_rerun/go_no_tax.tsv")
   l4ec <- import_genedata("data/input_preprocessed/metagenome/humann_rerun/level4ec_no_tax.tsv")
-  ## Need different input function for genefamilies - too big for dplyr.
-  # genefamilies <- import_genedata("data/input_preprocessed/metagenome/genefamilies.tsv")
   
   
   pathways %>% write_rds("data/input_processed/humann_rerun/pathways.Rds")
@@ -276,20 +260,6 @@ preprocess_input_data <- function() {
   
   n_humann_annotations %>% 
     write_tsv("data/input_processed/humann_rerun/n_humann_annotations.tsv")
-  
-  # tmp <-
-  #   pathways %>% 
-  #   pivot_longer(-sample_id, values_to = "orig_pw") %>% 
-  #   left_join(pathways_2 %>% 
-  #               pivot_longer(-sample_id, values_to = "new_pw"))
-  # 
-  # tmp %>% 
-  #   filter(name %in% tmp$name[!is.na(tmp$new_pw)][1:16]) %>% 
-  #   ggplot(aes(x = orig_pw, y = new_pw)) +
-  #   geom_point() +
-  #   facet_wrap(~name) +
-  #   geom_abline(slope = 1, intercept = 0)
-  
   
   # sample_meta -------------------------------------------------------------
   
@@ -366,18 +336,6 @@ preprocess_input_data <- function() {
     select(deltaker_id, locX, locY, lesion_diag, segment, segment_id, side_processed, diameter, polyp_volume = Polyp_vol) %>% 
     write_tsv("data/input_processed/lesion_locs.tsv")
   
-    # count(final_result, fin_res) %>% 
-    # pivot_wider(names_from = fin_res, values_from = n, values_fill = 0)
-    # group_by(deltaker_id) %>% 
-    # mutate(any_adv_serr = any(adv_serrated_lesion)) %>% 
-    # ungroup() %>% 
-    # filter(str_detect(final_result, "^5d."), !any_adv_serr) %>% 
-    # View()
-    # count(deltaker_id, adv_serrated_lesion, final_result) %>%
-    # pivot_wider(names_from = adv_serrated_lesion, values_from = n, values_fill = 0) %>%
-    # View()
-    
-  
   # lifestyle ---------------------------------------------------------------
   
   lifestyle_data %>%
@@ -432,7 +390,7 @@ preprocess_input_data <- function() {
   # antibiotics -------------------------------------------------------------
 
   antibiotics_filtered_from_Sandra <- 
-    read_rds("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/papers/Microbiome_stability/datasets/metadata/antibiotics/Antibiotics_filtered_fromSandra.rds") %>% 
+    read_rds("data/input_preprocessed/Antibiotics_filtered_fromSandra.rds") %>% 
     tibble() %>% 
     select(-any_of(names(screening_data %>% select(-deltaker_id))))
   
@@ -477,12 +435,8 @@ preprocess_input_data <- function() {
 
   # PPI ---------------------------------------------------------------------
 
-  lmr_crcbiome <- read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv")
-  lmr_key_crcbiome <- read_csv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/crcbiome_lmr_nokkel_2022-06-15.csv")
-  
-  # lmr_crcbiome %>% 
-  #   count(Legemiddel_ATCkode_Niva5) %>% 
-  #   filter(str_detect(Legemiddel_ATCkode_Niva5, "^A0(1|2)"))  
+  lmr_crcbiome <- read_csv2("data/input_preprocessed/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv")
+  lmr_key_crcbiome <- read_csv("data/input_preprocessed/lmr/crcbiome_lmr_nokkel_2022-06-15.csv")
   
   get_PPI <- function(only_PPI = FALSE) {
     
@@ -538,10 +492,10 @@ preprocess_input_data <- function() {
     write_tsv("data/input_processed/PPI_data.tsv")
   
   
-  lmr_key_crcbiome <- read_csv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/crcbiome_lmr_nokkel_2022-06-15.csv")
+  lmr_key_crcbiome <- read_csv("data/input_preprocessed/lmr/crcbiome_lmr_nokkel_2022-06-15.csv")
   
   lmr_crcbiome <- 
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv") %>% 
+    read_csv2("data/input_preprocessed/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv") %>% 
     mutate(Utlevering_ArManed = as.Date(paste0(Utlevering_ArManed, "-15"))) %>% 
     left_join(lmr_key_crcbiome, by = "lmr_kobling_id") %>% 
     left_join(screening_data %>% select(deltaker_id, fobt_investigation_date, mb_invitert_dato), by = "deltaker_id") %>% 
@@ -549,7 +503,7 @@ preprocess_input_data <- function() {
     mutate(months_since_invitation = as.double(round((Utlevering_ArManed - fobt_investigation_date)/(365.25/12), 1)))
   
   lmr_crcbiome_bcsn_invit <-
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv", 
+    read_csv2("data/input_preprocessed/lmr/62_161_uttrekksfil_2023-10-26T16.24.21.csv", 
               col_types = cols()) %>% 
     mutate(Utlevering_ArManed = as.Date(paste0(Utlevering_ArManed, "-15"))) %>% 
     left_join(lmr_key_crcbiome, by = "lmr_kobling_id") %>% 
@@ -560,19 +514,19 @@ preprocess_input_data <- function() {
     mutate(months_since_invitation = as.double(round((Utlevering_ArManed - postlagt_dato)/(365.25/12), 1)))
   
   ## Mock invitation dates for population control group
-  pop_mock_invitations_crcbiome_matched <- read_tsv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/mock_invitations_pop_control_crcbiome_matched.tsv")
-  pop_mock_invitations_screen_rep <- read_tsv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/mock_invitations_pop_control_screen_rep.tsv")
+  pop_mock_invitations_crcbiome_matched <- read_tsv("data/input_preprocessed/lmr/mock_invitations_pop_control_crcbiome_matched.tsv")
+  pop_mock_invitations_screen_rep <- read_tsv("data/input_preprocessed/lmr/mock_invitations_pop_control_screen_rep.tsv")
   
   
   lmr_pop_screen_rep <- 
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_169_uttrekksfil_2023-11-02T11.22.29.csv") %>% 
+    read_csv2("data/input_preprocessed/lmr/62_169_uttrekksfil_2023-11-02T11.22.29.csv") %>% 
     mutate(Utlevering_ArManed = as.Date(paste0(Utlevering_ArManed, "-15"))) %>% 
     left_join(pop_mock_invitations_screen_rep %>% select(-c(Pasient_Fodselsar, Pasient_Kjonn_Verdi)), by = "PID") %>% 
     select(id = PID, everything()) %>% 
     mutate(months_since_invitation_scr_rep = as.integer(round((Utlevering_ArManed - mock_invitation_date_screening_rep)/(365.25/12), 1))) #%>% 
   
   lmr_pop_crcbiome_match <- 
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_169_uttrekksfil_2023-11-02T11.22.29.csv") %>% 
+    read_csv2("data/input_preprocessed/lmr/62_169_uttrekksfil_2023-11-02T11.22.29.csv") %>% 
     mutate(Utlevering_ArManed = as.Date(paste0(Utlevering_ArManed, "-15"))) %>% 
     inner_join(pop_mock_invitations_crcbiome_matched %>% select(-c(Pasient_Fodselsar, Pasient_Kjonn_Verdi, crcbiome_match)), by = "PID", relationship = "many-to-many") %>% 
     select(id = unique_resampling_id, -PID, everything()) %>% 
@@ -580,12 +534,12 @@ preprocess_input_data <- function() {
   
   ## Invitation dates and screening center for BCSN participants
   bcsn_invitation_data <- 
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/crcbiome_lmr_kontrollgruppe_data_tillegg_avid.csv") %>% 
-    left_join(read_csv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/crcbiome_lmr_kontrollgruppe_fylke_avid.csv"), by = "PID")
+    read_csv2("data/input_preprocessed/lmr/crcbiome_lmr_kontrollgruppe_data_tillegg_avid.csv") %>% 
+    left_join(read_csv("data/input_preprocessed/lmr/crcbiome_lmr_kontrollgruppe_fylke_avid.csv"), by = "PID")
   
   ## LMR data for BCSN participants
   lmr_BSCN <- 
-    read_csv2("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/62_162_uttrekksfil_2023-10-26T16.25.53.csv") %>% 
+    read_csv2("data/input_preprocessed/lmr/62_162_uttrekksfil_2023-10-26T16.25.53.csv") %>% 
     mutate(Utlevering_ArManed = as.Date(paste0(Utlevering_ArManed, "-15"))) %>%
     left_join(bcsn_invitation_data, by = "PID") %>%
     select(id = PID, everything()) %>%
@@ -635,7 +589,6 @@ preprocess_input_data <- function() {
   
   crcbiome_screening_rep_comorbid_prescriptions <-
     lmr_crcbiome_bcsn_invit  %>%
-    # filter(crcbiome_consent %in% 1) %>% 
     summarize_lmr_comorbid_data(n_months = 12, id_dataset = screening_data %>% select(id = deltaker_id)) %>% 
     pivot_longer(-id, names_to = "drug_cat", values_to = "prescribed") %>% 
     mutate(within = "12 months") %>% 
@@ -667,7 +620,6 @@ preprocess_input_data <- function() {
                                        arm == "S" ~ "Sigmoidoscopy"),
                        age = year(postlagt_dato1) - fodselsaar) %>% 
                 select(-c(kjonn, fodselsaar, crcbiome_consent, crcbiome_colonoscopy, postlagt_dato1)),
-              # select(id, age), 
               by = join_by(id))
   
   bcsn_comorbid_prescriptions <-
@@ -688,41 +640,8 @@ preprocess_input_data <- function() {
                                        arm == "S" ~ "Sigmoidoscopy"),
                        age = year(postlagt_dato1) - fodselsaar) %>% 
                 select(-c(kjonn, fodselsaar, crcbiome_consent, crcbiome_colonoscopy, postlagt_dato1)),
-              # select(id, age), 
               by = join_by(id))
 
-  # bcsn_comorbid_prescriptions <-
-  #   lmr_BSCN  %>%
-  #   summarize_lmr_comorbid_data(n_months = 12, id_dataset = bcsn_invitation_data %>% select(id = PID)) %>% 
-  #   pivot_longer(-id, names_to = "drug_cat", values_to = "prescribed") %>% 
-  #   mutate(within = "12 months") %>% 
-  #   bind_rows(lmr_BSCN %>% 
-  #               summarize_lmr_comorbid_data(n_months = 24, id_dataset = bcsn_invitation_data %>% select(id = PID)) %>% 
-  #               pivot_longer(-id, names_to = "drug_cat", values_to = "prescribed") %>% 
-  #               mutate(within = "24 months")) %>% 
-  #   left_join(bcsn_invitation_data %>% 
-  #               select(id = PID, everything()) %>% 
-  #               left_join(lmr_BSCN %>% 
-  #                           select(id, Pasient_Fodselsar, sex = Pasient_Kjonn_Verdi) %>% 
-  #                           distinct(), by = "id") %>% 
-  #               mutate(age = year(postlagt_dato1)-Pasient_Fodselsar) %>% 
-  #               select(id, age, sex),
-  #             by = "id") %>% 
-  #   mutate(sex = case_when(sex == 1 ~ "Male",
-  #                          sex == 2 ~ "Female")) %>% 
-  #   select(-age) %>% 
-  #   left_join(read_csv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/datasets/lmr/crcbiome_lmr_kontrollgruppe_fylke_avid.csv") %>%
-  #               left_join(bcsn_invitation_data, by = "PID") %>% 
-  #               select(id = PID, everything()) %>% 
-  #               mutate(sex = case_when(kjonn == "F" ~ "Female",
-  #                                      kjonn == "M" ~ "Male"),
-  #                      arm = case_when(arm == "F" ~ "FIT",
-  #                                      arm == "S" ~ "Sigmoidoscopy"),
-  #                      age = year(postlagt_dato1) - fodselsaar) %>% 
-  #               select(-c(kjonn, fodselsaar, crcbiome_consent, crcbiome_colonoscopy, postlagt_dato1)),
-  #               # select(id, age), 
-  #             by = join_by(id)) %>% 
-  #     select(-c(fodselsaar, crcbiome_consent, crcbiome_colonoscopy))
   
   ## Use date for screening representative population
   pop_comorbid_prescriptions_scr_rep <-
@@ -744,27 +663,6 @@ preprocess_input_data <- function() {
     mutate(sex = case_when(sex == 1 ~ "Male",
                            sex == 2 ~ "Female"))
   
-  ## Use date for crcbiome representative population
-  # pop_comorbid_prescriptions_crcbiome_crcbiome_match <-
-  #   lmr_pop_crcbiome_match %>% 
-  #   rename(months_since_invitation = months_since_invitation_crcbiome_match) %>% 
-  #   summarize_lmr_comorbid_data(n_months = 12, id_dataset = pop_mock_invitations_crcbiome_matched %>% select(id = unique_resampling_id)) %>% 
-  #   pivot_longer(-id, names_to = "drug_cat", values_to = "prescribed") %>% 
-  #   mutate(within = "12 months") %>% 
-  #   bind_rows(lmr_pop_crcbiome_match %>% 
-  #               rename(months_since_invitation = months_since_invitation_crcbiome_match) %>% 
-  #               summarize_lmr_comorbid_data(n_months = 24, id_dataset = pop_mock_invitations %>% select(id = unique_resampling_id)) %>% 
-  #               pivot_longer(-id, names_to = "drug_cat", values_to = "prescribed") %>% 
-  #               mutate(within = "24 months")) %>% 
-  #   left_join(pop_mock_invitations_crcbiome_matched %>% 
-  #               select(id = unique_resampling_id, everything()) %>% 
-  #               mutate(age = year(mock_invitation_date_crcbiome_match)-Pasient_Fodselsar) %>% 
-  #               select(id, age, sex = Pasient_Kjonn_Verdi),
-  #             by = "id") %>% 
-  #   mutate(sex = case_when(sex == 1 ~ "Male",
-  #                          sex == 2 ~ "Female"))
-  
-  
   crcbiome_screening_rep_comorbid_prescriptions %>% 
     write_tsv("data/lmr/crcbiome_screening_rep_comorbid_prescriptions.tsv")
   
@@ -779,10 +677,6 @@ preprocess_input_data <- function() {
   
   pop_comorbid_prescriptions_scr_rep %>% 
     write_tsv("data/lmr/pop_comorbid_prescriptions_scr_rep.tsv")
-  
-  # pop_comorbid_prescriptions_crcbiome_crcbiome_match %>% 
-  #   write_tsv("data/lmr/pop_comorbid_prescriptions_crcbiome_match.tsv")
-  
   
   # metaphlan_species -------------------------------------------------------
   
@@ -820,16 +714,10 @@ preprocess_input_data <- function() {
     write_rds("data/input_processed/mp4_genera.Rds")
   
   mp4_sgb_names %>% 
-    # mutate(phylum = str_replace(phylum, "Firmicutes", "Bacillota")) %>% 
-    # mutate(clade_name = str_replace(clade_name, "p__Firmicutes", "p__Bacillota")) %>% 
     write_tsv("data/input_processed/mp4_sgb_names.tsv")
   mp4_species_names %>% 
-    # mutate(phylum = str_replace(phylum, "Firmicutes", "Bacillota")) %>% 
-    # mutate(clade_name = str_replace(clade_name, "p__Firmicutes", "p__Bacillota")) %>% 
     write_tsv("data/input_processed/mp4_species_names.tsv")
   mp4_genera_names %>% 
-    # mutate(phylum = str_replace(phylum, "Firmicutes", "Bacillota")) %>% 
-    # mutate(clade_name = str_replace(clade_name, "p__Firmicutes", "p__Bacillota")) %>% 
     write_tsv("data/input_processed/mp4_genera_names.tsv")
   
   
@@ -837,12 +725,12 @@ preprocess_input_data <- function() {
   # colibactin --------------------------------------------------------------
   
   pks_mapping <- 
-    read_tsv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/masterprojects/Lisi_masterproject/pipeline3_read_mapping/results/coverage_pks.tsv",
+    read_tsv("data/input_preprocessed/colibactin/coverage_pks.tsv",
              col_names = c("covered_bases", "coverage", "mean_coverage", "sample_id")) %>% 
     mutate(sample_id = str_replace(sample_id, "-", "_"))
 
   ecoli_mapping <- 
-    read_tsv("/ess/p1068/data/durable/007-f_smei/001-trro/CRCbiome/masterprojects/Lisi_masterproject/pipeline3_read_mapping/results/coverage_ecoli.tsv",
+    read_tsv("data/input_preprocessed/colibactin/coverage_ecoli.tsv",
              col_names = c("covered_bases", "coverage", "mean_coverage", "sample_id")) %>% 
     mutate(sample_id = str_replace(sample_id, "-", "_"))
   
@@ -885,7 +773,6 @@ preprocess_input_data <- function() {
     mutate(pks_classification = case_when(ecoli_pos %in% "absent" ~ "genotoxic pks negative", 
                                           partial_pks %in% c("partial_pks", "small_partial_pks", "not_detected") ~ "genotoxic pks negative",
                                           partial_pks %in% c("complete", "looks_normal") ~ "genotoxic pks positive")) %>% 
-    # select(sample_id, pks_classification) %>% 
     write_tsv("data/input_processed/pks_detection.tsv")
     
   
@@ -1172,8 +1059,6 @@ preprocess_input_data <- function() {
                            var_id %in% "detect_worthy_lesions" ~ "negative",
                            var_id %in% "final_result_cat_neg" ~ "Negative",
                            var_id %in% "senter" ~ "Moss",
-                           # var_id %in% "Antibiotics" ~ "No",
-                           # var_id %in% "Antacids" ~ "No",
                            var_id %in% "Blindtarm" ~ "No",
                            var_id %in% "Smoking" ~ "Non smoker",
                            var_id %in% "Snus" ~ "Non snuser",
@@ -1201,26 +1086,9 @@ preprocess_input_data <- function() {
     mutate(across(c(where(is.double), -deltaker_id), .fns = function(x) cat_func(x) %>% str_replace("negative", "low") %>% str_replace("positive", "high") %>% factor(levels = c("low", "mid", "high")))) %>% 
     write_rds("data/input_processed/metadata_selected_variables_cat.Rds")
   
-  
-  # variables <- 
-  #   variables %>% 
-  #   mutate(var_id = factor(var_id, levels = names(meta_dat)[ names(meta_dat) %in% var_id])) %>% 
-  #   mutate(data_source = case_when(dataset %in% c("diet", "diet_ea", "diet_wcrf") ~ "FFQ",
-  #                                  dataset %in% "lifestyle" ~ "LDQ",
-  #                                  dataset %in% "screening" ~ "screening db"))
-  
   lee_metadata <- 
     read_csv("data/input_preprocessed/Lee_2023/lee_metadata.csv") %>% 
     rename(sample_id = Run)
-  
-  # lee_metadata %>% 
-  #   ggplot(aes(x = Bases, group = factor(AvgSpotLen), color = factor(AvgSpotLen))) +
-  #   geom_density() +
-  #   geom_vline(xintercept = 1e9)
-  # 
-  # lee_metadata %>% 
-  #   mutate(under_1e9 = Bases < 1e9) %>% 
-  #   count(under_1e9)
   
   lee_mp4 <- read_tsv("data/input_preprocessed/Lee_2023/profiles.tsv", skip = 1)
   
@@ -1286,92 +1154,5 @@ preprocess_input_data <- function() {
     filter(Bases >= 1e9) %>% 
     select(sample_id, age_range, PHENOTYPE, `Sample Name`, sex, Bases) %>% 
     write_tsv("data/input_processed/lee_metadata.tsv")
-  
-  
-  ## Thomas et al.
-  thomas_mp4 <- read_tsv("data/input_preprocessed/Thomas_2019/profiles.tsv", skip = 1)
-  
-  thomas_meta <- read_csv("data/input_preprocessed/Thomas_2019/thomas_sra_data.txt", col_types = cols()) %>% 
-    rename(sample_id = Run) %>% 
-    select(sample_id, `Sample Name`) %>% 
-    left_join(read_tsv("data/ext_mg_data/20220322_mg_crc_sample_data.tsv", col_types = cols()) %>% 
-                rename(s_id = sample_id,
-                       `Sample Name` = subject_id) %>% 
-                select(`Sample Name`, study_condition, study_name, disease, disease_subtype, age, gender), by = "Sample Name")
-    
-  thomas_mp4_sgbs <-
-    thomas_mp4 %>% 
-    filter(str_detect(clade_name, "t__")) %>% 
-    mutate(clade_name = str_remove(clade_name, "^.*t__")) %>% 
-    pivot_longer(-clade_name, names_to = "sample_id", values_to = "abundance") %>% 
-    group_by(sample_id) %>% 
-    mutate(abundance = abundance/sum(abundance)*100) %>% 
-    ungroup() %>% 
-    pivot_wider(names_from = clade_name, values_from = abundance)
-  
-  thomas_mp4_sgb_names <- 
-    thomas_mp4 %>% 
-    filter(str_detect(clade_name, "t__")) %>% 
-    select(clade_name) %>% 
-    separate(clade_name, into = c("kingdom", "phylum", "clade", "order", "family", "genus", "species", "sgb"), 
-             sep = "\\|", 
-             remove = FALSE) %>% 
-    mutate(across(-clade_name, .fns = function(x) x %>% str_remove("[:alpha:]__")))
-  
-  thomas_meta %>% 
-    write_tsv("data/input_processed/thomas_metadata.tsv")
-  thomas_mp4_sgbs %>% 
-    write_rds("data/input_processed/thomas_sgbs.Rds")
-  thomas_mp4_sgb_names %>% 
-    write_tsv("data/input_processed/thomas_sgb_names.tsv")
-  
-  fit_stool_mp4 <- 
-    read_tsv("data/input_preprocessed/fit_stool_it/profiles.tsv", skip = 1, col_types = cols()) %>% 
-    pivot_longer(-clade_name) %>% 
-    bind_rows(read_tsv("data/input_preprocessed/fit_stool_it/profiles_sub.tsv", skip = 1, col_types = cols()) %>%
-                pivot_longer(-clade_name)) %>% 
-    pivot_wider(names_from = "name", values_from = "value", values_fill = 0)
-  
-  fit_stool_meta <- 
-    fit_stool_mp4 %>% 
-    select(-1) %>% 
-    names() %>% 
-    enframe(value = "sample_id") %>% 
-    select(-1) %>% 
-    mutate(sample_type = str_extract(sample_id, "F(E|IT)?") %>% factor(levels = c("FIT", "FE"), labels = c("FIT", "Norgen"))) %>% 
-    mutate(id = str_extract(sample_id, "^IT-[:digit:]*")) %>% 
-    mutate(subs = case_when(str_detect(sample_id, "(E|IT)$") ~ "original",
-                            str_detect(sample_id, "A$") ~ "subs_20e6",
-                            str_detect(sample_id, "B$") ~ "subs_15e6",
-                            str_detect(sample_id, "C$") ~ "subs_10e6",
-                            str_detect(sample_id, "D$") ~ "subs_5e6") %>% 
-             factor(levels = c("original", "subs_20e6", "subs_15e6", "subs_10e6", "subs_5e6")))
-  
-  
-  fit_stool_mp4_sgbs <-
-    fit_stool_mp4 %>% 
-    filter(str_detect(clade_name, "t__")) %>% 
-    mutate(clade_name = str_remove(clade_name, "^.*t__")) %>% 
-    pivot_longer(-clade_name, names_to = "sample_id", values_to = "abundance") %>% 
-    group_by(sample_id) %>% 
-    mutate(abundance = abundance/sum(abundance)*100) %>% 
-    ungroup() %>% 
-    pivot_wider(names_from = clade_name, values_from = abundance)
-  
-  fit_stool_mp4_sgb_names <- 
-    fit_stool_mp4 %>% 
-    filter(str_detect(clade_name, "t__")) %>% 
-    select(clade_name) %>% 
-    separate(clade_name, into = c("kingdom", "phylum", "clade", "order", "family", "genus", "species", "sgb"), 
-             sep = "\\|", 
-             remove = FALSE) %>% 
-    mutate(across(-clade_name, .fns = function(x) x %>% str_remove("[:alpha:]__")))
-  
-  fit_stool_meta %>% 
-    write_tsv("data/input_processed/fit_stool_metadata.tsv")
-  fit_stool_mp4_sgbs %>% 
-    write_rds("data/input_processed/fit_stool_sgbs.Rds")
-  fit_stool_mp4_sgb_names %>% 
-    write_tsv("data/input_processed/fit_stool_sgb_names.tsv")
   
 }

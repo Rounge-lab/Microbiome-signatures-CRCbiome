@@ -10,7 +10,7 @@ tmp_meta <-
               select(deltaker_id, final_result, detect_worthy_lesions, final_result_cat_neg, distal_acn, proximal_acn, FIT_value = fobt_verdi),
             by = "deltaker_id")
 
-# source("workflow/scripts/classification/model_eval_functions.R")
+source("workflow/scripts/classification/model_eval_functions.R")
 
 # model comparisons -------------------------------------------------------
 

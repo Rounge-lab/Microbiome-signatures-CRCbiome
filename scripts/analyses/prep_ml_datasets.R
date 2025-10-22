@@ -101,10 +101,6 @@ MAGs_abundance %>%
 mphlan_abundance %>%
   process_dataset("mphl")
 
-# ## mag-kegg
-# ko_mags  %>% 
-#   process_dataset("mag-kegg")
-
 ## hum-kegg
 ko_hum %>% 
   process_dataset("hum-kegg")
@@ -113,11 +109,6 @@ ko_hum %>%
 lididem %>% 
   process_dataset("lididem")
   
-# ## mags-mag-kegg
-# MAGs_abundance%>% 
-#   left_join(ko_mags) %>% 
-#   process_dataset("mags-mag-kegg")
-
 ## mphl-hum-kegg
 mphlan_abundance  %>% 
   left_join(ko_hum) %>% 
@@ -133,21 +124,10 @@ mphlan_abundance  %>%
   inner_join(lididem, by = "sample_id") %>% 
   process_dataset("mphl-lididem")
 
-# ## mag-kegg-lididem
-# ko_mags  %>% 
-#   inner_join(lididem, by = "sample_id") %>% 
-#   process_dataset("mag-kegg-lididem")
-
 ## hum-kegg-lididem
 ko_hum %>% 
   inner_join(lididem, by = "sample_id") %>% 
   process_dataset("hum-kegg-lididem")
-
-# ## mags-mag-kegg-lididem
-# MAGs_abundance %>% 
-#   left_join(ko_mags) %>% 
-#   inner_join(lididem, by = "sample_id") %>% 
-#   process_dataset("mags-mag-kegg-lididem")
 
 ## mphl-hum-kegg-lididem
 mphlan_abundance  %>% 
@@ -185,8 +165,6 @@ for(x in c("mphl", "mags", "hum-kegg")) {
     left_join(screening_data %>% select(deltaker_id, detect_worthy_lesions), by = "deltaker_id") %>% 
     left_join(train_test %>% select(deltaker_id, train_test), by = "deltaker_id") %>% 
     rename(target = detect_worthy_lesions)
-  
-  # x <- paste0("strat-",x)
   
   ## Split by outcome
   for(i in seq(length(outcome_splits))) {
@@ -305,7 +283,6 @@ fit_lididem_dataset <-
 
 catfit_dataset <-
   meta_dat_tmp %>% 
-  # mutate(FIT_cat = cut(fobt_verdi, breaks = c(15, 20, 25, 35, 75, Inf))) %>% 
   select(sample_id, FIT_cat, restr_train_set, train_test) %>% 
   rename(id = sample_id) 
 
@@ -455,94 +432,5 @@ full_PPI %>%
                       subset_value = TRUE, 
                       remove_vars = c("restr_train_set", "train_test"))
 
-
-# external datasets -------------------------------------------------------
-
-
-prep_external_comp <- function() {
-  ## External
-  lee <- read_rds("data/input_processed/lee_sgbs.Rds")
-  lee_metadata <- read_tsv("data/input_processed/lee_metadata.tsv", col_types = cols())
-  thomas <- read_rds("data/input_processed/thomas_sgbs.Rds")
-  thomas_metadata <- read_tsv("data/input_processed/thomas_metadata.tsv", col_types = cols())
-  
-  
-  mp_species_filtered_w_info <- 
-    mp4_sgb %>% 
-    inner_join(sample_data %>% select(sample_id, deltaker_id, Prøvetype, Total_Bases_QC_ATLAS)) %>% 
-    left_join(screening_data %>% select(deltaker_id, detect_worthy_lesions, final_result)) %>% 
-    left_join(train_test %>% select(deltaker_id, train_test)) %>% 
-    filter(!is.na(detect_worthy_lesions)) %>% 
-    filter(Prøvetype %in% "Baseline") %>% 
-    filter(Total_Bases_QC_ATLAS >= 1e9) %>% 
-    filter(train_test %in% "train") %>%
-    mutate(case_control = case_when(detect_worthy_lesions %in% "positive" ~ "case",
-                                    detect_worthy_lesions %in% "negative" ~ "control")) %>% 
-    select(-c(deltaker_id, Prøvetype, Total_Bases_QC_ATLAS, train_test, detect_worthy_lesions))
-  
-  ## All samples
-  CRCbiome_full <- 
-    mp_species_filtered_w_info %>% 
-    select(-final_result)
-  
-  mp_species_filtered_w_info %>% 
-    count(final_result)
-  
-  ## CRC or advanced adenoma vs norm
-  CRCbiome_CRC_advad_v_norm <- 
-    mp_species_filtered_w_info %>% 
-    filter(final_result %in% c("1. Negative", "5c. Advanced adenoma", "6. CRC")) %>% 
-    select(-final_result)
-  
-  ## "Clean" dataset with only clearly negative vs cancer
-  CRCbiome_CRC_v_norm_clean <- 
-    mp_species_filtered_w_info %>% 
-    filter(final_result %in% c("1. Negative", "6. Cancer")) %>% 
-    select(-c(final_result))
-  
-  
-  CRCbiome_full %>% 
-    write_tsv("data/ml-datasets/external-comp/CRCbiome_full.tsv")
-  
-  CRCbiome_CRC_advad_v_norm %>% 
-    write_tsv("data/ml-datasets/external-comp/CRCbiome_CRC_advad_v_norm.tsv")
-  
-  CRCbiome_CRC_v_norm_clean %>% 
-    write_tsv("data/ml-datasets/external-comp/CRCbiome_CRC_v_norm_clean.tsv")
-  
-  ## Lee
-  lee %>% 
-    left_join(lee_metadata %>% 
-                mutate(case_control = case_when(PHENOTYPE %in% "Control" ~ "control",
-                                                TRUE ~ "case")) %>% 
-                select(sample_id, case_control)) %>% 
-    write_tsv("data/ml-datasets/external-comp/lee.tsv")
-  
-  ## Thomas_2018a
-  thomas %>% 
-    inner_join(thomas_metadata %>% 
-                 mutate(case_control = case_when(study_condition %in% "control" ~ "control",
-                                                 TRUE ~ "case")) %>% 
-                 filter(study_name %in% "ThomasAM_2018a") %>% 
-                 select(sample_id, case_control)) %>% 
-    write_tsv("data/ml-datasets/external-comp/ThomasAM_2018a.tsv")
-  
-  ## Thomas_2018b
-  thomas %>% 
-    inner_join(thomas_metadata %>% 
-                 mutate(case_control = case_when(study_condition %in% "control" ~ "control",
-                                                 TRUE ~ "case")) %>% 
-                 filter(study_name %in% "ThomasAM_2018b") %>% 
-                 select(sample_id, case_control)) %>% 
-    write_tsv("data/ml-datasets/external-comp/ThomasAM_2018b.tsv")
-  
-  tibble("") %>% 
-    write_tsv("data/ml-datasets/external-comp/None.tsv")
-  tibble("") %>% 
-    write_tsv("data/ml-datasets/external-comp/none.tsv")
-  
-}
-
-prep_external_comp()
 
 rm(list = ls()[ !ls() %in% env_vars])
