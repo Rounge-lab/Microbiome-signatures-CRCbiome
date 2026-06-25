@@ -38,9 +38,16 @@ differential_abundance_main_outcome <- function(models = c("main")) {
                                   antibiotics_reg_quest_comb, 
                                   PPI_antacids_reg_quest_comb, 
                                   first_round), by = "deltaker_id") %>% 
+    left_join(read_tsv("data/synthetic/comorbid_pres.tsv", col_types = cols()) %>% 
+                filter(within %in% "12 months",
+                       drug_cat != "antibiotics_pres") %>% 
+                select(deltaker_id = id, drug_cat, prescribed) %>% 
+                pivot_wider(names_from = drug_cat, values_from = prescribed) %>% 
+                select(-antibiotics_pres_2), by = "deltaker_id") %>% 
     select(sample_id, dmm, senter, kjonn, antibiotics_reg_quest_comb, 
            first_round, PPI_antacids_reg_quest_comb, 
-           colo_diverticulitis, colo_hemorrhoids, colo_IBD, colo_any)
+           colo_diverticulitis, colo_hemorrhoids, colo_IBD, colo_any,
+           diab_2_pres, cvd_pres, copd_pres)
   
   
   # env ---------------------------------------------------------------------
@@ -49,7 +56,8 @@ differential_abundance_main_outcome <- function(models = c("main")) {
     expand.grid(dataset = c("metaphlan", "keggs", "mags"),
                 strat_var = c("", "dmm", "kjonn", "senter", 
                               "antibiotics_reg_quest_comb", "first_round", "PPI_antacids_reg_quest_comb",
-                              "colo_diverticulitis", "colo_hemorrhoids", "colo_IBD", "colo_any"),
+                              "colo_diverticulitis", "colo_hemorrhoids", "colo_IBD", "colo_any",
+                              "diab_2_pres", "cvd_pres", "copd_pres"),
                 model = c("unadjusted", "simplified_model", "standard_model",
                           "fully_adjusted_model", "add_dmm", "add_dna_conc", 
                           "symptoms", "antibiotics_reg_quest_comb", "PPI_antacids_reg_quest_comb"),
@@ -102,7 +110,7 @@ differential_abundance_main_outcome <- function(models = c("main")) {
     if (dataset == "colibactin_strat") {
       tmp_abund <-
         mphlan_abundance %>% 
-        left_join(read_tsv("data/input_processed/pks_detection.tsv", col_types = cols()) %>% 
+        left_join(load_colibactin_data(synthetic_data = TRUE), col_types = cols()) %>% 
                     select(sample_id, pks_classification), by = "sample_id") %>% 
         mutate(pks_pos_ecoli = case_when(str_detect(pks_classification, "positive") ~ SGB10068,
                                          TRUE ~ 0),

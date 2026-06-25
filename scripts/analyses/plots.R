@@ -110,43 +110,51 @@ plot_microbiome_overview <- function() {
     left_join(variables %>% select(variable = var_id, var_name, variable_category = dataset, lididem_crc), by = "variable") %>% 
     mutate(lvl = rename_var_levels(lvl)) %>% 
     mutate(var_level = paste(var_name, lvl)) %>% 
+    mutate(outcome_subset = factor(outcome_subset, labels = c("All", "No neoplastic findings", "Any colorectal neoplasia"))) %>% 
     mutate(index = factor(index, levels = c("observed", "shannon", "invsimpson"))) 
   
   tmp_alpha_tests_cat <-
     alpha_tests_cat %>% 
     filter(var_level %in% tmp_var_levels) %>% 
     group_by(test_var) %>% 
-    mutate(m_est = mean(estimate[ index %in% "observed" & !lvl %in% c("Unknown", "Missing")])) %>% 
+    mutate(m_est = mean(estimate[ index %in% "observed" & !lvl %in% c("Unknown", "Missing") & outcome_subset %in% "All"])) %>% 
     ungroup() %>% 
     arrange(m_est, index, estimate) %>% 
     mutate(var_level = factor(var_level, levels = var_level[ index %in% "observed"])) #%>% 
   
+  tmp_report_vars <- c("Sex", "Age", "Screening center", "FIT value", "Programmatic screening round",
+                       "Hemorrhoids", "Diverticulitis", "IBD", "National background", "Education",
+                       "Self reported gastrointestinal disorders", "WCRF", "Smoking", "Antibiotics use")
+  
   alpha_assoc_plot <-
     tmp_alpha_tests_cat %>% 
     filter(!test_var %in% c("final_result", "detect_worthy_lesions")) %>% 
-    filter(lididem_crc | 
-             var_name %in% c("WCRF", "Screening center", "National background", 
-                             "Employment status", "Education", "Antibiotics use",
-                             "Diverticulitis", "Hemorrhoids", "IBD"),
+    filter(var_name %in% tmp_report_vars,
            lvl != "Missing") %>%
-    ggplot(aes(x = estimate, y = var_level)) +
-    geom_linerange(aes(xmin = conf.low, xmax = conf.high), color = scales::muted("red")) +
-    geom_point(color = "black", aes(shape = p.value < 0.05)) +
-    scale_shape_manual(values = c(1,20)) +
-    geom_vline(xintercept = 0, color = "darkgray", linetype = 2) +
-    facet_wrap(~index, nrow = 1, scales = "free_x") +
-    theme_bw() +
-    labs(color = "", y = "") +
-    theme(legend.position = "none")
+    filter(index == "observed") %>% 
+    filter(!(var_level %in% "IBD Yes" & outcome_subset %in% "Any colorectal neoplasia")) %>% 
+    (function(plot_dat) {
+      plot_dat %>% 
+        ggplot(aes(x = estimate, y = var_level)) +
+        geom_linerange(aes(xmin = conf.low, xmax = conf.high), color = scales::muted("red")) +
+        geom_point(color = "black", aes(shape = p.value < 0.05)) +
+        scale_shape_manual(values = c(1,20)) +
+        geom_vline(xintercept = 0, color = "darkgray", linetype = 2) +
+        facet_wrap(~outcome_subset, nrow = 1) +
+        theme_bw() +
+        labs(color = "", y = "") +
+        theme(legend.position = "none")  
+    })
   
   
   beta_tests_cat <-
-    read_tsv("results/tables/permanova_host_vars_cat.tsv", col_types = cols()) %>% 
+    read_tsv("results/tables/permanova_host_vars_cat_rev.tsv", col_types = cols()) %>% 
     filter(dataset %in% ds) %>% 
     filter(test_var == term) %>% 
     left_join(variables %>% select(test_var = var_id, var_name, variable_category = dataset, lididem_crc), by = join_by(test_var)) %>% 
     mutate(test_level = rename_var_levels(test_level)) %>% 
     mutate(var_level = paste(var_name, test_level)) %>% 
+    mutate(outcome_subset = factor(outcome_subset, labels = c("All", "No neoplastic findings", "Any colorectal neoplasia"))) %>% 
     rename(p = `Pr(>F)`)
   
   
@@ -154,40 +162,38 @@ plot_microbiome_overview <- function() {
     beta_tests_cat %>% 
     mutate(dist = "Bray-Curtis") %>% 
     filter(!test_var %in% c("final_result", "detect_worthy_lesions")) %>% 
-    filter(lididem_crc |
-             str_detect(test_var, "Antibiotic") |
-             var_name %in% c("WCRF", "Screening center", "National background", 
-                             "Employment status", "Education", "Antibiotics use",
-                             "Diverticulitis", "Hemorrhoids", "IBD"),
+    filter(var_name %in% tmp_report_vars,
            test_level != "Missing") %>%
     ## Filter out levels with less than 10 observations
     filter(paste(term, test_level) %in% tmp_var_levels) %>% 
+    filter(!(var_level %in% "IBD Yes" & outcome_subset %in% "Any colorectal neoplasia")) %>% 
     group_by(test_var) %>% 
-    mutate(m_R2 = mean(R2[ !test_level %in% c("Unknown", "Missing")])) %>% 
+    mutate(m_R2 = mean(R2[ !test_level %in% c("Unknown", "Missing") & outcome_subset %in% "All"])) %>% 
     ungroup() %>% 
     arrange(m_R2, R2) %>% 
-    mutate(var_level = factor(var_level, levels = var_level)) %>% 
+    mutate(var_level = factor(var_level, levels = unique(var_level))) %>% 
     ggplot(aes(x = R2, y = var_level, fill = -log10(p))) +
     geom_col(color = "black") +
     theme_bw() +
-    facet_wrap(~dist) +
+    facet_wrap(~outcome_subset) +
     scale_fill_gradient2(high = scales::muted("red"),
                          mid = "gray",
                          low = "white",
                          midpoint = 1) +
+    scale_x_continuous(expand = expansion(mult = c(0, 0.2))) +
     labs(y = "")
   
   diversity_associations_plot <-
     ggpubr::ggarrange(alpha_assoc_plot + theme(text = element_text(size = 6)),
                       beta_assoc_plot + theme(text = element_text(size = 6), legend.position = "none"),
                       labels = c("d", "e"),
-                      widths = c(1.2, 1))
+                      widths = c(1, 1))
   
   fig_1 <- ggpubr::ggarrange(prev_ab_plot,
                              diversity_associations_plot, 
-                             nrow = 2, heights = c(1, 1.5))
+                             nrow = 2, heights = c(1, 1))
   
-  ggsave2("results/figures/microbiome_overview_figure.pdf", plot = fig_1, height = 150, width = 150, units = "mm")
+  ggsave2("results/figures/microbiome_overview_figure.pdf", plot = fig_1, height = 150, width = 120, units = "mm")
   
 }
 
@@ -884,15 +890,49 @@ summarize_dmm <- function(k = 4, dataset = "crcbiome") {
   
   tax_contrib_plot <-
     tax_contrib_dirich_comp %>% 
-    ggplot(aes(x = group, y = sgb, fill = prob)) +
+    arrange(sgb) %>% 
+    ggplot(aes(x = prob, y = sgb, group = group, color = group)) +
+    geom_point(size = .4) +
+    # geom_point() +
     scale_y_discrete(labels = lab_func) +
-    geom_tile() +
-    scale_fill_viridis_c(trans = "log10") +
+    scale_x_continuous(trans = "log10") +
+    labs(x = "Contribution",
+         color = "Component") +
     theme_bw() +
-    labs(fill = "Contribution",
-         y = "",
-         x = "Component") +
-    theme(axis.text.x = element_text(angle = 30, hjust = 1))
+    theme(text = element_text(size = 6),
+          axis.text.y = element_text(size = 4),
+          axis.text.x = element_text(size = 6,
+                                     angle = 30,
+                                     hjust = 1)) +
+    scale_color_manual(values = color_assignments)
+  
+  ## Evaluate diversity
+  dmm_group <-
+    load_dmm() %>% 
+    mutate(gr = rename_var_levels(gr)) %>% 
+    left_join(mphlan_abundance %>% 
+                pivot_longer(-sample_id) %>% 
+                group_by(sample_id) %>% 
+                summarize(observed = sum(value > 0),
+                          shannon = diversity(value),
+                          invsimpson = diversity(value, index = "invsimpson"),
+                          .groups = "drop"), by = "sample_id")
+  
+  
+  dmm_diversity <-
+    dmm_group %>% 
+    # left_join(sample_data %>% select(sample_id, Total_Bases_QC_ATLAS)) %>% 
+    # pivot_longer(c(observed, shannon, invsimpson)) %>% 
+    ggplot(aes(x = gr, y = observed, fill = gr)) +
+    # ggplot(aes(x = gr, y = Total_Bases_QC_ATLAS, fill = gr)) +
+    geom_boxplot(outlier.size = 0.4) +
+    scale_fill_manual(values = color_assignments) +
+    # facet_wrap(~name, scales = "free_y") +
+    # scale_y_continuous(trans = "log10") +
+    labs(x = "", fill = "") +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 30, hjust = 1),
+          text = element_text(size = 6))
   
   ## DMM associations
   mnom_group_host_var_assoc <-
@@ -922,11 +962,13 @@ summarize_dmm <- function(k = 4, dataset = "crcbiome") {
   
   
   dmm_plot <-
-    ggpubr::ggarrange(tax_contrib_plot + theme(text = element_text(size = 8)),
-                      dmm_host_assoc_plot, labels = c("a", "b"), nrow = 1, widths = c(1, 1.2))
+    ggpubr::ggarrange(ggpubr::ggarrange(tax_contrib_plot, #+ theme(text = element_text(size = 8)),
+                                        dmm_diversity, ncol = 1, labels = c("a", "b"), heights = c(1,0.7)),
+                      dmm_host_assoc_plot, 
+                      labels = c("", "c"), nrow = 1, widths = c(1, 0.7))
   
   dmm_plot %>% 
-    ggsave(filename = "results/figures/dmm_plots.pdf", plot = ., height = 100, width = 190, units = "mm")
+    ggsave(filename = "results/figures/dmm_plots_rev.pdf", plot = ., height = 100, width = 150, units = "mm")
   
 }
 
@@ -1168,15 +1210,21 @@ plot_strat_da <- function(ds_da = "metaphlan") {
   sensitivity_da_plot <-
     da_res_strat %>% 
     filter((strat_var %in% c("antibiotics_reg_quest_comb")) |
-             strat_var %in% "PPI_antacids_reg_quest_comb" |
-             (strat_var %in% "colo_any")) %>%
-    left_join(variables %>% select(strat_var = var_id, var_name) %>% bind_rows(tibble(strat_var = "colo_any", var_name = "Non-neoplastic findings")), by = join_by(strat_var)) %>% 
+             (strat_var %in% "PPI_antacids_reg_quest_comb") |
+             (strat_var %in% "colo_any") |
+             (str_detect(strat_var, "pres"))) %>%
+    left_join(variables %>% 
+                select(strat_var = var_id, var_name) %>% 
+                bind_rows(tibble(strat_var = c("colo_any", "copd_pres", "cvd_pres", "diab_2_pres"), 
+                                 var_name = c("Non-neoplastic findings", "Chronic obstructive pulmonary disease", 
+                                              "Cardiovascular disease", "Diabetes"))), 
+              by = join_by(strat_var)) %>% 
     mutate(significance = case_when(qval < 0.05 ~ "FDR significant",
                                     pval < 0.05 ~ "Nominally significant",
                                     TRUE ~ "Not significant") %>% 
              factor(levels = c("Not significant", "Nominally significant", "FDR significant"))) %>% 
     mutate(strat_val_lab = paste0(strat_val, " (n=", N, ")")) %>% 
-    mutate(value = ifelse(value == "positive", "CRC-related findings", value)) %>% 
+    mutate(value = ifelse(value == "positive", "Any colorectal neoplasia", value)) %>% 
     inner_join(diff_abund_table %>% 
                  group_by(feature) %>% 
                  filter(any(qval < 0.05)) %>%
@@ -1210,9 +1258,67 @@ plot_strat_da <- function(ds_da = "metaphlan") {
               axis.text.y = element_text(size = 6, face = "italic"))
     })
   
-  ggsave2("results/figures/diff_abund_sensitivity.pdf", sensitivity_da_plot, height = 100, width = 180, units = "mm")
+  ggsave2("results/figures/for_manuscript/diff_abund_sensitivity.pdf", sensitivity_da_plot, height = 100, width = 260, units = "mm")
 }
 
+
+diff_abund_clr <- function() {
+  
+  diff_abund_table <- 
+    read_tsv("data/diff_abund/Maaslin2/main_outcome/maaslin2_summary_main_models.tsv", col_types = cols()) %>%
+    filter(dataset == "metaphlan") %>% 
+    filter(str_detect(model, "wcrf.*anti")) %>%  ## Standard model
+    group_by(feature) %>%
+    filter(any(qval < 0.05)) %>% 
+    ungroup() %>%
+    (function(x) {
+      lvls <- 
+        x %>% 
+        filter(metadata %in% "detect_worthy_lesions") %>% 
+        arrange(desc(coef)) %>% 
+        pull(feature)
+      
+      x %>% 
+        mutate(feature = factor(feature, levels = lvls))
+    }) %>% 
+    filter(qval < 0.05)
+  
+  clr_based <- 
+    read_tsv("data/diff_abund/Maaslin2/main_outcome/maaslin2_summary_clr.tsv", col_types = cols()) %>% 
+    inner_join(diff_abund_table %>% select(feature, metadata, value)) %>% 
+    filter(feature %in% diff_abund_table$feature) %>% 
+    mutate(feature = factor(feature, levels = levels(diff_abund_table$feature)))
+    
+  clr_plot <-
+    clr_based %>% 
+    mutate(significance = case_when(qval < 0.05 ~ "FDR significant",
+                                    pval < 0.05 ~ "Nominally significant",
+                                    TRUE ~ "Not significant") %>% 
+             factor(levels = c("Not significant", "Nominally significant", "FDR significant"))) %>% 
+    mutate(value = str_replace(value, "positive", "Any neoplasia") %>% 
+             factor(levels = c("Any neoplasia",
+                               levels(meta_dat$final_result_cat_neg)[-1])))  %>%
+    (function(plot_obj) {
+      plot_obj %>% 
+        ggplot(aes(x = coef, y = feature, color = value)) +
+        geom_vline(xintercept = 0, linetype = 2, color = "dark gray") +
+        geom_point(aes(shape = significance), 
+                   position = position_dodge(width = 0.65)) +
+        scale_shape_manual(values = c(1,20,19)) +
+        scale_y_discrete(labels = function(x) x %>% enframe(value = "sgb") %>% left_join(mp4_taxonomy, by = "sgb") %>% pull(species)) +
+        theme_bw() +
+        scale_color_manual(values = color_assignments) +
+        labs(x = "log2FC", y = "", color = "") +
+        theme(text = element_text(size = 6),
+              axis.text.y = element_text(size = 6, face = "italic"))
+    })
+  
+  ggsave2("results/figures/clr_based_da.pdf", plot = clr_plot, height = 80, width = 120, units = "mm")
+    ggplot(aes(x = coef, y = feature, color = value, shape = significance)) +
+    geom_point()
+    
+    
+}
 
 plot_ecoli_lit_rep_da <- function() {
   
@@ -1697,14 +1803,20 @@ summarize_ml_res <- function(ds = "metaphlan") {
       mutate(strat_var = case_when(strat_var == "colo_hemorrhoids" ~ "Hemorrhoids",
                                    strat_var == "colo_diverticulitis" ~ "Diverticulitis",
                                    TRUE ~ strat_var)) %>% 
-      filter(strat_var %in% c("Cardiovascular disease", "Chronic obstructive pulmonary disease", 
-                              "Diabetes", "antibiotics_use", 
-                              "Smoking", "Utdanning",
-                              "Hemorrhoids", "Diverticulitis")) %>%
+      filter(strat_var %in% c("Cardiovascular disease", 
+                              "Chronic obstructive pulmonary disease", 
+                              "Diabetes", 
+                              "antibiotics_use", 
+                              "Smoking", 
+                              "Utdanning",
+                              "Hemorrhoids", 
+                              "Antacids",
+                              "Diverticulitis")) %>%
       mutate(strat_var = factor(strat_var,
                                 levels = c("Smoking", 
                                            "Utdanning",
                                            "antibiotics_use",
+                                           "Antacids",
                                            "Hemorrhoids",
                                            "Cardiovascular disease", 
                                            "Chronic obstructive pulmonary disease", 
@@ -1734,34 +1846,37 @@ summarize_ml_res <- function(ds = "metaphlan") {
   
   n_features_frac_samples_plot <-
     n_features_frac_samples_forests_selection %>%
-    group_by(n_vars_requested, frac_samples) %>% 
-    summarize(mean_cv_auroc = mean(auroc),
-              n_samples = mean(training_samples), 
-              .groups = "drop") %>% 
+    # group_by(n_vars_requested, frac_samples) %>% 
+    # summarize(mean_cv_auroc = mean(auroc),
+    #           n_samples = mean(training_samples), 
+    #           .groups = "drop") %>% 
     group_by(frac_samples) %>% 
-    mutate(mean_n_samples = paste0(100*unique(frac_samples), "% (", round(mean(n_samples)), ")"), 
+    mutate(mean_n_samples = paste0(100*unique(frac_samples), "% (", round(mean(training_samples)), ")"), 
            .groups = "drop") %>% 
-    mutate(mean_n_samples = fct_reorder(mean_n_samples, n_samples)) %>% 
+    mutate(mean_n_samples = fct_reorder(mean_n_samples, training_samples)) %>% 
     ggplot(aes(x = factor(mean_n_samples), 
-               y = factor(n_vars_requested),
-               label = signif(mean_cv_auroc, 2))) +
-    geom_tile(aes(fill = mean_cv_auroc)) +
-    geom_text(size = 1.5) +
+               y = auroc,
+               fill = factor(n_vars_requested),
+               # label = signif(mean_cv_auroc, 2)
+               )) +
+    geom_boxplot(outlier.size = 0.3) +
+    # geom_text(aes(label = signif(mean_cv_auroc, 2))) +
+    # geom_text(size = 1.5) +
+    geom_hline(yintercept = 0.5, linetype = 2, color = "gray") +
     theme_bw() +
     labs(x = "Fraction of samples (n) used for training",
-         y = "Number of features used for prediction",
-         fill = "Mean CV AUROC") +
+         fill = "Number of features\nused for prediction",
+         y = "AUROC") +
     theme(text = element_text(size = 6),
           axis.text.x = element_text(angle = 30, hjust = 1, size = 6),
-          legend.key.size = unit(4, units = "mm")) +
-    coord_fixed()
+          legend.key.size = unit(4, units = "mm"))
   
   
   ml_res_plot_suppl <-
     ggpubr::ggarrange(
       plot_stratified_classification_suppl + theme(text = element_text(size = 8)),
-      ggarrange(NULL, n_features_frac_samples_plot, labels = c("", "b")),
-      ncol = 1, common.legend = TRUE, legend = "left", labels = c("a", ""), heights = c(1.2,1))
+      ggarrange(n_features_frac_samples_plot, NULL, widths = c(1, 0.5), labels = c("b", "")),
+      ncol = 1, common.legend = FALSE, labels = c("a", ""), heights = c(1.2,1))
   
   ggsave2("results/figures/ml_suppl_fig.pdf",
           plot = ml_res_plot_suppl, height = 150, width = 220, units = "mm")
@@ -1769,4 +1884,51 @@ summarize_ml_res <- function(ds = "metaphlan") {
   
 }
 
-
+summarize_cross_region_ml_res <- function(ds = "metaphlan") {
+  
+  tmp_models <- read_tsv("data/models.tsv", col_types = cols())
+  
+  if (!"ds" %in% ls()) {
+    ds <- "metaphlan"
+  }
+  if (ds %in% "metaphlan") {
+    tmp_dat <- "mphl"
+  }
+  
+  
+  cross_region_ml_res <-
+    read_tsv("data/models/evaluations/feature_strat_models/primary_assessments_external.tsv", col_types = cols()) %>% 
+    bind_rows(read_tsv("data/models/evaluations/feature_strat_models/primary_assessments_internal.tsv", col_types = cols())) %>% 
+    filter(str_detect(primary_model, "rf_mphl-(Moss|Bærum)")) %>% 
+    mutate(training_region = str_extract(primary_model, "(Moss|Bærum)"),
+           testing_region = case_when(training_region %in% "Bærum" & included_in_training %in% "internal" ~ "Bærum",
+                                      training_region %in% "Bærum" & included_in_training %in% "external" ~ "Moss",
+                                      training_region %in% "Moss" & included_in_training %in% "internal" ~ "Moss",
+                                      training_region %in% "Moss" & included_in_training %in% "external" ~ "Bærum"))
+    
+  
+  cross_region_ml_res_plot <-
+    cross_region_ml_res %>% 
+    group_by(primary_model, included_in_training, training_region, testing_region) %>% 
+    summarize_model_stats(stats = c("auroc"), output_wide = FALSE) %>% 
+    mutate(across(c(training_region, testing_region), function(x) rename_var_levels(x))) %>% 
+    ggplot(aes(x = mean,
+               xmin = mean-sd,
+               xmax = mean+sd,
+               color = testing_region,
+               y = training_region)) +
+    geom_vline(aes(xintercept = 0.5), 
+               linetype = 2, color = "darkgrey") +
+    geom_pointrange(position = position_dodge(width = 0.5), shape = 20, size = 0.25) +
+    # scale_color_manual(values = color_assignments) +
+    scale_y_discrete(labels = function(x) str_wrap(x, width = 20)) +
+    theme_bw() +
+    labs(color = "Testing region",
+         y = "Training region",
+         x = "Mean CV model performance") +
+    theme(text = element_text(size = 8)) #+
+  
+  cross_region_ml_res_plot %>% 
+    ggsave2(filename = "results/figures/cross_region_ml_res.pdf", 
+            device = "pdf",width = 70, height = 40, units = "mm", plot = .)
+}

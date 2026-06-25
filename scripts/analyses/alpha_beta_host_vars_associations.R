@@ -14,6 +14,8 @@ beta_by_level <- function(dists, m_dat, test_var, adjust_vars, ref_level_test_va
                  rename(id = all_of(id_col)),
                by = "id")
   
+  dists <- as.dist(as.matrix(dists)[ tmp_meta$id, tmp_meta$id])
+
   if (!tmp_meta %>% 
       pull(all_of(test_var)) %>% 
       is.double()) {
@@ -88,6 +90,86 @@ alpha_diversity <-
   }) %>% 
   bind_rows()
 
+test_host_var_lm <- function(dat, vari, meta_dat, meta_vars, ref_lvl, test_var_cat = FALSE) {
+  tmp <-
+    dat %>% 
+    left_join(meta_dat %>% 
+                left_join(sample_data %>% 
+                            select(sample_id, deltaker_id, Total_Reads_QC_ATLAS),
+                          by = "deltaker_id") %>% 
+                select(sample_id, any_of(c("kjonn", "age_invitation", "senter", "Total_Reads_QC_ATLAS", vari))), 
+              by = "sample_id") %>% 
+    select(-c(dataset, index))
+  
+  if (is.na(ref_lvl) & test_var_cat) {
+    ref_lvl <- "low"
+  }
+  
+  if (!is.na(ref_lvl)) {
+    tmp <-
+      tmp %>% 
+      mutate(across(.cols = matches(vari), .fns = function(s) factor(s) %>% relevel(ref = ref_lvl)))
+  } else {
+    tmp <-
+      tmp %>% 
+      mutate(across(.cols = matches(vari), .fns = scale))
+  }
+  tmp %>% 
+    select(-sample_id) %>% 
+    lm(formula = diversity ~ ., data = .) %>% 
+    tidy(conf.int = TRUE) %>% 
+    mutate(variable = get_strings_from_vec(names(tmp)[-c(1,2)], term),
+           lvl = str_remove(term, variable),
+           lvl = case_when(!lvl %in% "" ~ lvl),
+           index = dat$index[1],
+           dataset = dat$dataset[1],
+           test_var = vari,
+           ref_level = ref_lvl) %>% 
+    return()
+}
+
+alpha_cont_tests <-
+  lapply(as.character(variables$var_id), function(i) {
+    
+    print(paste0("variable ", i, ": ", which(variables$var_id %in% i), " of ", length(variables$var_id)))
+    
+    ref_lvl <- variables %>% filter(var_id %in% i) %>% pull(ref)
+    
+    lapply(c("all", "negative", "positive"), function(outcome_subset) {
+      alpha_diversity %>% 
+        (function(x) {
+          if (outcome_subset == "all" | i %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions")) {
+            x
+          } else {
+            x %>% 
+              inner_join(meta_dat %>% 
+                           filter(detect_worthy_lesions %in% outcome_subset) %>% 
+                           left_join(sample_data, by = "deltaker_id") %>% 
+                           select(sample_id), by = "sample_id")
+          }
+        }) %>% 
+        pivot_longer(c(observed, shannon, invsimpson), names_to = "index", values_to = "diversity") %>% 
+        group_by(dataset, index) %>% 
+        group_split() %>% 
+        lapply(function(x) test_host_var_lm(x, 
+                                            vari = i, 
+                                            meta_dat, 
+                                            meta_vars, 
+                                            ref_lvl)) %>% 
+        bind_rows() %>% 
+        mutate(outcome_subset = outcome_subset)
+    }) %>% 
+      bind_rows()
+  }) %>% 
+  bind_rows() %>% 
+  filter(!(test_var %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions") &
+             outcome_subset %in% c("negative", "positive")))
+
+alpha_cont_tests %>% 
+  filter(test_var == variable) %>% 
+  write_tsv(file.path("results","tables","alpha_host_vars.tsv"))
+
+
 alpha_cat_tests <-
   lapply(as.character(variables$var_id), function(i) {
     
@@ -95,94 +177,118 @@ alpha_cat_tests <-
     
     ref_lvl <- variables %>% filter(var_id %in% i) %>% pull(ref)
     
-    alpha_diversity %>%
-      pivot_longer(c(observed, shannon, invsimpson), names_to = "index", values_to = "diversity") %>% 
-      group_by(dataset, index) %>% 
-      group_split() %>% 
-      lapply(function(x) {
-        tmp <-
-          x %>% 
-          left_join(meta_dat_cat %>% 
-                      left_join(sample_data %>% 
-                                  select(sample_id, deltaker_id, Total_Reads_QC_ATLAS),
-                                by = "deltaker_id") %>% 
-                      select(sample_id, any_of(c("kjonn", "age_invitation", "senter", "Total_Reads_QC_ATLAS", i))), 
-                    by = "sample_id") %>% 
-          select(-c(dataset, index))
+    lapply(c("all", "negative", "positive"), function(outcome_subset) {
+      alpha_diversity %>% 
+        (function(x) {
+          if (outcome_subset == "all" | i %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions")) {
+            x
+          } else {
+            x %>% 
+              inner_join(meta_dat %>% 
+                           filter(detect_worthy_lesions %in% outcome_subset) %>% 
+                           left_join(sample_data, by = "deltaker_id") %>% 
+                           select(sample_id), by = "sample_id")
+          }
+        }) %>% 
+        pivot_longer(c(observed, shannon, invsimpson), names_to = "index", values_to = "diversity") %>% 
+        group_by(dataset, index) %>% 
+        group_split() %>% 
+        lapply(function(x) test_host_var_lm(x, 
+                                            vari = i, 
+                                            meta_dat_cat, 
+                                            meta_vars, 
+                                            ref_lvl, 
+                                            test_var_cat = TRUE)) %>% 
+        bind_rows() %>% 
+        mutate(outcome_subset = outcome_subset)
+    }) %>% 
+      bind_rows()
+  }) %>% 
+  bind_rows() %>% 
+  filter(!(test_var %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions") &
+             outcome_subset %in% c("negative", "positive")))
+
+
+
+for (i_dat in tmp_dats) {
+  dat <- list("mags" = MAGs_abundance, 
+              "metaphlan" = mphlan_abundance, 
+              "ko_hum" = ko_hum)[[i_dat]]
+  
+  print(paste0("dataset ", i_dat, ": ", which(tmp_dats %in% i_dat), " of ", length(tmp_dats)))
+  
+  tmp_dists <- 
+    dat %>% 
+    as.data.frame() %>% 
+    column_to_rownames("sample_id") %>% 
+    as.matrix() %>% 
+    vegdist(method = "bray")
+  
+  for (i in as.character(variables$var_id)) {
+    print(paste0("variable ", i, ": ", which(variables$var_id %in% i), " of ", length(variables$var_id)))
+    
+    ref_lvl <- variables %>% filter(var_id %in% i) %>% pull(ref)
+    
+    for (outcome_subset in c("all", "negative", "positive")) {
+      output_file <- paste0("tmp/permanova_cat/",i_dat,"_",i,"_",outcome_subset, ".tsv")
+      if (!file.exists(output_file) & 
+          !(outcome_subset %in% c("negative", "positive") & 
+            i %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions"))) {
+        tmp_meta <-
+          meta_dat_cat %>% 
+          (function(x) {
+            if (outcome_subset %in% "all") {
+              x
+            } else {
+              x %>% 
+                filter(detect_worthy_lesions %in% outcome_subset)
+            }
+          }) %>% 
+          left_join(sample_data %>% 
+                      select(sample_id, deltaker_id, Total_Reads_QC_ATLAS), 
+                    by = "deltaker_id")
         
-        if (is.na(ref_lvl)) {
-          ref_lvl <- "low"
+        tmp_dists %>%
+          beta_by_level(m_dat = tmp_meta,
+                        test_var = i,
+                        adjust_vars = c("kjonn", "age_invitation", "senter", "Total_Reads_QC_ATLAS"),
+                        ref_level_test_var = ifelse(is.na(ref_lvl), "low", ref_lvl)) %>% 
+          mutate(outcome_subset = outcome_subset,
+                 dataset = i_dat) %>% 
+          tibble() %>% 
+          write_tsv(output_file)  
+      }
+    }
+  }
+}
+
+permanova_cat_res <-
+  lapply(tmp_dats, function(i_dat) {
+    lapply(as.character(variables$var_id), function(i) {
+      lapply(c("all", "negative", "positive"), function(outcome_subset) {
+        if (!(outcome_subset %in% c("negative", "positive") & 
+              i %in% c("final_result", "final_result_cat_neg", "detect_worthy_lesions"))) {
+          paste0("tmp/permanova_cat/",i_dat,"_",i,"_",outcome_subset, ".tsv") %>% 
+            read_tsv(col_types = cols())
         }
-        
-        if (!is.na(ref_lvl)) {
-          tmp <-
-            tmp %>% 
-            mutate(across(.cols = matches(i), .fns = function(s) factor(s) %>% relevel(ref = ref_lvl)))
-        }
-        
-        tmp %>% 
-          select(-sample_id) %>% 
-          lm(formula = diversity ~ ., data = .) %>% 
-          tidy(conf.int = TRUE) %>%
-          mutate(variable = get_strings_from_vec(names(tmp)[-c(1,2)], term),
-                 lvl = str_remove(term, variable),
-                 index = x$index[1],
-                 dataset = x$dataset[1],
-                 test_var = i,
-                 ref_level = ref_lvl)
       }) %>% 
+        bind_rows()
+    }) %>% 
       bind_rows()
   }) %>% 
   bind_rows()
 
-# if (!dir.exists("results/tables")) dir.create("results/tables", recursive = TRUE)
-# 
-# alpha_cat_tests %>% 
-#   write_tsv("results/tables/alpha_host_vars_cat.tsv"))
+permanova_cat_res %>% 
+  write_tsv("results/tables/permanova_host_vars_cat_rev.tsv")
 
-permanova_cat <- 
-  lapply(tmp_dats, function(i_dat) {
-    dat <- list("mags" = MAGs_abundance, 
-                "metaphlan" = mphlan_abundance, 
-                "ko_hum" = ko_hum)[[i_dat]]
-    
-    print(paste0("dataset ", i_dat, ": ", which(tmp_dats %in% i_dat), " of ", length(tmp_dats)))
-    
-    tmp_dists <- 
-      dat %>% 
-      as.data.frame() %>% 
-      column_to_rownames("sample_id") %>% 
-      as.matrix() %>% 
-      vegdist(method = "bray")
-    
-    lapply(as.character(variables$var_id), function(i) {
-      
-      print(paste0("variable ", i, ": ", which(variables$var_id %in% i), " of ", length(variables$var_id)))
-      
-      ref_lvl <- variables %>% filter(var_id %in% i) %>% pull(ref)
-      
-      tmp_dists %>%
-        beta_by_level(m_dat = meta_dat_cat %>% left_join(sample_data %>% select(sample_id, deltaker_id, Total_Reads_QC_ATLAS), by = "deltaker_id"),
-                      test_var = i,
-                      adjust_vars = c("kjonn", "age_invitation", "senter", "Total_Reads_QC_ATLAS"),
-                      ref_level_test_var = ifelse(is.na(ref_lvl), "low", ref_lvl))
-    }) %>% 
-      bind_rows() %>% 
-      mutate(dataset = i_dat)
-  }) %>% 
-  bind_rows() %>% 
-  tibble()
-
-# if (!dir.exists("results/tables")) dir.create("results/tables", recursive = TRUE)
-# 
-# permanova_cat %>%
-#   write_tsv("results/tables/permanova_host_vars_cat.tsv")
+# permanova_cat_res <-
+#   read_tsv("results/tables/permanova_host_vars_cat_rev.tsv")
 
 
 # multinom models ---------------------------------------------------------
 
 alpha_adj_outcome_tests_multinom <-
-  lapply(c("standard_model"), function(mod) {
+  lapply(c("no_adjustment", "standard_model"), function(mod) {
     
     lapply(as.character(c("detect_worthy_lesions", "final_result_cat_neg")), function(i) {
       
@@ -194,6 +300,16 @@ alpha_adj_outcome_tests_multinom <-
                       select(deltaker_id, senter, age_invitation, kjonn, wcrf_index_main, 
                              Smoking, Utdanning, colo_hemorrhoids, colo_IBD, 
                              antibiotics_reg_quest_comb, any_of(i)), by = "deltaker_id") %>% 
+          select(-c(deltaker_id))
+      }
+
+
+      if (mod %in% "no_adjustment") {
+        adj_vars <- 
+          sample_data %>% 
+          select(sample_id, deltaker_id) %>% 
+          left_join(meta_dat %>% 
+                      select(deltaker_id, any_of(i)), by = "deltaker_id") %>% 
           select(-c(deltaker_id))
       }
       
@@ -213,10 +329,22 @@ alpha_adj_outcome_tests_multinom <-
                      select(-any_of("antibiotics_reg_quest_comb"))
                  }
                  if (excl_cat %in% c("Male", "Female")) {
-                   adj_vars <- adj_vars %>% filter(kjonn %in% excl_cat) %>% select(-kjonn)
+                   adj_vars <- 
+                     adj_vars %>% 
+                     inner_join(meta_dat %>% 
+                                  filter(kjonn %in% excl_cat) %>% 
+                                  left_join(sample_data %>% select(sample_id, deltaker_id), by = "deltaker_id") %>% 
+                                  select(sample_id), by = "sample_id")  %>% 
+                     select(-any_of("kjonn"))
                  }
                  if (excl_cat %in% c("Bærum", "Moss")) {
-                   adj_vars <- adj_vars %>% filter(senter %in% excl_cat) %>% select(-senter)
+                   adj_vars <- 
+                     adj_vars %>% 
+                     inner_join(meta_dat %>% 
+                                  filter(senter %in% excl_cat) %>% 
+                                  left_join(sample_data %>% select(sample_id, deltaker_id), by = "deltaker_id") %>% 
+                                  select(sample_id), by = "sample_id")  %>% 
+                     select(-any_of("senter"))
                  }
                  if (excl_cat %in% c("proximal_acn", "distal_acn")) {
                    adj_vars %>% 
@@ -276,22 +404,22 @@ alpha_adj_outcome_tests_multinom <-
   ## Proximal/distal should not be evaluated for final_result
   filter(!(test_var %in% "final_result_cat_neg" & str_detect(subset_cat, "acn")))
 
-# if (!dir.exists("results/tables")) dir.create("results/tables", recursive = TRUE)
-# 
 # alpha_adj_outcome_tests_multinom %>% 
-#   write_tsv("results/tables/alpha_adj_outcome_tests.tsv"))
+#   write_tsv(file.path("results","tables","alpha_adj_outcome_tests.tsv"))
 
 
-dist_dat <-
-  mphlan_abundance %>% 
-  as.data.frame() %>% 
-  column_to_rownames(var = "sample_id") %>% 
-  as.matrix() %>% 
-  vegan::vegdist()
-
-
-fin_res_permanova <- 
-  lapply(c("detect_worthy_lesions", "final_result_cat_neg"), function(i) {
+fin_res_permanova <- lapply(c("metaphlan", "mags", "ko_hum"), function(dat) {
+  
+  dist_dat <-
+    list("metaphlan" = mphlan_abundance,
+       "mags" = MAGs_abundance,
+       "ko_hum" = ko_hum)[[dat]] %>%
+    as.data.frame() %>% 
+    column_to_rownames(var = "sample_id") %>% 
+    as.matrix() %>% 
+    vegan::vegdist()
+  
+  lapply(c("final_result", "detect_worthy_lesions", "final_result_cat_neg"), function(i) {
     
     lapply(c("unadjusted", "standard_model"), function(mod) {
       
@@ -331,17 +459,16 @@ fin_res_permanova <-
       tmp2 <- adonis_OmegaSq(tmp) %>% as.data.frame() %>% rownames_to_column("term") %>% tibble() %>% bind_cols("R2" = tmp$R2)
       
       tmp2 %>% 
-        mutate(adjustment = mod) %>% 
+        mutate(adjustment = mod,
+               dataset = dat) %>% 
         filter(!term %in% c("Residual","Total"))
     }) %>% 
       bind_rows()
   }) %>% 
+    bind_rows()
+}) %>% 
   bind_rows()
 
-# if (!dir.exists("results/tables")) dir.create("results/tables", recursive = TRUE)
-
-# fin_res_permanova %>% 
-#   write_tsv("results/tables/beta_outcome_tests.tsv")
 
 
 # Test pairwise differences between outcome groups ------------------------
@@ -398,8 +525,6 @@ alpha_adj_pairwise_outcome_tests_multinom <-
   }) %>% 
   bind_rows()
 
-# alpha_adj_pairwise_outcome_tests_multinom %>% 
-#   write_tsv("results/tables/alpha_adj_pairwise_fin_res_outcome_tests.tsv")
 
 
 beta_pairwise_fin_res <- function() {
